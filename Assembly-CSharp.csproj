@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{446720A3-2CE8-E6C0-4D1A-58ED6B5F6C80}</ProjectGuid>
+    <ProjectGuid>{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -87,6 +87,7 @@
     <Compile Include="Assets\UI\uDialog\uDialog_Utilities.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\Scripts\UI\test.cs" />
+    <Compile Include="Assets\Scripts\sound\voice.cs" />
     <Compile Include="Assets\UI\uDialog\uDialog_NotificationPanel.cs" />
     <Compile Include="Assets\Tom&apos;s Terrain Tools\Example Data\Scripts\SimpleSmoothMouseLook.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
@@ -100,6 +101,7 @@
     <Compile Include="Assets\Scripts\Truck\parking.cs" />
     <Compile Include="Assets\Downloaded assets\Forst\CTI Runtime Components\CTI Runtime Components BIRP\Scripts\CTI_CustomWind.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+    <Compile Include="Assets\Scripts\Car controller\engineSound.cs" />
     <Compile Include="Assets\Scripts\Car controller\CarController.cs" />
     <Compile Include="Assets\Scripts\UI\TimerManager.cs" />
     <Compile Include="Assets\Tom&apos;s Terrain Tools\Example Data\Scripts\PlayerHoverController.cs" />
@@ -1328,11 +1330,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SimpleInput.Editor.csproj">
-      <Project>{034C2841-C9B6-A59C-C31A-F1DE69C55931}</Project>
+      <Project>{27AFC41D-1D03-8FFF-E845-548336A70695}</Project>
       <Name>SimpleInput.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="SimpleInput.Runtime.csproj">
-      <Project>{5BC3EE27-6BA0-3AE1-9AED-3464102DBAA4}</Project>
+      <Project>{3E962D77-3373-FB70-3A46-76331F7BE564}</Project>
       <Name>SimpleInput.Runtime</Name>
     </ProjectReference>
   </ItemGroup>

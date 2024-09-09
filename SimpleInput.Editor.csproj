@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{034C2841-C9B6-A59C-C31A-F1DE69C55931}</ProjectGuid>
+    <ProjectGuid>{27AFC41D-1D03-8FFF-E845-548336A70695}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>SimpleInput.Editor</AssemblyName>
@@ -1118,7 +1118,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SimpleInput.Runtime.csproj">
-      <Project>{5BC3EE27-6BA0-3AE1-9AED-3464102DBAA4}</Project>
+      <Project>{3E962D77-3373-FB70-3A46-76331F7BE564}</Project>
       <Name>SimpleInput.Runtime</Name>
     </ProjectReference>
   </ItemGroup>

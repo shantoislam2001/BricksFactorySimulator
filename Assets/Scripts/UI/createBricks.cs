@@ -13,6 +13,8 @@ public class createBricks : MonoBehaviour
     [SerializeField] public TextMeshProUGUI s1coal;
     [SerializeField] public TextMeshProUGUI s1time;
     [SerializeField] public TextMeshProUGUI s1slotTime;
+    [SerializeField] public AudioSource BricksCreationStart;
+    [SerializeField] public AudioSource BricksCreationComplete;
 
     // buttons
     [SerializeField] public GameObject createB1;
@@ -74,6 +76,7 @@ public class createBricks : MonoBehaviour
                 timer1 = new Timer(180f, timeUp1);
                 TimerManager.AddTimer(timer1);
                 createB1.SetActive(false);
+                BricksCreationStart.Play();
             } else
             {
                 warning("Not enough Soil and Coal");
@@ -120,6 +123,7 @@ public class createBricks : MonoBehaviour
 
     void timeUp1()
     {
+        BricksCreationComplete.Play();
         createB1.SetActive(true);
         if (select1 == 0)
         {

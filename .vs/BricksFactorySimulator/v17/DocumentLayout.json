@@ -1,0 +1,169 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\github\\bricksfactorysimulator\\assets\\scripts\\orders and delivery\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\orders and delivery\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\github\\bricksfactorysimulator\\assets\\scripts\\load system\\loadat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\load system\\loadat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\assets\\scripts\\ui\\createbricks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\createbricks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\assets\\scripts\\sound\\voice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sound\\voice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\assets\\scripts\\truck\\antirollber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\truck\\antirollber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\assets\\scripts\\car controller\\enginesound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\car controller\\enginesound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\assets\\scripts\\car controller\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\car controller\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\assets\\scripts\\orders and delivery\\delivery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\orders and delivery\\delivery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\car AI\\git..cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\car AI\\git..cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "order.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\orders and delivery\\order.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\orders and delivery\\order.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\orders and delivery\\order.cs",
+              "RelativeToolTip": "Assets\\Scripts\\orders and delivery\\order.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAzwBgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T16:59:00.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "createBricks.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\UI\\createBricks.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\createBricks.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\UI\\createBricks.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\createBricks.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAgwH0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T16:29:05.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "voice.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\sound\\voice.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\sound\\voice.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\sound\\voice.cs",
+              "RelativeToolTip": "Assets\\Scripts\\sound\\voice.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T15:42:37.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "antiRollBer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\Truck\\antiRollBer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Truck\\antiRollBer.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\Truck\\antiRollBer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Truck\\antiRollBer.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAcwD8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T15:06:21.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "engineSound.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\Car controller\\engineSound.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Car controller\\engineSound.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\Car controller\\engineSound.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Car controller\\engineSound.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:34:58.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CarController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\Car controller\\CarController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Car controller\\CarController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\Car controller\\CarController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Car controller\\CarController.cs",
+              "ViewState": "AQIAAKkAAAAAAAAAAAA9wNYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:24:41.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "delivery.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\orders and delivery\\delivery.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\orders and delivery\\delivery.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\orders and delivery\\delivery.cs",
+              "RelativeToolTip": "Assets\\Scripts\\orders and delivery\\delivery.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:09:38.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "loadAT.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\Load system\\loadAT.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Load system\\loadAT.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\Load system\\loadAT.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Load system\\loadAT.cs",
+              "ViewState": "AQIAALABAAAAAAAAAAAIwI8BAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T10:53:04.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "git..cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\car AI\\git..cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\car AI\\git..cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\BricksFactorySimulator\\Assets\\Scripts\\car AI\\git..cs",
+              "RelativeToolTip": "Assets\\Scripts\\car AI\\git..cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T10:47:12.553Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

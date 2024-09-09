@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C23BB01F-DFA2-546C-45F8-51E61808AA01}</ProjectGuid>
+    <ProjectGuid>{3DEFC003-535D-8BD1-0F77-C1FA000AAD5E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -1262,15 +1262,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{446720A3-2CE8-E6C0-4D1A-58ED6B5F6C80}</Project>
+      <Project>{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="SimpleInput.Editor.csproj">
-      <Project>{034C2841-C9B6-A59C-C31A-F1DE69C55931}</Project>
+      <Project>{27AFC41D-1D03-8FFF-E845-548336A70695}</Project>
       <Name>SimpleInput.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="SimpleInput.Runtime.csproj">
-      <Project>{5BC3EE27-6BA0-3AE1-9AED-3464102DBAA4}</Project>
+      <Project>{3E962D77-3373-FB70-3A46-76331F7BE564}</Project>
       <Name>SimpleInput.Runtime</Name>
     </ProjectReference>
   </ItemGroup>

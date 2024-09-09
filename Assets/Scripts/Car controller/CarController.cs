@@ -28,13 +28,6 @@ public class CarController : MonoBehaviour
     [Header("Gear Settings")]
     public int numberOfGears = 5;
     public float[] gearRatios;
-    public float enginePitchMultiplier = 0.1f;
-    public float maxEnginePitch = 2.0f;
-
-    [Header("Audio Settings")]
-    public AudioSource engineAudioSource;
-    public AudioClip engineSoundClip;
-    public AudioClip gearChangeClip;
 
     [Header("UI Buttons")]
     public Button accelerateButton;
@@ -53,14 +46,6 @@ public class CarController : MonoBehaviour
     {
         // Initialize button listeners
         AddButtonListeners();
-
-        // Setup engine audio
-        if (engineAudioSource != null && engineSoundClip != null)
-        {
-            engineAudioSource.clip = engineSoundClip;
-            engineAudioSource.loop = true;
-            engineAudioSource.Play();
-        }
     }
 
     private void AddButtonListeners()
@@ -97,7 +82,6 @@ public class CarController : MonoBehaviour
         HandleMotor();
         HandleSteering();
         UpdateWheelTransforms();
-        UpdateEngineSound();
     }
 
     private void HandleMotor()
@@ -174,17 +158,6 @@ public class CarController : MonoBehaviour
         if (newGear != currentGear)
         {
             currentGear = newGear;
-            PlayGearChangeSound();
-        }
-    }
-
-    private void UpdateEngineSound()
-    {
-        if (engineAudioSource != null)
-        {
-            float speedFactor = currentSpeed / 100f;
-            engineAudioSource.pitch = 1.0f + (speedFactor * enginePitchMultiplier * currentGear);
-            engineAudioSource.pitch = Mathf.Clamp(engineAudioSource.pitch, 1.0f, maxEnginePitch);
         }
     }
 
@@ -202,7 +175,6 @@ public class CarController : MonoBehaviour
     private void OnReverseDown()
     {
         motorInput = -1f;
-        PlayGearChangeSound();
     }
 
     private void OnReverseUp()
@@ -238,13 +210,5 @@ public class CarController : MonoBehaviour
     private void OnSteerRightUp()
     {
         steerInput = 0f;
-    }
-
-    private void PlayGearChangeSound()
-    {
-        if (engineAudioSource != null && gearChangeClip != null)
-        {
-            engineAudioSource.PlayOneShot(gearChangeClip);
-        }
     }
 }

@@ -7,7 +7,7 @@ public class order : MonoBehaviour
     [SerializeField] public GameObject list;
     public Timer timer;
     public static int activeOrder = 0;
-    
+    [SerializeField] public AudioSource newOrder;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,6 +22,7 @@ public class order : MonoBehaviour
         int maxO = maxOrder(levelSystem.level);
         if (maxO > activeOrder)
         {
+            newOrder.Play();    
             GameObject client = list.transform.Find(transport.client.Dequeue()).gameObject;
             clientData cd = client.GetComponent<clientData>();
             activeOrder++;
