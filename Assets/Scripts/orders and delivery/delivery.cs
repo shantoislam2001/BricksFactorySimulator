@@ -378,6 +378,15 @@ public class Delivery : MonoBehaviour
         carAI.SetActiveWaypointList("Car1", "return trip");
 
         cTruck.transform.Find("Bricks").gameObject.SetActive(false);
+        truckData td = cTruck.GetComponent<truckData>();
+        td.load = "Empty";
+        td.status = "Parked";
+        if (td.type == "Drump truck")
+        {
+            transport.drumpTruck.Add(cTruck.name);
+        }
+
+                
 
         
 

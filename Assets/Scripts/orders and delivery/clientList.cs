@@ -40,7 +40,7 @@ public class clientList : MonoBehaviour
     [SerializeField] public GameObject requestPui;
     [SerializeField] public GameObject pendingPui;
     [SerializeField] public GameObject doneUi;
-
+    [SerializeField] public GameObject panel;
 
     void Start()
     {
@@ -49,10 +49,65 @@ public class clientList : MonoBehaviour
 
     public void p1()
     {
+        panel.SetActive(true);
         cClient = gameObject.transform.Find("P1").GameObject();
-        clientData cd = gameObject.transform.Find("P1").GetComponent<clientData>();
+        clientData cd = cClient.GetComponent<clientData>();
         updateInfo(cd);
         updateUi(cd);   
+    }
+
+    public void p2()
+    {
+        panel.SetActive(true);
+        cClient = gameObject.transform.Find("P2").GameObject();
+        clientData cd = cClient.GetComponent<clientData>();
+        updateInfo(cd);
+        updateUi(cd);
+    }
+
+    public void p3()
+    {
+        panel.SetActive(true);
+        cClient = gameObject.transform.Find("P3").GameObject();
+        clientData cd = cClient.GetComponent<clientData>();
+        updateInfo(cd);
+        updateUi(cd);
+    }
+
+    public void p4()
+    {
+        panel.SetActive(true);
+        cClient = gameObject.transform.Find("P4").GameObject();
+        clientData cd = cClient.GetComponent<clientData>();
+        updateInfo(cd);
+        updateUi(cd);
+    }
+
+    public void p5()
+    {
+        panel.SetActive(true);
+        cClient = gameObject.transform.Find("P5").GameObject();
+        clientData cd = cClient.GetComponent<clientData>();
+        updateInfo(cd);
+        updateUi(cd);
+    }
+
+    public void p6()
+    {
+        panel.SetActive(true);
+        cClient = gameObject.transform.Find("P6").GameObject();
+        clientData cd = cClient.GetComponent<clientData>();
+        updateInfo(cd);
+        updateUi(cd);
+    }
+
+    public void p7()
+    {
+        panel.SetActive(true);
+        cClient = gameObject.transform.Find("P7").GameObject();
+        clientData cd = cClient.GetComponent<clientData>();
+        updateInfo(cd);
+        updateUi(cd);
     }
 
     public void updateInfo(clientData cd)
@@ -186,6 +241,7 @@ public class clientList : MonoBehaviour
     {
         cClient.SetActive(false);
         transport.client.Enqueue(cClient.name);
+        panel.SetActive(false);
     }
 
     public void getAvancePayment()
@@ -206,7 +262,7 @@ public class clientList : MonoBehaviour
         levelSystem.currentXp += currentClient.xp;
         levelSystem.updateText();
         cClient.SetActive(false);
-        Debug.Log(cClient.name);
+        panel.SetActive(false);
     }
 
     private string FormatCurrency(float value)

@@ -91,6 +91,7 @@ public class createBricks : MonoBehaviour
                 timer1 = new Timer(300f, timeUp1);
                 TimerManager.AddTimer(timer1);
                 createB1.SetActive(false);
+                BricksCreationStart.Play();
             }
             else
             {
@@ -107,6 +108,7 @@ public class createBricks : MonoBehaviour
                 timer1 = new Timer(360f, timeUp1);
                 TimerManager.AddTimer(timer1);
                 createB1.SetActive(false);
+                BricksCreationStart.Play();
             }
             else
             {

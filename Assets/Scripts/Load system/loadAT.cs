@@ -393,6 +393,11 @@ public class loadAT : MonoBehaviour
         cTruck.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         cTruck.GetComponent <CarController>().enabled = false;  
         
+        if (cTruck.GetComponent<truckData>().type == "Drump truck")
+        {
+            transport.drumpTruck.Remove(currentTruck);
+        }
+
     }
 
     public void timeUp()
