@@ -12,8 +12,12 @@ public class uiManager : MonoBehaviour
     [SerializeField] public GameObject canvasOffice;
     [SerializeField] public GameObject officePanel;
     [SerializeField] public GameObject dtPanel;
+    [SerializeField] public GameObject truckPanel;
+    [SerializeField] public GameObject vanPanel;
     [SerializeField] public GameObject createBricks;
     [SerializeField] public GameObject orderList;
+    [SerializeField] public GameObject settingsPanel;
+    [SerializeField] public GameObject menuPanel;
 
 
     public void openStore()
@@ -111,6 +115,18 @@ public class uiManager : MonoBehaviour
         canvasOffice.SetActive(false);
     }
 
+    public void closeTruck()
+    {
+        truckPanel.SetActive(false);
+        canvasOffice.SetActive(false);
+    }
+
+    public void closeVan()
+    {
+        vanPanel.SetActive(false);
+        canvasOffice.SetActive(false);
+    }
+
     public void openCreateBricks()
     {
         canvasOffice.SetActive(true);
@@ -123,6 +139,29 @@ public class uiManager : MonoBehaviour
         canvasOffice.SetActive(false);
     }
 
+    public void openMenu()
+    {
+        canvasOffice.SetActive(true);
+        menuPanel.SetActive(true);
+    }
+
+    public void openSettings()
+    {
+        canvasOffice.SetActive(true);
+        settingsPanel.SetActive(true);
+    }
+
+    public void closeMenu()
+    {
+        menuPanel.SetActive(false);
+        canvasOffice.SetActive(false);
+    }
+
+    public void closeSettings()
+    {
+        settingsPanel.SetActive(false);
+        canvasOffice.SetActive(false);
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
