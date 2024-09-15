@@ -159,6 +159,7 @@ public class uiManager : MonoBehaviour
 
     public void closeSettings()
     {
+        menuPanel.SetActive(false);
         settingsPanel.SetActive(false);
         canvasOffice.SetActive(false);
     }

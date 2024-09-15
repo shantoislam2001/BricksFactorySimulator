@@ -242,6 +242,7 @@ public class clientList : MonoBehaviour
         cClient.SetActive(false);
         transport.client.Enqueue(cClient.name);
         panel.SetActive(false);
+        order.activeOrder--;
     }
 
     public void getAvancePayment()
@@ -263,6 +264,7 @@ public class clientList : MonoBehaviour
         levelSystem.updateText();
         cClient.SetActive(false);
         panel.SetActive(false);
+        order.activeOrder--;
     }
 
     private string FormatCurrency(float value)

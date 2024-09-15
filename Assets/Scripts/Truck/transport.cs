@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 public class transport : MonoBehaviour
 {
-   public static List<string> trucks = new List<string> { "SI 24- 01" };
-    public static List<string> drumpTruck = new List<string> { "SI 24- 01" };
+   public static List<string> trucks = new List<string> { "SI 24- 01", "SI 24- 02", "SI 24- 03", "SI 24- 04" };
+    public static List<string> drumpTruck = new List<string> { "SI 24- 01", "SI 24- 04" };
    public static List<string> inRoute = new List<string>();
 
     public static Queue<string> firstClass1k = new Queue<string>();

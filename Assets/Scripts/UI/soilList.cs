@@ -10,9 +10,9 @@ public class SoilList : MonoBehaviour
     public Transform itemHolder;
     public int numOfItem;
 
-    private Timer timer;
-    private GameObject cTruck;
+    private Dictionary<GameObject, Timer> truckTimers = new Dictionary<GameObject, Timer>();
     private Vector3 startPosition = new Vector3(533f, 0.11f, 546f);
+    public Queue<GameObject> tq = new Queue<GameObject>();  // Store the truck object instead of the name
 
     void Start()
     {
@@ -47,13 +47,14 @@ public class SoilList : MonoBehaviour
     {
         if (currency.money >= 225)
         {
-            cTruck = GameObject.Find(truck);
+            GameObject cTruck = GameObject.Find(truck);
             if (cTruck == null)
             {
                 Debug.LogError("Truck not found: " + truck);
                 return;
             }
 
+            tq.Enqueue(cTruck);  // Store the truck object instead of its name
             cTruck.transform.position = startPosition;
             cTruck.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
             cTruck.GetComponent<CarAI>().enabled = true;
@@ -61,8 +62,9 @@ public class SoilList : MonoBehaviour
             CarAI carAI = cTruck.GetComponent<CarAI>();
             carAI.SetActiveWaypointList("Car1", "go");
 
-            timer = new Timer(210f, timeUp);
-            TimerManager.AddTimer(timer);
+            Timer truckTimer = new Timer(210f, () => timeUp(cTruck));  // Pass the truck object to timeUp
+            TimerManager.AddTimer(truckTimer);
+            truckTimers[cTruck] = truckTimer;  // Store the timer for this truck
 
             truckData truckDataComponent = cTruck.GetComponent<truckData>();
             truckDataComponent.status = "In route";
@@ -75,70 +77,76 @@ public class SoilList : MonoBehaviour
 
             RefreshTruckList();  // Refresh the list after removing the item
             Debug.Log("Clicked item number: " + index + " with value: " + truck);
-        } else
+        }
+        else
         {
             warning();
         }
     }
 
-    public void timeUp()
+    public void timeUp(GameObject qTruck)
     {
-        if (cTruck == null)
+        if (qTruck == null)
         {
-            Debug.LogError("Truck not found for timeUp event.");
+            Debug.LogError("Truck not found in queue.");
             return;
         }
 
-        cTruck.transform.position = new Vector3(245f, 0.11f, 577f);
-        cTruck.transform.rotation = Quaternion.Euler(0f, 90f, 0f);
-        cTruck.SetActive(true);
+        qTruck.transform.position = new Vector3(245f, 0.11f, 577f);
+        qTruck.transform.rotation = Quaternion.Euler(0f, 90f, 0f);
+        qTruck.SetActive(true);
 
-        CarAI carAI = cTruck.GetComponent<CarAI>();
+        CarAI carAI = qTruck.GetComponent<CarAI>();
         carAI.SetActiveWaypointList("Car1", "return");
 
-        cTruck.transform.Find("Soil").gameObject.SetActive(true);
+        qTruck.transform.Find("Soil").gameObject.SetActive(true);
 
-        // Refresh the list after the truck returns
-        RefreshTruckList();
+        RefreshTruckList();  // Refresh the list when truck returns
 
-        timer = new Timer(210f, timeEnd);
-        TimerManager.AddTimer(timer);
+        Timer returnTimer = new Timer(210f, () => timeEnd(qTruck));  // Another timer for the return
+        TimerManager.AddTimer(returnTimer);
+        truckTimers[qTruck] = returnTimer;  // Update the truck's timer for the return
     }
 
-    public void timeEnd()
+    public void timeEnd(GameObject cTruck)
     {
+        if (cTruck == null)
+        {
+            Debug.LogError("Truck not found.");
+            return;
+        }
+
         cTruck.transform.Find("Soil").gameObject.SetActive(false);
         currency.addSoil(15);
-        
+
         transport.drumpTruck.Add(cTruck.gameObject.name);
         transport.inRoute.Remove(cTruck.gameObject.name);
+
         truckData truckDataComponent = cTruck.GetComponent<truckData>();
         truckDataComponent.status = "Parked";
         truckDataComponent.load = "Empty";
+
         parking.park(cTruck.gameObject.name);
-        //  CarAI carAI = cTruck.GetComponent<CarAI>();
-        // carAI.SetActiveWaypointList("Car1", "park");
         cTruck.GetComponent<CarAI>().enabled = false;
         cTruck.transform.Find("Audio Source").gameObject.SetActive(false);
         cTruck.GetComponent<BoxCollider>().enabled = true;
-        RefreshTruckList();
 
+        RefreshTruckList();  // Refresh list after the truck finishes its return trip
+
+        truckTimers.Remove(cTruck);  // Remove the truck's timer as it's done
     }
 
     public void warning()
     {
         uDialog.NewDialog()
         .SetTitleText("Warning")
-        .SetContentText("Not enough momey")
+        .SetContentText("Not enough money")
         .SetIcon(eIconType.Warning)
         .AddButton("Close", (dialog) => dialog.Close());
     }
 
     void Update()
     {
-        if (timer != null)
-        {
-          //  Debug.Log(timer.GetRemainingTime());
-        }
+        // You can add any timer updates here if needed
     }
 }

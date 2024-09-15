@@ -9,6 +9,7 @@ public class truckData : MonoBehaviour
     public string status;
     public int fuel;
     public int damage;
+    public string time;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

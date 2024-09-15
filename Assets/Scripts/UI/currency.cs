@@ -25,7 +25,8 @@ public class currency : MonoBehaviour
         money = 10000;
         soil = 100; 
         coal = 100;
-        firstClass = 2000;
+        firstClass = 1000;
+        tenHole = 6000;
     }
 
     // Update is called once per frame

@@ -20,7 +20,7 @@ public class order : MonoBehaviour
     public void sendOrder()
     {
         int maxO = maxOrder(levelSystem.level);
-        if (maxO > activeOrder)
+        if (maxO >= activeOrder)
         {
             newOrder.Play();    
             GameObject client = list.transform.Find(transport.client.Dequeue()).gameObject;
@@ -34,12 +34,12 @@ public class order : MonoBehaviour
             cd.xp = cd.brickQuantity / 20;
             cd.totalAmount = cd.perBrickPrice * cd.brickQuantity;
             cd.pandingPayment = (int)cd.totalAmount;
-            timer = new Timer(300f, timeUp);
+            timer = new Timer(180f, timeUp);
             TimerManager.AddTimer(timer);
 
         } else
         {
-            timer = new Timer(300f, timeUp);
+            timer = new Timer(180f, timeUp);
             TimerManager.AddTimer(timer);
         }
     }

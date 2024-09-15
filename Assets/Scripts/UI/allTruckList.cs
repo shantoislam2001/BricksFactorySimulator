@@ -40,7 +40,7 @@ public class allTruckList : MonoBehaviour
             item.transform.GetChild(5).GetComponent<TextMeshProUGUI>().text ="Status : "+ td.status;
             item.transform.GetChild(6).GetComponent<TextMeshProUGUI>().text = "Number : " + transport.trucks[i];
             item.transform.GetChild(7).GetComponent<TextMeshProUGUI>().text = "Load : " + td.load;
-            item.transform.GetChild(8).GetComponent<TextMeshProUGUI>().text = "Time : Coming soon";
+            item.transform.GetChild(8).GetComponent<TextMeshProUGUI>().text = "Time left :"+ td.time;
             item.transform.GetChild(9).GetComponent<TextMeshProUGUI>().text = "Damage : " + td.damage;
             item.transform.GetChild(10).GetComponent<TextMeshProUGUI>().text = "Fuel : " + td.fuel;
 

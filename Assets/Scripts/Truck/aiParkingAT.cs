@@ -25,6 +25,8 @@ public class aiParkingAT : MonoBehaviour
         mainParent.GetComponent<CarAI>().enabled = false;
         string n = mainParent.gameObject.name;
         parking.park(n);
+        mainParent.GetComponent<BoxCollider>().enabled = true;
+        mainParent.transform.Find("Audio Source").gameObject.SetActive(false);
     }
 
 

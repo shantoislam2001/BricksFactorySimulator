@@ -49,6 +49,7 @@ public class loadAT : MonoBehaviour
     }
 
     public void dropdownDrumpTruck () {
+        Debug.Log("dt");
         int v = dropdownDt.value;
         if (v == 0)
         {
@@ -77,68 +78,70 @@ public class loadAT : MonoBehaviour
 
     public void DropdownTruck()
     {
+        Debug.Log("truck");
         int v = dropdownTruck.value;
         if (v == 0)
         {
-            selectDt = "First Class(3k)";
+            selectTruck = "First Class(3k)";
         }
         else if (v == 1)
         {
-            selectDt = "First Class(4k)";
+            selectTruck = "First Class(4k)";
         }
         else if (v == 2)
         {
-            selectDt = "Three Hole(3k)";
+            selectTruck = "Three Hole(3k)";
         }
         else if (v == 3)
         {
-            selectDt = "Three Hole(4k)";
+            selectTruck = "Three Hole(4k)";
         }
         else if (v == 4)
         {
-            selectDt = "Ten Hole(3k)";
+            selectTruck = "Ten Hole(3k)";
         }
         else if (v == 5)
         {
-            selectDt = "Ten Hole(4k)";
+            selectTruck = "Ten Hole(4k)";
         }
         else
         {
-            selectDt = "First Class(3k)";
+            selectTruck = "First Class(3k)";
         }
 
     }
 
     public void DropdownVan()
     {
+        Debug.Log("van");
         int v = dropdownVan.value;
         if (v == 0)
         {
-            selectDt = "First Class(5k)";
+            selectVan = "First Class(5k)";
         }
         else if (v == 1)
         {
-            selectDt = "First Class(6k)";
+            selectVan = "First Class(6k)";
         }
         else if (v == 2)
         {
-            selectDt = "Three Hole(5k)";
+            selectVan = "Three Hole(5k)";
         }
         else if (v == 3)
         {
-            selectDt = "Three Hole(6k)";
+            selectVan = "Three Hole(6k)";
         }
         else if (v == 4)
         {
-            selectDt = "Ten Hole(5k)";
+            selectVan = "Ten Hole(5k)";
         }
         else if (v == 5)
         {
-            selectDt = "Ten Hole(6k)";
+            selectVan = "Ten Hole(6k)";
         }
         else
         {
-            selectDt = "First Class(5k)";
+            selectVan = "First Class(5k)";
         }
 
     }
@@ -385,7 +388,21 @@ public class loadAT : MonoBehaviour
     {
         GameObject cTruck = GameObject.Find(currentTruck);
        loadingStart.Play();
-        cTruck.GetComponent<truckData>().load = selectDt;
+        truckData td = cTruck.GetComponent<truckData>();
+        if (td.type == "Drump truck")
+        {
+            td.load = selectDt;
+        }
+        else if (td.type == "Truck")
+        {
+            td.load = selectTruck;
+        }
+        else if (td.type == "Van")
+        {
+            td.load = selectVan;
+        }
+
+        
         cTruck.GetComponent<BoxCollider>().enabled = false;
         timer = new Timer(t, timeUp);
         TimerManager.AddTimer(timer);
@@ -406,30 +423,79 @@ public class loadAT : MonoBehaviour
         GameObject cTruck = GameObject.Find(currentTruck);
         cTruck.GetComponent<BoxCollider>().enabled = true;
         cTruck.transform.Find("Bricks").gameObject.SetActive(true);
+        truckData td = cTruck.GetComponent<truckData>();
 
-        if (selectDt == "First Class(1k)")
+        if (td.load == "First Class(1k)")
         {
             transport.firstClass1k.Enqueue(currentTruck);
         }
-        else if (selectDt == "First Class(2k)")
+        else if (td.load == "First Class(2k)")
         {
             transport.firstClass2k.Enqueue(currentTruck);
         }
-        else if (selectDt == "Three Hole(1k)")
+        else if (td.load == "First Class(3k)")
+        {
+            transport.firstClass3k.Enqueue(currentTruck);
+        }
+        else if (td.load == "First Class(4k)")
+        {
+            transport.firstClass4k.Enqueue(currentTruck);
+        }
+        else if (td.load == "First Class(5k)")
+        {
+            transport.firstClass5k.Enqueue(currentTruck);
+        }
+        else if (td.load == "First Class(6k)")
+        {
+            transport.firstClass6k.Enqueue(currentTruck);
+        }
+        else if (td.load == "Three Hole(1k)")
         {
             transport.threeHole1k.Enqueue(currentTruck);
         }
-        else if (selectDt == "Three Hole(2k)")
+        else if (td.load == "Three Hole(2k)")
         {
             transport.threeHole2k.Enqueue(currentTruck);
         }
-        else if (selectDt == "Ten Hole(1k)")
+        else if (td.load == "Three Hole(3k)")
+        {
+            transport.threeHole3k.Enqueue(currentTruck);
+        }
+        else if (td.load == "Three Hole(4k)")
+        {
+            transport.threeHole4k.Enqueue(currentTruck);
+        }
+        else if (td.load == "Three Hole(5k)")
+        {
+            transport.threeHole5k.Enqueue(currentTruck);
+        }
+        else if (td.load == "Three Hole(6k)")
+        {
+            transport.threeHole6k.Enqueue(currentTruck);
+        }
+        else if (td.load == "Ten Hole(1k)")
         {
             transport.tenHole1k.Enqueue(currentTruck);
         }
-        else if (selectDt == "Ten Hole(2k)")
+        else if (td.load == "Ten Hole(2k)")
         {
             transport.tenHole2k.Enqueue(currentTruck);
+        }
+        else if (td.load == "Ten Hole(3k)")
+        {
+            transport.tenHole3k.Enqueue(currentTruck);
+        }
+        else if (td.load == "Ten Hole(4k)")
+        {
+            transport.tenHole4k.Enqueue(currentTruck);
+        }
+        else if (td.load == "Ten Hole(5k)")
+        {
+            transport.tenHole5k.Enqueue(currentTruck);
+        }
+        else if (td.load == "Ten Hole(6k)")
+        {
+            transport.tenHole6k.Enqueue(currentTruck);
         }
 
     }
@@ -453,6 +519,11 @@ public class loadAT : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        GameObject cTruck = GameObject.Find(currentTruck);
+        try
+        {
+            cTruck.GetComponent<truckData>().time = timer.GetFormattedTime();
+        }
+        catch (Exception ex) { }
     }
 }
