@@ -5,15 +5,15 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638613249778042391
-    m_Hash: 2207434637
+      ticks: 638615015454252331
+    m_Hash: 3205617929
   m_LockFileStatus:
     m_FilePath: C:/Users/User/Documents/GitHub/BricksFactorySimulator/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638613249835429037
+      ticks: 638615015477742841
     m_Hash: 3250638133
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

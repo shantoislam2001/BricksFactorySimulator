@@ -450,6 +450,8 @@
 "Assets/Scripts/orders and delivery/order.cs"
 "Assets/Scripts/Player/joystick.cs"
 "Assets/Scripts/Player/TriggerControl.cs"
+"Assets/Scripts/Settings/SaveGameManager.cs"
+"Assets/Scripts/Settings/settings.cs"
 "Assets/Scripts/sound/voice.cs"
 "Assets/Scripts/Truck/aiParkingAT.cs"
 "Assets/Scripts/Truck/antiRollBer.cs"

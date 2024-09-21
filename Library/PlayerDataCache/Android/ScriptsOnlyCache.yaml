@@ -1,26 +1,50 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp:
+    - UI.Dialogs.uDialog
+    - UI.Dialogs.uDialog_Button
+    - UI.Dialogs.uDialog_Config
+    - UI.Dialogs.uDialog_NotificationPanel
+    - UI.Dialogs.uDialog_ResizeListener
+    - UI.Dialogs.uDialog_ScreenOverlay
+    - UI.Dialogs.uDialog_TaskBar
+    - UI.Dialogs.uDialog_TaskBar_Task
+    Assembly-CSharp-Editor.dll:
+    - ReadmeEditor
     Assembly-CSharp.dll:
     - AntiRollBar
     - AreaTrigger
     - CarAI
     - CarController
+    - CarEngineSound
+    - Delivery
     - FPSController
     - FixedJoystick
     - MultiPanelAnimationScript
+    - ProgressBar
     - ProgressBarCircle
+    - Readme
+    - SaveGameManager
     - SlideAxisController
     - SlideZoom
     - SoilList
     - TimerManager
     - TriggerCar
     - TriggerControl
+    - aiParkingAT
     - allTruckList
+    - clientData
+    - clientList
     - coalList
+    - createBricks
     - currency
+    - dayNight
+    - levelSystem
+    - loadAT
+    - order
     - parkingAt
     - roadAt
-    - test
+    - settings
     - truckData
     - uiManager
     Unity.AdaptivePerformance.Editor.dll:
@@ -44,6 +68,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     Unity.TextMeshPro.dll:
+    - TMPro.TMP_Dropdown
     - TMPro.TMP_FontAsset
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
@@ -55,6 +80,17 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI:
+    - UnityEngine.EventSystems.EventTrigger
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.ContentSizeFitter
+    - UnityEngine.UI.HorizontalLayoutGroup
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
+    - UnityEngine.UI.Outline
+    - UnityEngine.UI.Shadow
+    - UnityEngine.UI.Text
+    - UnityEngine.UI.VerticalLayoutGroup
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.UI.Button
@@ -63,14 +99,22 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
     - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
   serializedClasses:
     Assembly-CSharp:
     - .CarAI/CarWaypointMapping
     - .CarAI/Waypoint
     - .CarAI/WaypointList
     - .MultiPanelAnimationScript/UIPanel
+    - UI.Dialogs.SerializableColor
+    - UI.Dialogs.uDialog/uDialog_Event
+    - UI.Dialogs.uDialog_Button_Data
+    - UI.Dialogs.uDialog_ColorScheme
+    - UI.Dialogs.uDialog_FontSetting
     Unity.InputSystem:
     - UnityEngine.InputSystem.InputAction
     - UnityEngine.InputSystem.InputActionMap
@@ -81,7 +125,11 @@ ScriptsOnlyBuild:
     - TMPro.FaceInfo_Legacy
     - TMPro.FontAssetCreationSettings
     - TMPro.KerningTable
+    - TMPro.LigatureSubstitutionRecord
     - TMPro.TMP_Character
+    - TMPro.TMP_Dropdown/DropdownEvent
+    - TMPro.TMP_Dropdown/OptionData
+    - TMPro.TMP_Dropdown/OptionDataList
     - TMPro.TMP_FontFeatureTable
     - TMPro.TMP_FontWeightPair
     - TMPro.TMP_Sprite
@@ -103,6 +151,8 @@ ScriptsOnlyBuild:
     - UnityEngine.TextCore.LowLevel.GlyphPairAdjustmentRecord
     - UnityEngine.TextCore.LowLevel.GlyphValueRecord
     UnityEngine.UI:
+    - UnityEngine.EventSystems.EventTrigger/Entry
+    - UnityEngine.EventSystems.EventTrigger/TriggerEvent
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
     - UnityEngine.UI.ColorBlock
@@ -110,8 +160,13 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.ScrollRect/ScrollRectEvent
+    - UnityEngine.UI.Scrollbar/ScrollEvent
     - UnityEngine.UI.SpriteState
+    - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: Delivery
+    methodName: Send
   - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: openCoalList
@@ -119,14 +174,32 @@ ScriptsOnlyBuild:
     fullTypeName: MultiPanelAnimationScript
     methodName: FadeIn
   - assembly: Assembly-CSharp
+    fullTypeName: uiManager
+    methodName: closeOrderList
+  - assembly: Assembly-CSharp
     fullTypeName: TriggerControl
     methodName: EnterCar
+  - assembly: Assembly-CSharp
+    fullTypeName: loadAT
+    methodName: DropdownVan
   - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: closeSoilCoal
   - assembly: Assembly-CSharp
     fullTypeName: uiManager
+    methodName: openCreateBricks
+  - assembly: Assembly-CSharp
+    fullTypeName: MultiPanelAnimationScript
+    methodName: FadeIn
+  - assembly: Assembly-CSharp
+    fullTypeName: settings
+    methodName: setDD
+  - assembly: Assembly-CSharp
+    fullTypeName: uiManager
     methodName: closeOffice
+  - assembly: Assembly-CSharp
+    fullTypeName: clientList
+    methodName: p4
   - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: openSoilList
@@ -138,7 +211,16 @@ ScriptsOnlyBuild:
     methodName: ExitCar
   - assembly: Assembly-CSharp
     fullTypeName: uiManager
+    methodName: closeTruck
+  - assembly: Assembly-CSharp
+    fullTypeName: clientList
+    methodName: Accept
+  - assembly: Assembly-CSharp
+    fullTypeName: uiManager
     methodName: closeAllTruck
+  - assembly: Assembly-CSharp
+    fullTypeName: Delivery
+    methodName: dropdown2
   - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: openAllTruck
@@ -149,8 +231,29 @@ ScriptsOnlyBuild:
     fullTypeName: allTruckList
     methodName: RefreshTruckList
   - assembly: Assembly-CSharp
+    fullTypeName: clientList
+    methodName: p3
+  - assembly: Assembly-CSharp
+    fullTypeName: Delivery
+    methodName: dropdown3
+  - assembly: Assembly-CSharp
+    fullTypeName: loadAT
+    methodName: loadDt
+  - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: closeSoilList
+  - assembly: Assembly-CSharp
+    fullTypeName: Delivery
+    methodName: dropdown1
+  - assembly: Assembly-CSharp
+    fullTypeName: uiManager
+    methodName: openSettings
+  - assembly: Assembly-CSharp
+    fullTypeName: MultiPanelAnimationScript
+    methodName: FadeIn
+  - assembly: Assembly-CSharp
+    fullTypeName: loadAT
+    methodName: dropdownDrumpTruck
   - assembly: Assembly-CSharp
     fullTypeName: MultiPanelAnimationScript
     methodName: FadeOut
@@ -158,8 +261,53 @@ ScriptsOnlyBuild:
     fullTypeName: uiManager
     methodName: closeCoalList
   - assembly: Assembly-CSharp
+    fullTypeName: clientList
+    methodName: p1
+  - assembly: Assembly-CSharp
+    fullTypeName: uiManager
+    methodName: closeVan
+  - assembly: Assembly-CSharp
+    fullTypeName: createBricks
+    methodName: Dropdown1
+  - assembly: Assembly-CSharp
+    fullTypeName: loadAT
+    methodName: loadTruck
+  - assembly: Assembly-CSharp
+    fullTypeName: uiManager
+    methodName: closeMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: uiManager
+    methodName: closeDt
+  - assembly: Assembly-CSharp
+    fullTypeName: uiManager
+    methodName: closeSettings
+  - assembly: Assembly-CSharp
+    fullTypeName: createBricks
+    methodName: click1
+  - assembly: Assembly-CSharp
+    fullTypeName: clientList
+    methodName: p2
+  - assembly: Assembly-CSharp
+    fullTypeName: uiManager
+    methodName: openOrderList
+  - assembly: Assembly-CSharp
+    fullTypeName: uiManager
+    methodName: closeCreateBricks
+  - assembly: Assembly-CSharp
+    fullTypeName: MultiPanelAnimationScript
+    methodName: FadeOut
+  - assembly: Assembly-CSharp
+    fullTypeName: clientList
+    methodName: p5
+  - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: openStore
+  - assembly: Assembly-CSharp
+    fullTypeName: MultiPanelAnimationScript
+    methodName: FadeIn
+  - assembly: Assembly-CSharp
+    fullTypeName: uiManager
+    methodName: openMenu
   - assembly: Assembly-CSharp
     fullTypeName: MultiPanelAnimationScript
     methodName: FadeIn
@@ -170,17 +318,38 @@ ScriptsOnlyBuild:
     fullTypeName: MultiPanelAnimationScript
     methodName: FadeIn
   - assembly: Assembly-CSharp
+    fullTypeName: clientList
+    methodName: p6
+  - assembly: Assembly-CSharp
+    fullTypeName: loadAT
+    methodName: DropdownTruck
+  - assembly: Assembly-CSharp
+    fullTypeName: clientList
+    methodName: getAvancePayment
+  - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: openSoilCoal
   - assembly: Assembly-CSharp
     fullTypeName: MultiPanelAnimationScript
     methodName: FadeIn
   - assembly: Assembly-CSharp
+    fullTypeName: clientList
+    methodName: Done
+  - assembly: Assembly-CSharp
+    fullTypeName: clientList
+    methodName: p7
+  - assembly: Assembly-CSharp
+    fullTypeName: clientList
+    methodName: Cencel
+  - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: openSoilCoal
   - assembly: Assembly-CSharp
     fullTypeName: MultiPanelAnimationScript
     methodName: FadeIn
+  - assembly: Assembly-CSharp
+    fullTypeName: loadAT
+    methodName: loadVan
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -211,6 +380,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
@@ -219,96 +390,158 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 25830}
+      Script: {instanceID: 25932}
     - Class: 114
-      Script: {instanceID: 26044}
+      Script: {instanceID: 25982}
     - Class: 114
-      Script: {instanceID: 26252}
+      Script: {instanceID: 26196}
     - Class: 114
-      Script: {instanceID: 26320}
+      Script: {instanceID: 26254}
     - Class: 114
-      Script: {instanceID: 26618}
+      Script: {instanceID: 26408}
     - Class: 114
-      Script: {instanceID: 26688}
+      Script: {instanceID: 26476}
     - Class: 114
-      Script: {instanceID: 26724}
+      Script: {instanceID: 26698}
     - Class: 114
-      Script: {instanceID: 26902}
+      Script: {instanceID: 26780}
     - Class: 114
-      Script: {instanceID: 26924}
+      Script: {instanceID: 26850}
     - Class: 114
-      Script: {instanceID: 27030}
+      Script: {instanceID: 26886}
     - Class: 114
-      Script: {instanceID: 27392}
+      Script: {instanceID: 27064}
     - Class: 114
-      Script: {instanceID: 27564}
+      Script: {instanceID: 27086}
     - Class: 114
-      Script: {instanceID: 27660}
+      Script: {instanceID: 27192}
     - Class: 114
-      Script: {instanceID: 28078}
+      Script: {instanceID: 27250}
     - Class: 114
-      Script: {instanceID: 28208}
+      Script: {instanceID: 27558}
     - Class: 114
-      Script: {instanceID: 28726}
+      Script: {instanceID: 27648}
     - Class: 114
-      Script: {instanceID: 29206}
+      Script: {instanceID: 27734}
     - Class: 114
-      Script: {instanceID: 29576}
+      Script: {instanceID: 27830}
     - Class: 114
-      Script: {instanceID: 30010}
+      Script: {instanceID: 27978}
     - Class: 114
-      Script: {instanceID: 30320}
+      Script: {instanceID: 28106}
     - Class: 114
-      Script: {instanceID: 30394}
+      Script: {instanceID: 28170}
     - Class: 114
-      Script: {instanceID: 30396}
+      Script: {instanceID: 28254}
     - Class: 114
-      Script: {instanceID: 30514}
+      Script: {instanceID: 28300}
+    - Class: 114
+      Script: {instanceID: 28386}
+    - Class: 114
+      Script: {instanceID: 28682}
+    - Class: 114
+      Script: {instanceID: 28910}
+    - Class: 114
+      Script: {instanceID: 29044}
+    - Class: 114
+      Script: {instanceID: 29392}
+    - Class: 114
+      Script: {instanceID: 29458}
+    - Class: 114
+      Script: {instanceID: 29672}
+    - Class: 114
+      Script: {instanceID: 29768}
+    - Class: 114
+      Script: {instanceID: 29992}
+    - Class: 114
+      Script: {instanceID: 30116}
+    - Class: 114
+      Script: {instanceID: 30206}
     - Class: 114
       Script: {instanceID: 30518}
     - Class: 114
-      Script: {instanceID: 30820}
+      Script: {instanceID: 30592}
     - Class: 114
-      Script: {instanceID: 30966}
+      Script: {instanceID: 30594}
     - Class: 114
-      Script: {instanceID: 31126}
+      Script: {instanceID: 30708}
     - Class: 114
-      Script: {instanceID: 31250}
+      Script: {instanceID: 30716}
     - Class: 114
-      Script: {instanceID: 31256}
+      Script: {instanceID: 30786}
     - Class: 114
-      Script: {instanceID: 31286}
+      Script: {instanceID: 31022}
     - Class: 114
-      Script: {instanceID: 31400}
+      Script: {instanceID: 31168}
     - Class: 114
-      Script: {instanceID: 31698}
+      Script: {instanceID: 31186}
     - Class: 114
-      Script: {instanceID: 32072}
+      Script: {instanceID: 31330}
     - Class: 114
-      Script: {instanceID: 32136}
+      Script: {instanceID: 31356}
     - Class: 114
-      Script: {instanceID: 32354}
+      Script: {instanceID: 31456}
     - Class: 114
-      Script: {instanceID: 32428}
+      Script: {instanceID: 31462}
     - Class: 114
-      Script: {instanceID: 32740}
+      Script: {instanceID: 31492}
     - Class: 114
-      Script: {instanceID: 32830}
+      Script: {instanceID: 31606}
     - Class: 114
-      Script: {instanceID: 33074}
+      Script: {instanceID: 31724}
     - Class: 114
-      Script: {instanceID: 33378}
+      Script: {instanceID: 31904}
     - Class: 114
-      Script: {instanceID: 33462}
+      Script: {instanceID: 32104}
     - Class: 114
-      Script: {instanceID: 38950}
+      Script: {instanceID: 32154}
     - Class: 114
-      Script: {instanceID: 39184}
+      Script: {instanceID: 32274}
+    - Class: 114
+      Script: {instanceID: 32284}
+    - Class: 114
+      Script: {instanceID: 32332}
+    - Class: 114
+      Script: {instanceID: 32348}
+    - Class: 114
+      Script: {instanceID: 32524}
+    - Class: 114
+      Script: {instanceID: 32566}
+    - Class: 114
+      Script: {instanceID: 32640}
+    - Class: 114
+      Script: {instanceID: 32726}
+    - Class: 114
+      Script: {instanceID: 32954}
+    - Class: 114
+      Script: {instanceID: 32962}
+    - Class: 114
+      Script: {instanceID: 33000}
+    - Class: 114
+      Script: {instanceID: 33048}
+    - Class: 114
+      Script: {instanceID: 33196}
+    - Class: 114
+      Script: {instanceID: 33294}
+    - Class: 114
+      Script: {instanceID: 33600}
+    - Class: 114
+      Script: {instanceID: 33684}
+    - Class: 114
+      Script: {instanceID: 33844}
+    - Class: 114
+      Script: {instanceID: 33912}
+    - Class: 114
+      Script: {instanceID: 41600}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -343,6 +576,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
     - Class: 226
       Script: {instanceID: 0}
     - Class: 227
@@ -350,6 +585,12 @@ ScriptsOnlyBuild:
     - Class: 1953259897
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 45554b0310a80553c629c176d0a1a49b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: order
   - hash:
       serializedVersion: 2
       Hash: 7e0d045966fad49339090a3d1dc256e5
@@ -400,6 +641,12 @@ ScriptsOnlyBuild:
     className: Touchpad
   - hash:
       serializedVersion: 2
+      Hash: afa770b0590bd2abd4985befaf3fbcf5
+    assemblyName: Assembly-CSharp
+    namespaceName: UI.Dialogs
+    className: uDialog_TaskBar
+  - hash:
+      serializedVersion: 2
       Hash: e8d390bd9ecacc453a7500b90d0c0292
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
@@ -442,6 +689,12 @@ ScriptsOnlyBuild:
     className: VirtualMouseInput
   - hash:
       serializedVersion: 2
+      Hash: 9d0625e5da56d398a020982eb7dda651
+    assemblyName: Assembly-CSharp
+    namespaceName: UI.Dialogs.Examples
+    className: uDialog_ExampleController
+  - hash:
+      serializedVersion: 2
       Hash: d35d813297b02080403ea856c9025c07
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -452,6 +705,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: b88b77c7156d2014ad99fd5aa619c4da
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: RandomSample
   - hash:
       serializedVersion: 2
       Hash: 86344100c716167fb86137c127ca9eee
@@ -506,6 +765,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
     className: StateGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: bf15682e7b5d861ebbc07a5da62a9e88
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: levelSystem
   - hash:
       serializedVersion: 2
       Hash: febcfbf0a0d85e37808a3740e3c2c6fa
@@ -760,6 +1025,12 @@ ScriptsOnlyBuild:
     className: Vignette
   - hash:
       serializedVersion: 2
+      Hash: 18b7d17bd072d072ac29ec860dd69329
+    assemblyName: Assembly-CSharp
+    namespaceName: UI.Dialogs
+    className: uDialog_NotificationPanel
+  - hash:
+      serializedVersion: 2
       Hash: fc0a9a681d29388386a9abf3f08b024a
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
@@ -832,6 +1103,12 @@ ScriptsOnlyBuild:
     className: ScriptMachine
   - hash:
       serializedVersion: 2
+      Hash: 6c008428d8747b5b533e911d82e69135
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: settings
+  - hash:
+      serializedVersion: 2
       Hash: d2ba937a92f6be1268c6b74e49511569
     assemblyName: Assembly-CSharp
     namespaceName: TTTSamples
@@ -880,6 +1157,12 @@ ScriptsOnlyBuild:
     className: SimpleInput
   - hash:
       serializedVersion: 2
+      Hash: 2fa51468fd043342057beb1696b248e5
+    assemblyName: Assembly-CSharp
+    namespaceName: UI.Dialogs
+    className: uDialog_ScreenOverlay
+  - hash:
+      serializedVersion: 2
       Hash: 6291c1a4418424d7572107eca2c463c2
     assemblyName: Assembly-CSharp
     namespaceName: TTT
@@ -892,7 +1175,7 @@ ScriptsOnlyBuild:
     className: MouseButtonInputKeyboard
   - hash:
       serializedVersion: 2
-      Hash: 8543c90851da03f181634a609cfac244
+      Hash: 05a98e8c9bc74ac9c853718d91198b1b
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: uiManager
@@ -902,6 +1185,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: TMPro
     className: TMP_PhoneNumberValidator
+  - hash:
+      serializedVersion: 2
+      Hash: 4212b2de5d28ceb2a968be8926dc44df
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SaveGameManager
   - hash:
       serializedVersion: 2
       Hash: ff76cf6cf52b4db7b95af6ffadca9288
@@ -1030,6 +1319,12 @@ ScriptsOnlyBuild:
     className: InputSystemUIInputModuleEditor
   - hash:
       serializedVersion: 2
+      Hash: 41af48821056a2d6cbedace89c656338
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: createBricks
+  - hash:
+      serializedVersion: 2
       Hash: b14e186823458f549289789cccbb77ce
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1052,6 +1347,12 @@ ScriptsOnlyBuild:
     assemblyName: SimpleInput.Runtime
     namespaceName: SimpleInputNamespace
     className: Joystick
+  - hash:
+      serializedVersion: 2
+      Hash: 1e59aae415be3a7f2bcb5b5b0e442845
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: voice
   - hash:
       serializedVersion: 2
       Hash: f235b66bbaad891803c9d777dfd67956
@@ -1118,6 +1419,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: DynamicJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: 241bba9038280a349b8a7c45549aa321
+    assemblyName: Assembly-CSharp
+    namespaceName: UI.Dialogs
+    className: uDialog_ResizeListener
   - hash:
       serializedVersion: 2
       Hash: e63fe08659e7e4647a51098c666f8845
@@ -1192,6 +1499,12 @@ ScriptsOnlyBuild:
     className: PostProcessEffectSettings
   - hash:
       serializedVersion: 2
+      Hash: 2a840bb3d8f4d6b14ee11bbd2209d78b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CarEngineSound
+  - hash:
+      serializedVersion: 2
       Hash: 51b80d3734ea86b38e3101db98029e15
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -1220,6 +1533,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 8083e0af9bbfdc2db8b17c4ba010854e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CheckFonts
   - hash:
       serializedVersion: 2
       Hash: 7fdd3ee28e9042c3ec83463d0bb3b230
@@ -1300,6 +1619,12 @@ ScriptsOnlyBuild:
     className: CameraController
   - hash:
       serializedVersion: 2
+      Hash: 22c9f65f12a54816afb283a2ac194b4c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: clientData
+  - hash:
+      serializedVersion: 2
       Hash: 7e9cad7f71f9cc52f699bbd2d2a75734
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1316,6 +1641,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UIElements
     className: PanelEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 120149baded9d7a4d86c810f328f2e94
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Delivery
   - hash:
       serializedVersion: 2
       Hash: 43558547f8540e734f978c1fa1b33781
@@ -1402,7 +1733,7 @@ ScriptsOnlyBuild:
     className: AdaptiveViewDistance
   - hash:
       serializedVersion: 2
-      Hash: bd462f0f9966f601a6d6407700ff26c7
+      Hash: 9cfe3a50bcc50d2d38091a5ea4c70e0c
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CarController
@@ -1438,16 +1769,16 @@ ScriptsOnlyBuild:
     className: ButtonInputUI
   - hash:
       serializedVersion: 2
+      Hash: 02370ebf05811810f00a4426fc180a53
+    assemblyName: Assembly-CSharp
+    namespaceName: UI.Dialogs
+    className: uDialog_TaskBar_Task
+  - hash:
+      serializedVersion: 2
       Hash: f64a96ff115d65571e495471ec2f15b2
     assemblyName: Assembly-CSharp
     namespaceName: TTDemoScripts
     className: PlayerHoverController
-  - hash:
-      serializedVersion: 2
-      Hash: b25a96c00e95419cdff2e5b6643b9c9f
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: test
   - hash:
       serializedVersion: 2
       Hash: d5cd7f207e91ca8336c65a577a6fb2a0
@@ -1846,6 +2177,18 @@ ScriptsOnlyBuild:
     className: RemoteInputPlayerConnection
   - hash:
       serializedVersion: 2
+      Hash: 1825e148a13165a05d643e9c2cb4ad7d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: loadAT
+  - hash:
+      serializedVersion: 2
+      Hash: 7f092d60a9af4f0726767ef8cfe98a5d
+    assemblyName: Assembly-CSharp
+    namespaceName: UI.Dialogs
+    className: uDialog_Config
+  - hash:
+      serializedVersion: 2
       Hash: d5c1f8d1f5aa95ce526e382f9f270948
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -1984,6 +2327,12 @@ ScriptsOnlyBuild:
     className: AdaptivePerformanceGeneralSettings
   - hash:
       serializedVersion: 2
+      Hash: cc079085204cbd57fbcf2f5f2106739d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: dayNight
+  - hash:
+      serializedVersion: 2
       Hash: c4b85a67513b4f0cf7b5fb2d5ded04b0
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -2024,6 +2373,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: allTruckList
+  - hash:
+      serializedVersion: 2
+      Hash: 61964c4add35fe7231fe40d9c35db7e7
+    assemblyName: Assembly-CSharp
+    namespaceName: UI.Dialogs
+    className: uDialog_Button
+  - hash:
+      serializedVersion: 2
+      Hash: 96890c4a8fc2414273a2713b166ea97b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: clientList
   - hash:
       serializedVersion: 2
       Hash: fe111e830148f07e5735ebe7620f752e
@@ -2152,13 +2513,19 @@ ScriptsOnlyBuild:
     className: PostProcessLayer
   - hash:
       serializedVersion: 2
+      Hash: 0c9f6ca4d0ddbd3b26a39ae4d4d24cb9
+    assemblyName: Assembly-CSharp
+    namespaceName: UI.Dialogs.Examples
+    className: ExampleNote
+  - hash:
+      serializedVersion: 2
       Hash: e23d2210701e34e6850023cabe554c1f
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnInputFieldEndEditMessageListener
   - hash:
       serializedVersion: 2
-      Hash: fc838355d2b72eb82d4414bf2c73a33e
+      Hash: 282d5fa28171cb94af8d5a7a1504967b
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: truckData
@@ -2194,6 +2561,12 @@ ScriptsOnlyBuild:
     className: SimpleInputDragListener
   - hash:
       serializedVersion: 2
+      Hash: b25a96c00e95419cdff2e5b6643b9c9f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: test
+  - hash:
+      serializedVersion: 2
       Hash: d82086405f46de14829f6b4bcbdd8fc9
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -2222,7 +2595,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 840c7d5612affd1686bac66d8c0cfc83
+    assemblyName: Assembly-CSharp
+    namespaceName: UI.Dialogs
+    className: uDialog
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/Software/bfs2.apk
+  playerPath: D:/Software/bfs.apk

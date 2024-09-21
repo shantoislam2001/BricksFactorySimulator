@@ -1,0 +1,12 @@
+# ninja log v5
+86	649	7475611846147533	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	c245b979dbbdbf6e
+651	1399	7475611852709173	C:/Users/User/Documents/GitHub/BricksFactorySimulator/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5lm394b1/obj/arm64-v8a/libswappywrapper.so	4d43713464d82080
+40	1807	7475611857703810	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	1408fb71e85b5003
+29	1838	7475611858489787	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	11bd664e9f1c465e
+59	1879	7475611859775580	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	938cf34a733608f7
+19	2090	7475611860942388	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	3a2e638767b61b76
+1	2174	7475611861435178	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	d43851ff7209abee
+73	2183	7475611862126145	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	d85109d723e2fd76
+49	2399	7475611865314229	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	63b3b69ebf224a9f
+10	2590	7475611866867493	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	463dd25c10275585
+2591	2945	7475611870409573	C:/Users/User/Documents/GitHub/BricksFactorySimulator/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5lm394b1/obj/arm64-v8a/libgame.so	1caaac90a897176b

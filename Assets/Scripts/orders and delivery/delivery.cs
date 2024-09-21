@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,12 +17,13 @@ public class Delivery : MonoBehaviour
     [SerializeField] public GameObject UiddFirstClass;
     [SerializeField] public GameObject UiddThreeHole;
     [SerializeField] public GameObject UiddTenHole;
+    public Queue<GameObject> tq = new Queue<GameObject>();
 
     public int ddFirstClassValue;
     private GameObject cTruck;
     private Vector3 startPosition = new Vector3(533f, 0.11f, 546f);
     public Timer timer;
-    
+    private Dictionary<GameObject, Timer> truckTimers = new Dictionary<GameObject, Timer>();
 
     void Start()
     {
@@ -351,33 +353,36 @@ public class Delivery : MonoBehaviour
 
     public void sendTruck(string ct)
     {
+        
         updateText();
         cTruck = GameObject.Find(ct);
+        tq.Enqueue(cTruck);
         cTruck.transform.position = startPosition;
         cTruck.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         cTruck.GetComponent<CarAI>().enabled = true;
         cTruck.transform.Find("Audio Source").gameObject.SetActive(true);
         CarAI carAI = cTruck.GetComponent<CarAI>();
         carAI.SetActiveWaypointList("Car1", "go");
-
-        timer = new Timer(120f, timeUp);
-        TimerManager.AddTimer(timer);
+        Timer truckTimer = new Timer(210f, () => timeUp(cTruck));
+        
+        TimerManager.AddTimer(truckTimer);
+        truckTimers[cTruck] = truckTimer;
         truckData truckDataComponent = cTruck.GetComponent<truckData>();
         truckDataComponent.status = "In route";
         cTruck.GetComponent<BoxCollider>().enabled = false;
     }
 
-    public void timeUp()
+    public void timeUp(GameObject qTruck)
     {
 
-        cTruck.transform.position = new Vector3(245f, 0.11f, 577f);
-        cTruck.transform.rotation = Quaternion.Euler(0f, 90f, 0f);
-        cTruck.SetActive(true);
+        qTruck.transform.position = new Vector3(245f, 0.11f, 577f);
+        qTruck.transform.rotation = Quaternion.Euler(0f, 90f, 0f);
+        qTruck.SetActive(true);
 
         CarAI carAI = cTruck.GetComponent<CarAI>();
         carAI.SetActiveWaypointList("Car1", "return trip");
 
-        cTruck.transform.Find("Bricks").gameObject.SetActive(false);
+        qTruck.transform.Find("Bricks").gameObject.SetActive(false);
         truckData td = cTruck.GetComponent<truckData>();
         td.load = "Empty";
         td.status = "Parked";
