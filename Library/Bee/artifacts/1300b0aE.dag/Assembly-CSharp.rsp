@@ -437,6 +437,7 @@
 "Assets/ProgressBar/Scene/Demo.cs"
 "Assets/ProgressBar/Script/ProgressBar.cs"
 "Assets/ProgressBar/Script/ProgressBarCircle.cs"
+"Assets/Scripts/Animation/Tutorial character/TutorialAC.cs"
 "Assets/Scripts/car AI/carAi.cs"
 "Assets/Scripts/Car controller/CarController.cs"
 "Assets/Scripts/Car controller/engineSound.cs"

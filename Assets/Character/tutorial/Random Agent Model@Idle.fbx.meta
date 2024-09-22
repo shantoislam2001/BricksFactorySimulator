@@ -1,0 +1,944 @@
+fileFormatVersion: 2
+guid: 844948715f9cbe64eb9862bc58e57286
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Random Agent Model_Body_diffuse
+    second: {fileID: 2800000, guid: f29ce24389942284e9db9312e8061996, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Random Agent Model_Eyewear_diffuse
+    second: {fileID: 2800000, guid: ff1f0894248b0ba44958412a1bf48209, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Random Agent Model_Hair_diffuse
+    second: {fileID: 2800000, guid: 7e98a11cbc346884fae3c5e5fecb1e6b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Random Agent Model_Shoes_diffuse
+    second: {fileID: 2800000, guid: 4bc24775ee977f944b8f678308225dd1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Random Agent Model_Top_diffuse
+    second: {fileID: 2800000, guid: 7952cc230cffbfa4bb1642f4bfef64bb, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: mixamo.com
+      internalID: -203655887218126122
+      firstFrame: 0
+      lastFrame: 499
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Random_Agent_Model:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Random_Agent_Model:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Random Agent Model@Idle(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:Body
+      parentName: Random Agent Model@Idle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:Eyes
+      parentName: Random Agent Model@Idle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:Eyelashes
+      parentName: Random Agent Model@Idle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:Tops
+      parentName: Random Agent Model@Idle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:Hair
+      parentName: Random Agent Model@Idle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:Shoes
+      parentName: Random Agent Model@Idle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:Eyewear
+      parentName: Random Agent Model@Idle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:Hips
+      parentName: Random Agent Model@Idle(Clone)
+      position: {x: -0.0014879333, y: 1.0194198, z: 0.008426318}
+      rotation: {x: 0.000000005820765, y: -0.000000005820766, z: 0.000000022555469,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:Spine
+      parentName: Random_Agent_Model:Hips
+      position: {x: -0, y: 0.08971245, z: -0.008656482}
+      rotation: {x: -0.0480783, y: 0.000000006915954, z: -0.00000002261291, w: 0.9988436}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:Spine1
+      parentName: Random_Agent_Model:Spine
+      position: {x: -0, y: 0.10515057, z: -1.3793994e-10}
+      rotation: {x: -0.000000011175871, y: 0.0000000030716338, z: -0.0000000015310517,
+        w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Random_Agent_Model:Spine2
+      parentName: Random_Agent_Model:Spine1
+      position: {x: -0, y: 0.1201721, z: -2.7247762e-10}
+      rotation: {x: -0, y: -0.0000000033861036, z: 0.0000000047900954, w: 1}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: Random_Agent_Model:Neck
+      parentName: Random_Agent_Model:Spine2
+      position: {x: -0, y: 0.13519365, z: 0.0000000089415195}
+      rotation: {x: 0.048078302, y: 0.0000000030545957, z: -0.0000000029260687, w: 0.9988436}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Random_Agent_Model:Head
+      parentName: Random_Agent_Model:Neck
+      position: {x: -0, y: 0.043018647, z: 0.020099998}
+      rotation: {x: 0.0000000037252903, y: -0.000000002910383, z: 3.4106118e-10, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Random_Agent_Model:HeadTop_End
+      parentName: Random_Agent_Model:Head
+      position: {x: -0, y: 0.22999008, z: 0.107460395}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:RightShoulder
+      parentName: Random_Agent_Model:Spine2
+      position: {x: 0.06295317, y: 0.11789502, z: -0.0017664416}
+      rotation: {x: -0.55735296, y: -0.4308118, z: 0.5736868, w: -0.4179023}
+      scale: {x: 1.0000004, y: 1.0000002, z: 0.99999976}
+    - name: Random_Agent_Model:RightArm
+      parentName: Random_Agent_Model:RightShoulder
+      position: {x: 8.631408e-11, y: 0.13033871, z: 9.526055e-10}
+      rotation: {x: -0.11061549, y: 0.0052564587, z: -0.009474128, w: 0.9938042}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000008}
+    - name: Random_Agent_Model:RightForeArm
+      parentName: Random_Agent_Model:RightArm
+      position: {x: -2.7526229e-10, y: 0.2172411, z: -3.465226e-10}
+      rotation: {x: 0.03328462, y: 0.0033374773, z: -0.06611904, w: -0.99725085}
+      scale: {x: 1.0000002, y: 1.0000006, z: 1}
+    - name: Random_Agent_Model:RightHand
+      parentName: Random_Agent_Model:RightForeArm
+      position: {x: 6.9447764e-10, y: 0.27307484, z: 4.930655e-11}
+      rotation: {x: -0.0685676, y: 0.018526448, z: 0.078170486, w: -0.9944067}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1.0000007}
+    - name: Random_Agent_Model:RightHandRing1
+      parentName: Random_Agent_Model:RightHand
+      position: {x: 0.010997802, y: 0.085429, z: -0.0005179371}
+      rotation: {x: -0.04056901, y: -0.00056584546, z: 0.013932195, w: 0.9990795}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000004}
+    - name: Random_Agent_Model:RightHandRing2
+      parentName: Random_Agent_Model:RightHandRing1
+      position: {x: -0.00024426728, y: 0.030271612, z: 1.8774244e-11}
+      rotation: {x: 0.04025921, y: -0.00007174609, z: 0.001925755, w: 0.9991874}
+      scale: {x: 1.0000002, y: 1.0000006, z: 1.0000002}
+    - name: Random_Agent_Model:RightHandRing3
+      parentName: Random_Agent_Model:RightHandRing2
+      position: {x: 0.000062331455, y: 0.028791938, z: -1.574466e-10}
+      rotation: {x: 0.032114822, y: 0.00000007088855, z: -0.000000018627762, w: 0.9994842}
+      scale: {x: 1.0000001, y: 0.9999997, z: 1}
+    - name: Random_Agent_Model:RightHandRing4
+      parentName: Random_Agent_Model:RightHandRing3
+      position: {x: 0.00018193573, y: 0.025413966, z: -1.8406013e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:RightHandIndex1
+      parentName: Random_Agent_Model:RightHand
+      position: {x: -0.02906761, y: 0.07861479, z: 0.00083448336}
+      rotation: {x: 0.03486078, y: 0.0029029564, z: 0.08293466, w: 0.99594086}
+      scale: {x: 1, y: 1.0000006, z: 1.0000005}
+    - name: Random_Agent_Model:RightHandIndex2
+      parentName: Random_Agent_Model:RightHandIndex1
+      position: {x: -0.00008650935, y: 0.030521637, z: 4.4023238e-10}
+      rotation: {x: 0.040885862, y: 0.0000164432, z: 0.0009116987, w: 0.9991634}
+      scale: {x: 1.0000002, y: 0.99999994, z: 0.99999994}
+    - name: Random_Agent_Model:RightHandIndex3
+      parentName: Random_Agent_Model:RightHandIndex2
+      position: {x: 0.0001741299, y: 0.029584918, z: 4.2570036e-10}
+      rotation: {x: -0.040236976, y: -0.00003194696, z: -0.0017892257, w: 0.99918854}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: Random_Agent_Model:RightHandIndex4
+      parentName: Random_Agent_Model:RightHandIndex3
+      position: {x: -0.000087621396, y: 0.026019713, z: -1.2136667e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:RightHandThumb1
+      parentName: Random_Agent_Model:RightHand
+      position: {x: -0.02387751, y: 0.021867895, z: 0.014779739}
+      rotation: {x: -0.12839477, y: -0.02018733, z: -0.3271353, w: -0.9359967}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000005}
+    - name: Random_Agent_Model:RightHandThumb2
+      parentName: Random_Agent_Model:RightHandThumb1
+      position: {x: -0.0050543887, y: 0.028021313, z: 4.4351708e-10}
+      rotation: {x: 0.00036422152, y: -0.00004647484, z: 0.08153158, w: 0.9966708}
+      scale: {x: 0.99999976, y: 0.9999997, z: 0.9999998}
+    - name: Random_Agent_Model:RightHandThumb3
+      parentName: Random_Agent_Model:RightHandThumb2
+      position: {x: 0.0018908959, y: 0.031436175, z: 1.9390115e-10}
+      rotation: {x: 0.017036194, y: -0.00000012904034, z: -0.00000006516392, w: 0.99985486}
+      scale: {x: 1, y: 1.0000005, z: 1.0000002}
+    - name: Random_Agent_Model:RightHandThumb4
+      parentName: Random_Agent_Model:RightHandThumb3
+      position: {x: 0.0031634925, y: 0.028053721, z: 0.0000000010671146}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:RightHandMiddle1
+      parentName: Random_Agent_Model:RightHand
+      position: {x: -0.008956767, y: 0.08327317, z: -0.00052502664}
+      rotation: {x: -0.0065132007, y: -0.00021624939, z: 0.033182997, w: 0.9994281}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1.0000007}
+    - name: Random_Agent_Model:RightHandMiddle2
+      parentName: Random_Agent_Model:RightHandMiddle1
+      position: {x: -0.00017719525, y: 0.03405383, z: -7.2349277e-10}
+      rotation: {x: 0.026237149, y: -0.000000007959896, z: 0.000000019169415, w: 0.9996558}
+      scale: {x: 1.0000001, y: 0.9999998, z: 1}
+    - name: Random_Agent_Model:RightHandMiddle3
+      parentName: Random_Agent_Model:RightHandMiddle2
+      position: {x: -0.00003027147, y: 0.031593848, z: -1.9872232e-10}
+      rotation: {x: 0.040805914, y: 0.000042630778, z: 0.0010215206, w: 0.99916655}
+      scale: {x: 1, y: 0.9999998, z: 0.9999998}
+    - name: Random_Agent_Model:RightHandMiddle4
+      parentName: Random_Agent_Model:RightHandMiddle3
+      position: {x: 0.00020746625, y: 0.027415292, z: -9.277278e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:RightHandPinky1
+      parentName: Random_Agent_Model:RightHand
+      position: {x: 0.027026573, y: 0.07226846, z: 0.001743835}
+      rotation: {x: -0.0008326917, y: 0.0000054445113, z: -0.025360066, w: 0.999678}
+      scale: {x: 1, y: 1.0000002, z: 1.0000004}
+    - name: Random_Agent_Model:RightHandPinky2
+      parentName: Random_Agent_Model:RightHandPinky1
+      position: {x: 0.000060898154, y: 0.03215459, z: -7.7007656e-10}
+      rotation: {x: -0.015616551, y: -0.0000000311702, z: 0.00000010919199, w: 0.9998781}
+      scale: {x: 1, y: 0.99999946, z: 0.9999996}
+    - name: Random_Agent_Model:RightHandPinky3
+      parentName: Random_Agent_Model:RightHandPinky2
+      position: {x: -0.000017870334, y: 0.025857875, z: -3.6336983e-10}
+      rotation: {x: -0.0070886496, y: 0.000000016574852, z: -0.000000047746394, w: 0.99997485}
+      scale: {x: 0.9999999, y: 1.0000005, z: 1.0000005}
+    - name: Random_Agent_Model:RightHandPinky4
+      parentName: Random_Agent_Model:RightHandPinky3
+      position: {x: -0.00004302731, y: 0.023534691, z: 4.2946907e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:LeftShoulder
+      parentName: Random_Agent_Model:Spine2
+      position: {x: -0.06295317, y: 0.117876425, z: -0.0015736741}
+      rotation: {x: 0.55829525, y: -0.43008065, z: 0.5728944, w: 0.41848436}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+    - name: Random_Agent_Model:LeftArm
+      parentName: Random_Agent_Model:LeftShoulder
+      position: {x: -9.239334e-11, y: 0.13033871, z: 9.519939e-10}
+      rotation: {x: -0.10976343, y: -0.0051470385, z: 0.013884928, w: 0.9938474}
+      scale: {x: 1.0000007, y: 1.0000015, z: 1.0000007}
+    - name: Random_Agent_Model:LeftForeArm
+      parentName: Random_Agent_Model:LeftArm
+      position: {x: -3.746402e-11, y: 0.21723898, z: 2.2794325e-10}
+      rotation: {x: -0.03394316, y: 0.0032745681, z: -0.06462683, w: 0.9973267}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Random_Agent_Model:LeftHand
+      parentName: Random_Agent_Model:LeftForeArm
+      position: {x: -3.1712402e-10, y: 0.27297184, z: 5.095279e-10}
+      rotation: {x: 0.017981535, y: 0.018343417, z: 0.060799755, w: 0.9978194}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000002}
+    - name: Random_Agent_Model:LeftHandMiddle1
+      parentName: Random_Agent_Model:LeftHand
+      position: {x: 0.008258532, y: 0.0824194, z: -0.003538022}
+      rotation: {x: 0.057891898, y: -0.0010008699, z: -0.03051613, w: 0.9978559}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: Random_Agent_Model:LeftHandMiddle2
+      parentName: Random_Agent_Model:LeftHandMiddle1
+      position: {x: -0.00011579584, y: 0.03415453, z: 3.4201944e-10}
+      rotation: {x: 0.0014211308, y: -0.000000046100457, z: 0.000000015512338, w: 0.999999}
+      scale: {x: 0.9999998, y: 0.99999994, z: 1}
+    - name: Random_Agent_Model:LeftHandMiddle3
+      parentName: Random_Agent_Model:LeftHandMiddle2
+      position: {x: -0.00011571544, y: 0.03197597, z: -2.1265294e-10}
+      rotation: {x: -0.03925965, y: -0.00010219633, z: 0.0031496463, w: 0.9992241}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000002}
+    - name: Random_Agent_Model:LeftHandMiddle4
+      parentName: Random_Agent_Model:LeftHandMiddle3
+      position: {x: 0.00023151138, y: 0.028740853, z: 7.177903e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:LeftHandIndex1
+      parentName: Random_Agent_Model:LeftHand
+      position: {x: 0.028740564, y: 0.079278536, z: -0.0002071799}
+      rotation: {x: 0.055087015, y: -0.006380136, z: -0.07519328, w: 0.9956258}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: Random_Agent_Model:LeftHandIndex2
+      parentName: Random_Agent_Model:LeftHandIndex1
+      position: {x: 0.000026192078, y: 0.031100225, z: -3.9890863e-10}
+      rotation: {x: 0.03331855, y: -0.000000024214387, z: -0.000000048079528, w: 0.99944484}
+      scale: {x: 1, y: 0.9999998, z: 1.0000004}
+    - name: Random_Agent_Model:LeftHandIndex3
+      parentName: Random_Agent_Model:LeftHandIndex2
+      position: {x: -0.000088179855, y: 0.02916204, z: 5.939208e-10}
+      rotation: {x: -0.041158393, y: 0.0000021885862, z: 0.00038038075, w: 0.9991526}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Random_Agent_Model:LeftHandIndex4
+      parentName: Random_Agent_Model:LeftHandIndex3
+      position: {x: 0.00006198708, y: 0.026277808, z: -3.9857184e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:LeftHandThumb1
+      parentName: Random_Agent_Model:LeftHand
+      position: {x: 0.02364552, y: 0.019782053, z: 0.012256298}
+      rotation: {x: 0.11260819, y: -0.024294896, z: -0.33703694, w: 0.93441707}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1.0000004}
+    - name: Random_Agent_Model:LeftHandThumb2
+      parentName: Random_Agent_Model:LeftHandThumb1
+      position: {x: 0.0046548736, y: 0.026129523, z: 2.5980482e-10}
+      rotation: {x: 0.014676837, y: 0.0019428448, z: -0.09734479, w: 0.9951406}
+      scale: {x: 1, y: 1.0000004, z: 0.99999994}
+    - name: Random_Agent_Model:LeftHandThumb3
+      parentName: Random_Agent_Model:LeftHandThumb2
+      position: {x: -0.0027797031, y: 0.03241088, z: 9.851473e-10}
+      rotation: {x: 0.015533447, y: -0.00000009892356, z: 0.000000016954711, w: 0.99987936}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: Random_Agent_Model:LeftHandThumb4
+      parentName: Random_Agent_Model:LeftHandThumb3
+      position: {x: -0.0018751654, y: 0.030950278, z: 6.372349e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:LeftHandPinky1
+      parentName: Random_Agent_Model:LeftHand
+      position: {x: -0.027028829, y: 0.06961482, z: 0.0014423662}
+      rotation: {x: 0.002592761, y: 0.0032299068, z: 0.02543335, w: 0.999668}
+      scale: {x: 0.9999998, y: 0.9999998, z: 1.0000004}
+    - name: Random_Agent_Model:LeftHandPinky2
+      parentName: Random_Agent_Model:LeftHandPinky1
+      position: {x: 0.00003471833, y: 0.03153136, z: 6.0572913e-10}
+      rotation: {x: 0.0017334579, y: -0.0000000016298147, z: 0.00000010669466, w: 0.9999985}
+      scale: {x: 0.9999998, y: 1, z: 1}
+    - name: Random_Agent_Model:LeftHandPinky3
+      parentName: Random_Agent_Model:LeftHandPinky2
+      position: {x: 0.00002124746, y: 0.02580632, z: -6.257636e-11}
+      rotation: {x: 0.015687132, y: -0.0000000025701328, z: -0.000000114051524, w: 0.999877}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Random_Agent_Model:LeftHandPinky4
+      parentName: Random_Agent_Model:LeftHandPinky3
+      position: {x: -0.00005596522, y: 0.023237383, z: -5.5514304e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:LeftHandRing1
+      parentName: Random_Agent_Model:LeftHand
+      position: {x: -0.009970269, y: 0.08452287, z: -0.0023782465}
+      rotation: {x: 0.025905795, y: 0.0019689717, z: 0.018454695, w: 0.9994921}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000005}
+    - name: Random_Agent_Model:LeftHandRing2
+      parentName: Random_Agent_Model:LeftHandRing1
+      position: {x: 0.00008902048, y: 0.030000865, z: -3.7443243e-10}
+      rotation: {x: 0.017503478, y: 0.00000005739274, z: -0.000000044245088, w: 0.9998469}
+      scale: {x: 1.0000004, y: 1.0000002, z: 0.9999998}
+    - name: Random_Agent_Model:LeftHandRing3
+      parentName: Random_Agent_Model:LeftHandRing2
+      position: {x: 0.00000008088979, y: 0.028171118, z: 1.8090304e-10}
+      rotation: {x: 0.020052703, y: 0.000000042428876, z: 0.000000037810803, w: 0.99979895}
+      scale: {x: 1, y: 1, z: 1.0000006}
+    - name: Random_Agent_Model:LeftHandRing4
+      parentName: Random_Agent_Model:LeftHandRing3
+      position: {x: -0.000089100395, y: 0.026249163, z: 2.1306874e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:LeftUpLeg
+      parentName: Random_Agent_Model:Hips
+      position: {x: -0.05878977, y: -0.049812086, z: -0.0017848586}
+      rotation: {x: 0.00008363363, y: -0.016267342, z: 0.9998545, w: 0.0051396904}
+      scale: {x: 1.0000007, y: 1.0000005, z: 0.99999994}
+    - name: Random_Agent_Model:LeftLeg
+      parentName: Random_Agent_Model:LeftUpLeg
+      position: {x: -1.7328311e-10, y: 0.40995178, z: 3.491322e-10}
+      rotation: {x: -0.01250231, y: -0.00016846965, z: 0.013473495, w: 0.9998311}
+      scale: {x: 1.0000011, y: 1.000001, z: 1.0000002}
+    - name: Random_Agent_Model:LeftFoot
+      parentName: Random_Agent_Model:LeftLeg
+      position: {x: 4.6142276e-10, y: 0.44600815, z: 5.987087e-10}
+      rotation: {x: 0.49969703, y: 0.042608753, z: -0.024620045, w: 0.86480135}
+      scale: {x: 1.0000007, y: 1.0000004, z: 1.0000005}
+    - name: Random_Agent_Model:LeftToeBase
+      parentName: Random_Agent_Model:LeftFoot
+      position: {x: -2.6969313e-10, y: 0.15731457, z: 0.0000000072144113}
+      rotation: {x: 0.3046319, y: 0.025140878, z: -0.008044, w: 0.95210433}
+      scale: {x: 1.0000008, y: 1.0000013, z: 0.9999996}
+    - name: Random_Agent_Model:LeftToe_End
+      parentName: Random_Agent_Model:LeftToeBase
+      position: {x: -3.8596515e-10, y: 0.064377, z: -9.5034716e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Random_Agent_Model:RightUpLeg
+      parentName: Random_Agent_Model:Hips
+      position: {x: 0.05878977, y: -0.049812086, z: -0.0005631256}
+      rotation: {x: -0.00008185635, y: -0.015924133, z: 0.99986005, w: -0.0051397877}
+      scale: {x: 1.0000007, y: 1.000001, z: 1}
+    - name: Random_Agent_Model:RightLeg
+      parentName: Random_Agent_Model:RightUpLeg
+      position: {x: -5.0149926e-11, y: 0.40994275, z: 4.0555247e-11}
+      rotation: {x: -0.018395305, y: 0.00024781437, z: -0.013469569, w: 0.9997401}
+      scale: {x: 1.0000014, y: 1.0000011, z: 1.0000001}
+    - name: Random_Agent_Model:RightFoot
+      parentName: Random_Agent_Model:RightLeg
+      position: {x: 8.1447654e-11, y: 0.44632107, z: -0.0000000011292403}
+      rotation: {x: 0.5162605, y: -0.0395015, z: 0.023846278, w: 0.8551878}
+      scale: {x: 0.9999997, y: 0.99999994, z: 0.99999934}
+    - name: Random_Agent_Model:RightToeBase
+      parentName: Random_Agent_Model:RightFoot
+      position: {x: 3.887017e-10, y: 0.16420461, z: -9.9852e-10}
+      rotation: {x: 0.29112235, y: -0.028407322, z: 0.008648659, w: 0.95622486}
+      scale: {x: 1.0000001, y: 1.0000011, z: 0.9999992}
+    - name: Random_Agent_Model:RightToe_End
+      parentName: Random_Agent_Model:RightToeBase
+      position: {x: 1.8518341e-11, y: 0.06630399, z: -3.7168504e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
