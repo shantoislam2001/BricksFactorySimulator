@@ -4,6 +4,7 @@ public class AreaTrigger : MonoBehaviour
 {
     // Reference to the GameObject to be activated
     public GameObject objectToActivate;
+    private Collider triggerCollider;
 
     // Tag of the player object
     public string playerTag = "player";
@@ -28,10 +29,25 @@ public class AreaTrigger : MonoBehaviour
         }
     }
 
-    // Debugging: Draw the trigger area in the scene view
-    private void OnDrawGizmos()
+   
+
+    void OnDrawGizmos()
     {
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireCube(transform.position, GetComponent<Collider>().bounds.size);
+        // Get the collider attached to this object
+        triggerCollider = GetComponent<Collider>();
+
+        // Set the color for the Gizmos
+        Gizmos.color = new Color(1, 0, 0, 0.5f);  // Red color with 50% transparency
+
+        // Draw different Gizmos based on the type of collider
+        if (triggerCollider is BoxCollider box)
+        {
+            Gizmos.DrawCube(box.bounds.center, box.size);
+        }
+        else if (triggerCollider is SphereCollider sphere)
+        {
+            Gizmos.DrawSphere(sphere.bounds.center, sphere.radius);
+        }
+        // Add more for different colliders if needed
     }
 }

@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638615015454252331
-    m_Hash: 3205617929
+      ticks: 638625768562395137
+    m_Hash: 3210434370
   m_LockFileStatus:
     m_FilePath: D:/Unity projects/BricksFactorySimulator/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638615015477742841
-    m_Hash: 3250638133
+      ticks: 638625768562415543
+    m_Hash: 4160963281
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -249,6 +249,78 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 2.4.4
     minimumUnityVersion: 2020.3.48f1
+- packageId: com.unity.device-simulator.devices@1.0.0
+  testable: 0
+  isDirectDependency: 1
+  version: 1.0.0
+  source: 1
+  resolvedPath: D:\Unity projects\BricksFactorySimulator\Library\PackageCache\com.unity.device-simulator.devices
+  assetPath: Packages/com.unity.device-simulator.devices
+  name: com.unity.device-simulator.devices
+  displayName: Device Simulator Devices
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: This package contains additional devices for the Device Simulator.
+    Each device has a complete device definition and includes a device overlay. After
+    you install this package, the additional devices are immediately available in
+    the Device Simulator.
+  errors: []
+  versions:
+    all:
+    - 1.0.0-pre.1
+    - 1.0.0-pre.2
+    - 1.0.0-pre.4
+    - 1.0.0
+    compatible:
+    - 1.0.0
+    recommended: 1.0.0
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637810555200000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.device-simulator.devices.git
+    revision: 2e1ffaaea0624daf91ee6c76906fd119dbd584c6
+    path: 
+  unityLifecycle:
+    version: 1.0.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  assetStore:
+    productId: 
+  fingerprint: ae8874e9c898e20961be6f426dfafaf49f604cda
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.0.0
+    minimumUnityVersion: 2022.1.0a1
 - packageId: com.unity.feature.mobile@1.0.0
   testable: 0
   isDirectDependency: 1

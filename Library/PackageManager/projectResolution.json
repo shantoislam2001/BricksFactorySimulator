@@ -24,6 +24,14 @@
       "version": "2.4.4",
       "source": "registry"
     },
+    "com.unity.device-simulator.devices@1.0.0": {
+      "name": "com.unity.device-simulator.devices",
+      "resolvedPath": "D:\\Unity projects\\BricksFactorySimulator\\Library\\PackageCache\\com.unity.device-simulator.devices",
+      "fingerprint": "ae8874e9c898e20961be6f426dfafaf49f604cda",
+      "editorCompatibility": "2022.1.0a1",
+      "version": "1.0.0",
+      "source": "registry"
+    },
     "com.unity.feature.mobile@1.0.0": {
       "name": "com.unity.feature.mobile",
       "resolvedPath": "D:\\Unity projects\\BricksFactorySimulator\\Library\\PackageCache\\com.unity.feature.mobile",
