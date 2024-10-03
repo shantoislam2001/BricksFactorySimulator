@@ -75,6 +75,7 @@
     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\TerrainQualitySettings.cs" />
     <Compile Include="Assets\Scripts\Car controller\TriggerCar.cs" />
     <Compile Include="Assets\ClassicSRIA\Scripts\ClassicSRIA.cs" />
+    <Compile Include="Assets\Scripts\Tutorial script\TutorialAT4.cs" />
     <Compile Include="Assets\Scripts\Player\joystick.cs" />
     <Compile Include="Assets\Scripts\UI\levelSystem.cs" />
     <Compile Include="Assets\UI\uDialog\uDialog_Button.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Assets\UI\uDialog\uDialog_Utilities.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\Scripts\UI\test.cs" />
+    <Compile Include="Assets\Scripts\Tutorial script\TutorialAT5.cs" />
     <Compile Include="Assets\Scripts\sound\voice.cs" />
     <Compile Include="Assets\UI\uDialog\uDialog_NotificationPanel.cs" />
     <Compile Include="Assets\Tom&apos;s Terrain Tools\Example Data\Scripts\SimpleSmoothMouseLook.cs" />
@@ -96,8 +98,8 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\UI\uDialog\uDialog_ScreenOverlay.cs" />
     <Compile Include="Assets\ClassicSRIA\Scripts\Examples\Common\SimpleClientViewsHolders.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\ProgressBar\Script\ProgressBarCircle.cs" />
     <Compile Include="Assets\Scripts\Truck\parking.cs" />
     <Compile Include="Assets\Downloaded assets\Forst\CTI Runtime Components\CTI Runtime Components BIRP\Scripts\CTI_CustomWind.cs" />
@@ -126,6 +128,7 @@
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Scripts\UI\currency.cs" />
     <Compile Include="Assets\Scripts\orders and delivery\delivery.cs" />
+    <Compile Include="Assets\Scripts\Tutorial script\TutorialAT6.cs" />
     <Compile Include="Assets\Scripts\UI\officeAt.cs" />
     <Compile Include="Assets\Scripts\car AI\carAi.cs" />
     <Compile Include="Assets\UI\uDialog\uDialog_Timer.cs" />
@@ -148,6 +151,7 @@
     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\SpawnInArea.cs" />
     <Compile Include="Assets\ClassicSRIA\Scripts\Examples\Common\DemoUI.cs" />
     <Compile Include="Assets\Scripts\Truck\parkingAt.cs" />
+    <Compile Include="Assets\Scripts\Tutorial script\disclaimer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
@@ -182,6 +186,7 @@
     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\TreeExplosion.cs" />
     <Compile Include="Assets\ClassicSRIA\Scripts\Examples\VerticalClassicListViewExample.cs" />
     <Compile Include="Assets\Scripts\Tutorial script\Tutorial.cs" />
+    <Compile Include="Assets\Scripts\Tutorial script\TutorialAT3.cs" />
     <Compile Include="Assets\Texchre\FPS Controller Code.cs" />
     <Compile Include="Assets\Scripts\Truck\aiParkingAT.cs" />
     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\ForceGrassDistanceInEditor.cs" />
@@ -700,6 +705,18 @@
       <HintPath>Library\PackageCache\com.unity.visualscripting\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.18f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.18f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.Apple.Extensions.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.18f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.Apple.Extensions.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.18f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
       <Private>False</Private>
@@ -1212,16 +1229,24 @@
       <HintPath>Library\ScriptAssemblies\Unity.Profiling.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    <Reference Include="Unity.AdaptivePerformance.Google.Android.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AdaptivePerformance.Google.Android.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.AdaptivePerformance">
       <HintPath>Library\ScriptAssemblies\Unity.AdaptivePerformance.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AdaptivePerformance.Simulator.Google.Extension">
+      <HintPath>Library\ScriptAssemblies\Unity.AdaptivePerformance.Simulator.Google.Extension.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Notifications">
@@ -1272,12 +1297,12 @@
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Notifications.Android">
-      <HintPath>Library\ScriptAssemblies\Unity.Notifications.Android.dll</HintPath>
+    <Reference Include="Unity.AdaptivePerformance.Google.Android">
+      <HintPath>Library\ScriptAssemblies\Unity.AdaptivePerformance.Google.Android.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    <Reference Include="Unity.Notifications.Android">
+      <HintPath>Library\ScriptAssemblies\Unity.Notifications.Android.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.AdaptivePerformance.UI.Editor">

@@ -16,6 +16,14 @@
       "version": "1.0.0",
       "source": "builtin"
     },
+    "com.unity.adaptiveperformance.google.android@1.3.1": {
+      "name": "com.unity.adaptiveperformance.google.android",
+      "resolvedPath": "D:\\Unity projects\\BricksFactorySimulator\\Library\\PackageCache\\com.unity.adaptiveperformance.google.android",
+      "fingerprint": "fdabb9ee1cb3a389f271752e8ac951ae7003a85d",
+      "editorCompatibility": "2021.2.0a18",
+      "version": "1.3.1",
+      "source": "registry"
+    },
     "com.unity.collab-proxy@2.4.4": {
       "name": "com.unity.collab-proxy",
       "resolvedPath": "D:\\Unity projects\\BricksFactorySimulator\\Library\\PackageCache\\com.unity.collab-proxy",
@@ -53,14 +61,6 @@
       "fingerprint": "8140e851d83e922ca2021b04a89519de94ebe38c",
       "editorCompatibility": "2019.4.25f1",
       "version": "2.0.22",
-      "source": "registry"
-    },
-    "com.unity.ide.vscode@1.2.0": {
-      "name": "com.unity.ide.vscode",
-      "resolvedPath": "D:\\Unity projects\\BricksFactorySimulator\\Library\\PackageCache\\com.unity.ide.vscode",
-      "fingerprint": "35692973aa9e370b4477026bbb4fa3b5eddd633e",
-      "editorCompatibility": "2019.2.0a12",
-      "version": "1.2.0",
       "source": "registry"
     },
     "com.unity.inputsystem@1.9.0": {

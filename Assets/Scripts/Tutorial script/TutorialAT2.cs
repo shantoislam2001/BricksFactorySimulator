@@ -40,7 +40,7 @@ public class TutorialAT2 : MonoBehaviour
         panel.SetActive(false);
         animator.SetBool("talk", false);
         icon.SetActive(false);
-      //  Invoke("active", 10f);
+        Invoke("active", 10f);
     }
 
     void active()

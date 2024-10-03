@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "D:\\Unity projects\\BricksFactorySimulator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|d:\\unity projects\\bricksfactorysimulator\\assets\\scripts\\tutorial script\\tutorialat2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\tutorial script\\tutorialat1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tutorial script\\tutorialat1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|d:\\unity projects\\bricksfactorysimulator\\assets\\scripts\\tutorial script\\disclaimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tutorial script\\disclaimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\tutorial script\\tutorialat5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tutorial script\\tutorialat5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\ui\\uianimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uianimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\ai character controller\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ai character controller\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\ui\\levelsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\levelsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\tutorial script\\tutorialat4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tutorial script\\tutorialat4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\tutorial script\\tutorialat6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tutorial script\\tutorialat6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\tutorial script\\tutorialat2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tutorial script\\tutorialat2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\tutorial script\\tutorialat1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tutorial script\\tutorialat1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\tutorial script\\tutorialat3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tutorial script\\tutorialat3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\ai character controller\\aicharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\animation\\tutorial character\\tutorialac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\animation\\tutorial character\\tutorialac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\ai character controller\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ai character controller\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\ui\\officeat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,30 +63,22 @@
       "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tutorial script\\tutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\ui\\uianimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uianimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\ui\\soillist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\soillist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\ui\\levelsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\levelsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 115,
+      "VerticalTabListWidth": 178,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,20 +86,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "disclaimer.cs",
+              "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\disclaimer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\disclaimer.cs",
+              "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\disclaimer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Tutorial script\\disclaimer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T13:43:01.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TutorialAT6.cs",
+              "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT6.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\TutorialAT6.cs",
+              "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT6.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Tutorial script\\TutorialAT6.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwDsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T16:01:12.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TutorialAT5.cs",
+              "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT5.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\TutorialAT5.cs",
+              "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT5.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Tutorial script\\TutorialAT5.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwCkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T15:32:14.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TutorialAT4.cs",
+              "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT4.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\TutorialAT4.cs",
+              "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT4.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Tutorial script\\TutorialAT4.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T14:03:54.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TutorialAT3.cs",
+              "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT3.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\TutorialAT3.cs",
+              "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT3.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Tutorial script\\TutorialAT3.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAUwCgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T16:37:28.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "TutorialAT2.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT2.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\TutorialAT2.cs",
               "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT2.cs",
               "RelativeToolTip": "Assets\\Scripts\\Tutorial script\\TutorialAT2.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwCkAAAAeAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAUwDEAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T15:56:21.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T15:56:21.033Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "aiCharacter.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\AI character controller\\aiCharacter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AI character controller\\aiCharacter.cs",
@@ -91,19 +171,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TutorialAT1.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT1.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\TutorialAT1.cs",
               "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT1.cs",
               "RelativeToolTip": "Assets\\Scripts\\Tutorial script\\TutorialAT1.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T05:48:50.847Z"
+              "WhenOpened": "2024-09-28T05:48:50.847Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "showTrigger.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\showTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\showTrigger.cs",
@@ -114,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "Tutorial.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\Tutorial.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\Tutorial.cs",
@@ -126,13 +207,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "uiAnimation.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\UI\\uiAnimation.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\uiAnimation.cs",
               "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\UI\\uiAnimation.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\uiAnimation.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAQwBUAAABIAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAowBUAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-27T13:13:06.195Z"
             },
@@ -144,13 +225,13 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\AI character controller\\aiController.cs",
               "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\AI character controller\\aiController.cs",
               "RelativeToolTip": "Assets\\Scripts\\AI character controller\\aiController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-27T05:23:54.264Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "soilList.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\UI\\soilList.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\soilList.cs",
@@ -162,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "TutorialAC.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Animation\\Tutorial character\\TutorialAC.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Animation\\Tutorial character\\TutorialAC.cs",
@@ -174,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "note.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\note.cs",
               "RelativeDocumentMoniker": "Assets\\note.cs",
@@ -186,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "officeAt.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\UI\\officeAt.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\officeAt.cs",
@@ -198,13 +279,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
               "Title": "levelSystem.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\UI\\levelSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\levelSystem.cs",
               "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\UI\\levelSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\levelSystem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAmwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T05:50:33.497Z"
             }
