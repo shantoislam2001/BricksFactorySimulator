@@ -22,7 +22,7 @@ public class currency : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        money = 10000;
+        money = 50000;
         soil = 100; 
         coal = 100;
         firstClass = 1000;

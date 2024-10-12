@@ -1,8 +1,9 @@
+using TMPro;
 using UnityEngine;
 
 public class truckData : MonoBehaviour
 {
-
+    [SerializeField] TextMeshPro truckNumber;
     public string name;
     public string type;
     public string load;
@@ -14,7 +15,8 @@ public class truckData : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        truckNumber.text = gameObject.name;
+        name = gameObject.name; 
     }
 
     // Update is called once per frame

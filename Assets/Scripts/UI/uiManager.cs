@@ -18,6 +18,9 @@ public class uiManager : MonoBehaviour
     [SerializeField] public GameObject orderList;
     [SerializeField] public GameObject settingsPanel;
     [SerializeField] public GameObject menuPanel;
+    [SerializeField] public GameObject truckBuyPanel;
+    [SerializeField] public GameObject truckRentPanel;
+
 
 
     public void openStore()
@@ -163,6 +166,31 @@ public class uiManager : MonoBehaviour
         settingsPanel.SetActive(false);
         canvasOffice.SetActive(false);
     }
+
+    public void openTruckBuy()
+    {
+        canvasOffice.SetActive(true);
+        truckBuyPanel.SetActive(true);
+    }
+
+    public void closeTruckBuy()
+    {
+        truckBuyPanel.SetActive(false);
+        canvasOffice.SetActive(false);
+    }
+
+    public void openTruckRent()
+    {
+        canvasOffice.SetActive(true);
+        truckRentPanel.SetActive(true);
+    }
+
+    public void closeTruckRent()
+    {
+        truckRentPanel.SetActive(false);
+        canvasOffice.SetActive(false);
+    }
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

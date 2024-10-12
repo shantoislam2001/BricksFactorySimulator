@@ -125,6 +125,7 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\Truck\antiRollBer.cs" />
+    <Compile Include="Assets\Scripts\Truck buy and rent\TruckBuy.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Scripts\UI\currency.cs" />
     <Compile Include="Assets\Scripts\orders and delivery\delivery.cs" />
@@ -182,6 +183,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\UI\uDialog\uDialog_Enums.cs" />
     <Compile Include="Assets\Scripts\UI\coalList.cs" />
+    <Compile Include="Assets\Scripts\Truck buy and rent\TruckRent.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\TreeExplosion.cs" />
     <Compile Include="Assets\ClassicSRIA\Scripts\Examples\VerticalClassicListViewExample.cs" />

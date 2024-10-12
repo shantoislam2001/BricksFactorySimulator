@@ -10,6 +10,14 @@ public class coalList : MonoBehaviour
     public Transform itemHolder;
     public int numOfItem;
 
+    [SerializeField] public GameObject uiObject;
+    [SerializeField] public GameObject listPanel;
+    [SerializeField] public GameObject canvasList;
+    [SerializeField] public GameObject timerSoil;
+    [SerializeField] public GameObject timerCoal;
+    [SerializeField] public GameObject soilButton;
+    [SerializeField] public GameObject coalButton;
+
     private Dictionary<GameObject, Timer> truckTimers = new Dictionary<GameObject, Timer>();
     private Vector3 startPosition = new Vector3(533f, 0.11f, 546f);
     public Queue<GameObject> tq = new Queue<GameObject>();  // Store the truck object instead of the name
@@ -24,7 +32,7 @@ public class coalList : MonoBehaviour
         RefreshTruckList();
     }
 
-    void RefreshTruckList()
+   public void RefreshTruckList()
     {
         // Clear existing UI items
         foreach (Transform child in itemHolder)
@@ -74,9 +82,16 @@ public class coalList : MonoBehaviour
             transport.inRoute.Add(truck);
             transport.drumpTruck.RemoveAt(index);
             cTruck.GetComponent<BoxCollider>().enabled = false;
-
+            uiObject.SetActive(false);
+            listPanel.SetActive(false);
+            canvasList.SetActive(false);
+            timerSoil.SetActive(true);
+            timerCoal.SetActive(true);
+            soilButton.SetActive(false);
+            coalButton.SetActive(false);
             RefreshTruckList();  // Refresh the list after removing the item
             Debug.Log("Clicked item number: " + index + " with value: " + truck);
+            Invoke("activeButtons", 5f);
         }
         else
         {
@@ -117,7 +132,7 @@ public class coalList : MonoBehaviour
         }
 
         cTruck.transform.Find("Coal").gameObject.SetActive(false);
-        currency.addCoal(5);
+        currency.addCoal(10);
 
         transport.drumpTruck.Add(cTruck.gameObject.name);
         transport.inRoute.Remove(cTruck.gameObject.name);
@@ -143,6 +158,14 @@ public class coalList : MonoBehaviour
         .SetContentText("Not enough money")
         .SetIcon(eIconType.Warning)
         .AddButton("Close", (dialog) => dialog.Close());
+    }
+
+    void activeButtons()
+    {
+        timerSoil.SetActive(false);
+        timerCoal.SetActive(false);
+        soilButton.SetActive(true);
+        coalButton.SetActive(true);
     }
 
     void Update()

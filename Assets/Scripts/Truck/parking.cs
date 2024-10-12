@@ -235,6 +235,161 @@ public class parking : MonoBehaviour
         }
     }
 
+
+
+    public static bool haveEmptySlot()
+    {
+            // Check slot0
+            GameObject slot0Obj = GameObject.Find("parking 0");
+            if (slot0Obj != null && slot0Obj.CompareTag("empty"))
+            {
+                return true;
+            }
+
+            // Check slot1
+            GameObject slot1Obj = GameObject.Find("parking 1");
+            if (slot1Obj != null && slot1Obj.CompareTag("empty"))
+            {
+            return true;
+            }
+
+            // Check slot2
+            GameObject slot2Obj = GameObject.Find("parking 2");
+            if (slot2Obj != null && slot2Obj.CompareTag("empty"))
+            {
+            return true;
+            }
+
+            // Continue adding checks for all other slots...
+            GameObject slot3Obj = GameObject.Find("parking 3");
+            if (slot3Obj != null && slot3Obj.CompareTag("empty"))
+            {
+            return true;
+            }
+
+            GameObject slot4Obj = GameObject.Find("parking 4");
+            if (slot4Obj != null && slot4Obj.CompareTag("empty"))
+            {
+            return true;
+            }
+
+            GameObject slot5Obj = GameObject.Find("parking 5");
+            if (slot5Obj != null && slot5Obj.CompareTag("empty"))
+            {
+                return true;
+            }
+
+            GameObject slot6Obj = GameObject.Find("parking 6");
+            if (slot6Obj != null && slot6Obj.CompareTag("empty"))
+            {
+            return true;
+            }
+
+            GameObject slot7Obj = GameObject.Find("parking 7");
+            if (slot7Obj != null && slot7Obj.CompareTag("empty"))
+            {
+                return true;
+            }
+
+            GameObject slot8Obj = GameObject.Find("parking 8");
+            if (slot8Obj != null && slot8Obj.CompareTag("empty"))
+            {
+                return true;
+            }
+
+            GameObject slot9Obj = GameObject.Find("parking 9");
+            if (slot9Obj != null && slot9Obj.CompareTag("empty"))
+            {
+                return true;
+            }
+
+            GameObject slot10Obj = GameObject.Find("parking 10");
+            if (slot10Obj != null && slot10Obj.CompareTag("empty"))
+            {
+                return true;
+            }
+
+            GameObject slot11Obj = GameObject.Find("parking 11");
+            if (slot11Obj != null && slot11Obj.CompareTag("empty"))
+            {
+                return true;
+            }
+
+            GameObject slot12Obj = GameObject.Find("parking 12");
+            if (slot12Obj != null && slot12Obj.CompareTag("empty"))
+            {
+                return true;
+            }
+
+            GameObject slot13Obj = GameObject.Find("parking 13");
+            if (slot13Obj != null && slot13Obj.CompareTag("empty"))
+            {
+                return true;
+            }
+
+            GameObject slot14Obj = GameObject.Find("parking 14");
+            if (slot14Obj != null && slot14Obj.CompareTag("empty"))
+            {
+                return true;
+            }
+
+            GameObject slot15Obj = GameObject.Find("parking 15");
+            if (slot15Obj != null && slot15Obj.CompareTag("empty"))
+            {
+                return true;
+            }
+
+            GameObject slot16Obj = GameObject.Find("parking 16");
+            if (slot16Obj != null && slot16Obj.CompareTag("empty"))
+            {
+                return true;
+            }
+
+            GameObject slot17Obj = GameObject.Find("parking 17");
+            if (slot17Obj != null && slot17Obj.CompareTag("empty"))
+            {
+                return true;
+            }
+
+            GameObject slot18Obj = GameObject.Find("parking 18");
+            if (slot18Obj != null && slot18Obj.CompareTag("empty"))
+            {
+                return true;
+            }
+
+            GameObject slot19Obj = GameObject.Find("parking 19");
+            if (slot19Obj != null && slot19Obj.CompareTag("empty"))
+            {
+                return true;
+            }
+
+            GameObject slot20Obj = GameObject.Find("parking 20");
+            if (slot20Obj != null && slot20Obj.CompareTag("empty"))
+            {
+                return true;
+            }
+
+            GameObject slot21Obj = GameObject.Find("parking 21");
+            if (slot21Obj != null && slot21Obj.CompareTag("empty"))
+            {
+                return true;
+            }
+
+            GameObject slot22Obj = GameObject.Find("parking 22");
+            if (slot22Obj != null && slot22Obj.CompareTag("empty"))
+            {
+                return true;
+            } else
+        {
+            return false;
+        }
+
+            
+      
+    }
+
+
+
     // Update is called once per frame
     void Update()
     {

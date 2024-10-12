@@ -462,6 +462,8 @@
 "Assets/Scripts/Settings/SaveGameManager.cs"
 "Assets/Scripts/Settings/settings.cs"
 "Assets/Scripts/sound/voice.cs"
+"Assets/Scripts/Truck buy and rent/TruckBuy.cs"
+"Assets/Scripts/Truck buy and rent/TruckRent.cs"
 "Assets/Scripts/Truck/aiParkingAT.cs"
 "Assets/Scripts/Truck/antiRollBer.cs"
 "Assets/Scripts/Truck/parking.cs"

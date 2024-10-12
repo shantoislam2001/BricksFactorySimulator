@@ -10,6 +10,15 @@ public class SoilList : MonoBehaviour
     public GameObject itemPrefab;
     public Transform itemHolder;
     public int numOfItem;
+    [SerializeField] public GameObject uiObject;
+    [SerializeField] public GameObject listPanel;
+    [SerializeField] public GameObject canvasList;
+    [SerializeField] public GameObject timerSoil;
+    [SerializeField] public GameObject timerCoal;
+    [SerializeField] public GameObject soilButton;
+    [SerializeField] public GameObject coalButton;
+
+
 
     private Dictionary<GameObject, Timer> truckTimers = new Dictionary<GameObject, Timer>();
     private Vector3 startPosition = new Vector3(533f, 0.11f, 546f);
@@ -25,7 +34,7 @@ public class SoilList : MonoBehaviour
         RefreshTruckList();
     }
 
-    void RefreshTruckList()
+   public void RefreshTruckList()
     {
         // Clear existing UI items
         foreach (Transform child in itemHolder)
@@ -46,7 +55,7 @@ public class SoilList : MonoBehaviour
 
     void OnItemClick(int index, string truck)
     {
-        if (currency.money >= 225)
+        if (currency.money >= 175)
         {
             GameObject cTruck = GameObject.Find(truck);
             if (cTruck == null)
@@ -75,9 +84,16 @@ public class SoilList : MonoBehaviour
             transport.inRoute.Add(truck);
             transport.drumpTruck.RemoveAt(index);
             cTruck.GetComponent<BoxCollider>().enabled = false;
-
+            uiObject.SetActive(false);
+            listPanel.SetActive(false);
+            canvasList.SetActive(false);
+            timerSoil.SetActive(true);
+            timerCoal.SetActive(true);
+            soilButton.SetActive(false);
+            coalButton.SetActive(false);
             RefreshTruckList();  // Refresh the list after removing the item
             Debug.Log("Clicked item number: " + index + " with value: " + truck);
+            Invoke("activeButtons", 5f);
         }
         else
         {
@@ -118,7 +134,7 @@ public class SoilList : MonoBehaviour
         }
 
         cTruck.transform.Find("Soil").gameObject.SetActive(false);
-        currency.addSoil(15);
+        currency.addSoil(35);
 
         transport.drumpTruck.Add(cTruck.gameObject.name);
         transport.inRoute.Remove(cTruck.gameObject.name);
@@ -144,6 +160,14 @@ public class SoilList : MonoBehaviour
         .SetContentText("Not enough money")
         .SetIcon(eIconType.Warning)
         .AddButton("Close", (dialog) => dialog.Close());
+    }
+
+    void activeButtons()
+    {
+        timerSoil.SetActive(false);
+        timerCoal.SetActive(false);
+        soilButton.SetActive(true);
+        coalButton.SetActive(true);
     }
 
     void Update()
