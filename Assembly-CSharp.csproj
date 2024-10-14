@@ -126,6 +126,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\Truck\antiRollBer.cs" />
     <Compile Include="Assets\Scripts\Truck buy and rent\TruckBuy.cs" />
+    <Compile Include="Assets\Scripts\car AI\TestAi.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Scripts\UI\currency.cs" />
     <Compile Include="Assets\Scripts\orders and delivery\delivery.cs" />

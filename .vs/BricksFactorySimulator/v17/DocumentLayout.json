@@ -3,7 +3,43 @@
   "WorkspaceRootPath": "D:\\Unity projects\\BricksFactorySimulator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|d:\\unity projects\\bricksfactorysimulator\\assets\\scripts\\truck buy and rent\\truckrent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|d:\\unity projects\\bricksfactorysimulator\\assets\\scripts\\day night system\\daynight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\day night system\\daynight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\player\\joystick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\joystick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\car ai\\carai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\car ai\\carai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\car ai\\testai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\car ai\\testai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\car controller\\slidezoom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\car controller\\slidezoom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\car controller\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\car controller\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\ui\\uianimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uianimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\truck\\truckdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\truck\\truckdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\truck buy and rent\\truckrent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\truck buy and rent\\truckrent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,20 +51,12 @@
       "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\truck\\transport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\ui\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\ui\\udialog\\documentation\\change list.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\udialog\\documentation\\change list.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\truck\\truckdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\truck\\truckdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\ui\\soillist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,10 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\tutorial script\\tutorialat5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tutorial script\\tutorialat5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\ui\\uianimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uianimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B4FAB03-AD68-1ACA-0BC5-60932B59346E}|Assembly-CSharp.csproj|D:\\Unity projects\\BricksFactorySimulator\\assets\\scripts\\ai character controller\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -123,19 +147,91 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "dayNight.cs",
+              "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Day night system\\dayNight.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Day night system\\dayNight.cs",
+              "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Day night system\\dayNight.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Day night system\\dayNight.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T05:19:24.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "joystick.cs",
+              "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Player\\joystick.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\joystick.cs",
+              "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Player\\joystick.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\joystick.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAmwFAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T05:11:21.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TestAi.cs",
+              "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\car AI\\TestAi.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\car AI\\TestAi.cs",
+              "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\car AI\\TestAi.cs",
+              "RelativeToolTip": "Assets\\Scripts\\car AI\\TestAi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T15:52:32.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SlideZoom.cs",
+              "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Car controller\\SlideZoom.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Car controller\\SlideZoom.cs",
+              "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Car controller\\SlideZoom.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Car controller\\SlideZoom.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T15:25:10.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CarController.cs",
+              "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Car controller\\CarController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Car controller\\CarController.cs",
+              "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Car controller\\CarController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Car controller\\CarController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAwDIAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T15:01:11.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "carAi.cs",
+              "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\car AI\\carAi.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\car AI\\carAi.cs",
+              "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\car AI\\carAi.cs",
+              "RelativeToolTip": "Assets\\Scripts\\car AI\\carAi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T04:31:35.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "TruckRent.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Truck buy and rent\\TruckRent.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Truck buy and rent\\TruckRent.cs",
               "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Truck buy and rent\\TruckRent.cs",
               "RelativeToolTip": "Assets\\Scripts\\Truck buy and rent\\TruckRent.cs",
-              "ViewState": "AQIAALwAAAAAAAAAAAAmwN4AAAAoAAAA",
+              "ViewState": "AQIAANsAAAAAAAAAAABRwN4AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T15:43:38.431Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T15:43:38.431Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "transport.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Truck\\transport.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Truck\\transport.cs",
@@ -147,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "currency.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\UI\\currency.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\currency.cs",
@@ -159,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "Change List.txt",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\UI\\uDialog\\Documentation\\Change List.txt",
               "RelativeDocumentMoniker": "Assets\\UI\\uDialog\\Documentation\\Change List.txt",
@@ -171,19 +267,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "truckData.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Truck\\truckData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Truck\\truckData.cs",
               "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Truck\\truckData.cs",
               "RelativeToolTip": "Assets\\Scripts\\Truck\\truckData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T04:57:48.916Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "parking.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Truck\\parking.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Truck\\parking.cs",
@@ -195,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "TruckBuy.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Truck buy and rent\\TruckBuy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Truck buy and rent\\TruckBuy.cs",
@@ -207,19 +303,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "uiManager.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\UI\\uiManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\uiManager.cs",
               "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\UI\\uiManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\uiManager.cs",
-              "ViewState": "AQIAAK8AAAAAAAAAAAA/wMEAAAAAAAAA",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAuwM0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T02:39:27.369Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "coalList.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\UI\\coalList.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\coalList.cs",
@@ -231,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "disclaimer.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\disclaimer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\disclaimer.cs",
@@ -243,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "TutorialAT6.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT6.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\TutorialAT6.cs",
@@ -255,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "TutorialAT5.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT5.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\TutorialAT5.cs",
@@ -267,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "TutorialAT4.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT4.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\TutorialAT4.cs",
@@ -279,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "TutorialAT3.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT3.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\TutorialAT3.cs",
@@ -291,7 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "TutorialAT2.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT2.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\TutorialAT2.cs",
@@ -303,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "aiCharacter.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\AI character controller\\aiCharacter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AI character controller\\aiCharacter.cs",
@@ -315,7 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "TutorialAT1.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\TutorialAT1.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\TutorialAT1.cs",
@@ -327,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "showTrigger.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\showTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\showTrigger.cs",
@@ -338,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "Tutorial.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Tutorial script\\Tutorial.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tutorial script\\Tutorial.cs",
@@ -350,19 +446,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 6,
               "Title": "uiAnimation.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\UI\\uiAnimation.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\uiAnimation.cs",
               "ToolTip": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\UI\\uiAnimation.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\uiAnimation.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAowBUAAABIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-27T13:13:06.195Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "aiController.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\AI character controller\\aiController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AI character controller\\aiController.cs",
@@ -374,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "soilList.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\UI\\soilList.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\soilList.cs",
@@ -386,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "TutorialAC.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\Animation\\Tutorial character\\TutorialAC.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Animation\\Tutorial character\\TutorialAC.cs",
@@ -398,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "note.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\note.cs",
               "RelativeDocumentMoniker": "Assets\\note.cs",
@@ -410,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "officeAt.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\UI\\officeAt.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\officeAt.cs",
@@ -422,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "levelSystem.cs",
               "DocumentMoniker": "D:\\Unity projects\\BricksFactorySimulator\\Assets\\Scripts\\UI\\levelSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\levelSystem.cs",

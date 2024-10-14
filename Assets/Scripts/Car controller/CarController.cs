@@ -44,6 +44,11 @@ public class CarController : MonoBehaviour
 
     private void Start()
     {
+        accelerateButton = GameObject.Find("Canvas car").gameObject.transform.Find("Accelaretor").GetComponent<Button>();
+        brakeButton = GameObject.Find("Canvas car").gameObject.transform.Find("Brake").GetComponent<Button>();
+        steerLeftButton = GameObject.Find("Canvas car").gameObject.transform.Find("left").GetComponent<Button>();
+        steerRightButton = GameObject.Find("Canvas car").gameObject.transform.Find("right").GetComponent<Button>();
+        reverseButton = GameObject.Find("Canvas car").gameObject.transform.Find("Revarse ").GetComponent<Button>();
         // Initialize button listeners
         AddButtonListeners();
     }

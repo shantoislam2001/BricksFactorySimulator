@@ -8,12 +8,15 @@ public class SlideAxisController : MonoBehaviour
 
     public Joystick joystick;  // Reference to the joystick
     public RectTransform slideAreaRect;  // Reference to the slide area UI element
+    public float minVerticalAngle = -30f;  // Minimum vertical angle limit
+    public float maxVerticalAngle = 60f;   // Maximum vertical angle limit
 
     private Vector2 startTouchPosition;
     private Vector2 currentTouchPosition;
     private Vector2 deltaTouchPosition;
     private bool isDragging = false;
     private int slideAxisTouchID = -1;  // Track the touch ID for the slide axis
+    private float currentCameraVerticalAngle = 0f;  // Track current vertical angle
 
     void Update()
     {
@@ -48,7 +51,20 @@ public class SlideAxisController : MonoBehaviour
 
                     // Vertical rotation for the camera
                     float rotateVertical = -deltaTouchPosition.y * lookSensitivity * Time.deltaTime;
-                    Camera.main.transform.Rotate(rotateVertical, 0f, 0f);
+
+                    // Clamp the vertical angle to prevent over-rotation
+                    currentCameraVerticalAngle = Mathf.Clamp(
+                        currentCameraVerticalAngle + rotateVertical,
+                        minVerticalAngle,
+                        maxVerticalAngle
+                    );
+
+                    // Apply the clamped vertical rotation to the camera
+                    Camera.main.transform.localEulerAngles = new Vector3(
+                        currentCameraVerticalAngle,
+                        Camera.main.transform.localEulerAngles.y,
+                        0f
+                    );
 
                     startTouchPosition = currentTouchPosition;
                 }

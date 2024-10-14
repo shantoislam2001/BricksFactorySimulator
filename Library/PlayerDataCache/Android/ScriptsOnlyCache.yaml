@@ -9,6 +9,8 @@ ScriptsOnlyBuild:
     - UI.Dialogs.uDialog_ScreenOverlay
     - UI.Dialogs.uDialog_TaskBar
     - UI.Dialogs.uDialog_TaskBar_Task
+    Assembly-CSharp-Editor.dll:
+    - ReadmeEditor
     Assembly-CSharp.dll:
     - AntiRollBar
     - AreaTrigger
@@ -21,6 +23,7 @@ ScriptsOnlyBuild:
     - MultiPanelAnimationScript
     - ProgressBar
     - ProgressBarCircle
+    - Readme
     - SaveGameManager
     - SlideAxisController
     - SlideZoom
@@ -28,6 +31,8 @@ ScriptsOnlyBuild:
     - TimerManager
     - TriggerCar
     - TriggerControl
+    - TruckBuy
+    - TruckRent
     - TutorialAT1
     - TutorialAT2
     - TutorialAT3
@@ -57,6 +62,8 @@ ScriptsOnlyBuild:
     Unity.AdaptivePerformance.Google.Android.dll:
     - UnityEngine.AdaptivePerformance.Google.Android.GoogleAndroidProviderLoader
     - UnityEngine.AdaptivePerformance.Google.Android.GoogleAndroidProviderSettings
+    Unity.AdaptivePerformance.Simulator.Editor.dll:
+    - UnityEditor.AdaptivePerformance.Simulator.Editor.SimulatorProviderSettings
     Unity.AdaptivePerformance.dll:
     - UnityEngine.AdaptivePerformance.AdaptivePerformanceGeneralSettings
     - UnityEngine.AdaptivePerformance.AdaptivePerformanceManagerSettings
@@ -67,6 +74,8 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.InputSystemObject
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     - UnityEngine.InputSystem.UI.InputSystemUIInputModule
+    Unity.Mobile.AndroidLogcat.Editor.dll:
+    - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
@@ -86,10 +95,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -115,6 +122,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
     - UnityEngine.UI.Mask
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
@@ -178,6 +186,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Button/ButtonClickedEvent
     - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.FontData
+    - UnityEngine.UI.InputField/EndEditEvent
+    - UnityEngine.UI.InputField/OnChangeEvent
+    - UnityEngine.UI.InputField/SubmitEvent
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.ScrollRect/ScrollRectEvent
@@ -186,6 +197,15 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: TruckBuy
+    methodName: setNameByCost
+  - assembly: Assembly-CSharp
+    fullTypeName: TruckRent
+    methodName: returnVan
+  - assembly: Assembly-CSharp
+    fullTypeName: TruckBuy
+    methodName: BuyTruck
+  - assembly: Assembly-CSharp
     fullTypeName: disclaimer
     methodName: ok
   - assembly: Assembly-CSharp
@@ -193,10 +213,16 @@ ScriptsOnlyBuild:
     methodName: Send
   - assembly: Assembly-CSharp
     fullTypeName: uiManager
+    methodName: closePayments
+  - assembly: Assembly-CSharp
+    fullTypeName: uiManager
     methodName: openCoalList
   - assembly: Assembly-CSharp
     fullTypeName: MultiPanelAnimationScript
     methodName: FadeIn
+  - assembly: Assembly-CSharp
+    fullTypeName: coalList
+    methodName: RefreshTruckList
   - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: closeOrderList
@@ -231,6 +257,9 @@ ScriptsOnlyBuild:
     fullTypeName: MultiPanelAnimationScript
     methodName: FadeIn
   - assembly: Assembly-CSharp
+    fullTypeName: SoilList
+    methodName: RefreshTruckList
+  - assembly: Assembly-CSharp
     fullTypeName: TriggerControl
     methodName: ExitCar
   - assembly: Assembly-CSharp
@@ -258,6 +287,9 @@ ScriptsOnlyBuild:
     fullTypeName: clientList
     methodName: p3
   - assembly: Assembly-CSharp
+    fullTypeName: uiManager
+    methodName: openPayments
+  - assembly: Assembly-CSharp
     fullTypeName: Delivery
     methodName: dropdown3
   - assembly: Assembly-CSharp
@@ -270,17 +302,32 @@ ScriptsOnlyBuild:
     fullTypeName: Delivery
     methodName: dropdown1
   - assembly: Assembly-CSharp
+    fullTypeName: TruckRent
+    methodName: returnDt
+  - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: openSettings
   - assembly: Assembly-CSharp
     fullTypeName: MultiPanelAnimationScript
     methodName: FadeIn
   - assembly: Assembly-CSharp
+    fullTypeName: uiManager
+    methodName: openTruckRent
+  - assembly: Assembly-CSharp
+    fullTypeName: TruckBuy
+    methodName: setNameByRandom
+  - assembly: Assembly-CSharp
+    fullTypeName: TruckRent
+    methodName: rentDt
+  - assembly: Assembly-CSharp
     fullTypeName: loadAT
     methodName: dropdownDrumpTruck
   - assembly: Assembly-CSharp
     fullTypeName: MultiPanelAnimationScript
     methodName: FadeOut
+  - assembly: Assembly-CSharp
+    fullTypeName: uiManager
+    methodName: openTruckBuy
   - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: closeCoalList
@@ -312,8 +359,14 @@ ScriptsOnlyBuild:
     fullTypeName: clientList
     methodName: p2
   - assembly: Assembly-CSharp
+    fullTypeName: TruckBuy
+    methodName: BuyVan
+  - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: openOrderList
+  - assembly: Assembly-CSharp
+    fullTypeName: TruckRent
+    methodName: returnTruck
   - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: closeCreateBricks
@@ -330,11 +383,17 @@ ScriptsOnlyBuild:
     fullTypeName: MultiPanelAnimationScript
     methodName: FadeIn
   - assembly: Assembly-CSharp
+    fullTypeName: TruckBuy
+    methodName: BuyDrumpTruck
+  - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: openMenu
   - assembly: Assembly-CSharp
     fullTypeName: MultiPanelAnimationScript
     methodName: FadeIn
+  - assembly: Assembly-CSharp
+    fullTypeName: uiManager
+    methodName: closeTruckBuy
   - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: openOffice
@@ -360,8 +419,17 @@ ScriptsOnlyBuild:
     fullTypeName: clientList
     methodName: Done
   - assembly: Assembly-CSharp
+    fullTypeName: uiManager
+    methodName: closeTruckRent
+  - assembly: Assembly-CSharp
+    fullTypeName: TruckRent
+    methodName: rentTruck
+  - assembly: Assembly-CSharp
     fullTypeName: clientList
     methodName: p7
+  - assembly: Assembly-CSharp
+    fullTypeName: TruckRent
+    methodName: rentVan
   - assembly: Assembly-CSharp
     fullTypeName: clientList
     methodName: Cencel
@@ -425,165 +493,171 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 25964}
+      Script: {instanceID: 25972}
     - Class: 114
-      Script: {instanceID: 26014}
+      Script: {instanceID: 26022}
     - Class: 114
-      Script: {instanceID: 26140}
+      Script: {instanceID: 26148}
     - Class: 114
-      Script: {instanceID: 26232}
+      Script: {instanceID: 26188}
     - Class: 114
-      Script: {instanceID: 26290}
+      Script: {instanceID: 26242}
     - Class: 114
-      Script: {instanceID: 26444}
+      Script: {instanceID: 26300}
     - Class: 114
-      Script: {instanceID: 26512}
+      Script: {instanceID: 26454}
     - Class: 114
-      Script: {instanceID: 26732}
+      Script: {instanceID: 26522}
     - Class: 114
-      Script: {instanceID: 26812}
+      Script: {instanceID: 26742}
     - Class: 114
-      Script: {instanceID: 26882}
+      Script: {instanceID: 26822}
     - Class: 114
-      Script: {instanceID: 26918}
+      Script: {instanceID: 26892}
     - Class: 114
-      Script: {instanceID: 27096}
+      Script: {instanceID: 26928}
     - Class: 114
-      Script: {instanceID: 27118}
+      Script: {instanceID: 27106}
     - Class: 114
-      Script: {instanceID: 27224}
+      Script: {instanceID: 27128}
     - Class: 114
-      Script: {instanceID: 27282}
+      Script: {instanceID: 27234}
     - Class: 114
-      Script: {instanceID: 27594}
+      Script: {instanceID: 27292}
     - Class: 114
-      Script: {instanceID: 27684}
+      Script: {instanceID: 27604}
     - Class: 114
-      Script: {instanceID: 27770}
+      Script: {instanceID: 27694}
     - Class: 114
-      Script: {instanceID: 27866}
+      Script: {instanceID: 27780}
     - Class: 114
-      Script: {instanceID: 28014}
+      Script: {instanceID: 27876}
     - Class: 114
-      Script: {instanceID: 28142}
+      Script: {instanceID: 28024}
     - Class: 114
-      Script: {instanceID: 28206}
+      Script: {instanceID: 28152}
     - Class: 114
-      Script: {instanceID: 28290}
+      Script: {instanceID: 28216}
     - Class: 114
-      Script: {instanceID: 28336}
+      Script: {instanceID: 28300}
     - Class: 114
-      Script: {instanceID: 28422}
+      Script: {instanceID: 28346}
     - Class: 114
-      Script: {instanceID: 28428}
+      Script: {instanceID: 28432}
     - Class: 114
-      Script: {instanceID: 28722}
+      Script: {instanceID: 28438}
     - Class: 114
-      Script: {instanceID: 28950}
+      Script: {instanceID: 28732}
     - Class: 114
-      Script: {instanceID: 29084}
+      Script: {instanceID: 28960}
     - Class: 114
-      Script: {instanceID: 29248}
+      Script: {instanceID: 29094}
     - Class: 114
-      Script: {instanceID: 29436}
+      Script: {instanceID: 29130}
     - Class: 114
-      Script: {instanceID: 29502}
+      Script: {instanceID: 29260}
     - Class: 114
-      Script: {instanceID: 29716}
+      Script: {instanceID: 29448}
     - Class: 114
-      Script: {instanceID: 29812}
+      Script: {instanceID: 29514}
     - Class: 114
-      Script: {instanceID: 30008}
+      Script: {instanceID: 29728}
     - Class: 114
-      Script: {instanceID: 30038}
+      Script: {instanceID: 29824}
     - Class: 114
-      Script: {instanceID: 30162}
+      Script: {instanceID: 30010}
     - Class: 114
-      Script: {instanceID: 30252}
+      Script: {instanceID: 30022}
     - Class: 114
-      Script: {instanceID: 30340}
+      Script: {instanceID: 30052}
     - Class: 114
-      Script: {instanceID: 30568}
+      Script: {instanceID: 30176}
     - Class: 114
-      Script: {instanceID: 30640}
+      Script: {instanceID: 30266}
     - Class: 114
-      Script: {instanceID: 30642}
+      Script: {instanceID: 30354}
     - Class: 114
-      Script: {instanceID: 30672}
+      Script: {instanceID: 30582}
     - Class: 114
-      Script: {instanceID: 30758}
+      Script: {instanceID: 30654}
     - Class: 114
-      Script: {instanceID: 30766}
+      Script: {instanceID: 30656}
     - Class: 114
-      Script: {instanceID: 30836}
+      Script: {instanceID: 30686}
     - Class: 114
-      Script: {instanceID: 30860}
+      Script: {instanceID: 30772}
     - Class: 114
-      Script: {instanceID: 31076}
+      Script: {instanceID: 30780}
     - Class: 114
-      Script: {instanceID: 31222}
+      Script: {instanceID: 30850}
     - Class: 114
-      Script: {instanceID: 31240}
+      Script: {instanceID: 30874}
     - Class: 114
-      Script: {instanceID: 31384}
+      Script: {instanceID: 31090}
     - Class: 114
-      Script: {instanceID: 31410}
+      Script: {instanceID: 31236}
     - Class: 114
-      Script: {instanceID: 31512}
+      Script: {instanceID: 31254}
     - Class: 114
-      Script: {instanceID: 31518}
+      Script: {instanceID: 31398}
     - Class: 114
-      Script: {instanceID: 31548}
+      Script: {instanceID: 31424}
     - Class: 114
-      Script: {instanceID: 31662}
+      Script: {instanceID: 31526}
     - Class: 114
-      Script: {instanceID: 31778}
+      Script: {instanceID: 31532}
     - Class: 114
-      Script: {instanceID: 31958}
+      Script: {instanceID: 31562}
     - Class: 114
-      Script: {instanceID: 32158}
+      Script: {instanceID: 31676}
     - Class: 114
-      Script: {instanceID: 32210}
+      Script: {instanceID: 31792}
     - Class: 114
-      Script: {instanceID: 32334}
+      Script: {instanceID: 31972}
     - Class: 114
-      Script: {instanceID: 32344}
+      Script: {instanceID: 31986}
     - Class: 114
-      Script: {instanceID: 32392}
+      Script: {instanceID: 32172}
     - Class: 114
-      Script: {instanceID: 32408}
+      Script: {instanceID: 32224}
     - Class: 114
-      Script: {instanceID: 32582}
+      Script: {instanceID: 32348}
     - Class: 114
-      Script: {instanceID: 32624}
+      Script: {instanceID: 32358}
     - Class: 114
-      Script: {instanceID: 32698}
+      Script: {instanceID: 32406}
     - Class: 114
-      Script: {instanceID: 32784}
+      Script: {instanceID: 32422}
     - Class: 114
-      Script: {instanceID: 33010}
+      Script: {instanceID: 32596}
     - Class: 114
-      Script: {instanceID: 33018}
+      Script: {instanceID: 32638}
     - Class: 114
-      Script: {instanceID: 33056}
+      Script: {instanceID: 32712}
     - Class: 114
-      Script: {instanceID: 33104}
+      Script: {instanceID: 32798}
     - Class: 114
-      Script: {instanceID: 33252}
+      Script: {instanceID: 33024}
     - Class: 114
-      Script: {instanceID: 33350}
+      Script: {instanceID: 33032}
     - Class: 114
-      Script: {instanceID: 33656}
+      Script: {instanceID: 33070}
     - Class: 114
-      Script: {instanceID: 33740}
+      Script: {instanceID: 33118}
     - Class: 114
-      Script: {instanceID: 33906}
+      Script: {instanceID: 33266}
     - Class: 114
-      Script: {instanceID: 33972}
+      Script: {instanceID: 33364}
     - Class: 114
-      Script: {instanceID: 42128}
+      Script: {instanceID: 33670}
     - Class: 114
-      Script: {instanceID: 46576}
+      Script: {instanceID: 33754}
+    - Class: 114
+      Script: {instanceID: 33920}
+    - Class: 114
+      Script: {instanceID: 33986}
+    - Class: 114
+      Script: {instanceID: 42512}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -673,6 +747,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: parking
+  - hash:
+      serializedVersion: 2
+      Hash: 8eac252700d2c6ee1bc7328064d80ffa
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: disclaimer
   - hash:
       serializedVersion: 2
       Hash: 25f9856e61afbe27958849616102671e
@@ -873,7 +953,7 @@ ScriptsOnlyBuild:
     className: TriggerCar
   - hash:
       serializedVersion: 2
-      Hash: 2b32c8f757b7c776c368f724380f16d7
+      Hash: b9ac7bf4fafefb9a719435ffda18ebe0
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: SoilList
@@ -1233,7 +1313,7 @@ ScriptsOnlyBuild:
     className: MouseButtonInputKeyboard
   - hash:
       serializedVersion: 2
-      Hash: 05a98e8c9bc74ac9c853718d91198b1b
+      Hash: de4b501df0155c46d4a8f312d3262e31
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: uiManager
@@ -1491,6 +1571,12 @@ ScriptsOnlyBuild:
     className: uDialog_ResizeListener
   - hash:
       serializedVersion: 2
+      Hash: 67a5b2ca7b9227d8976230785325a20e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TruckBuy
+  - hash:
+      serializedVersion: 2
       Hash: e63fe08659e7e4647a51098c666f8845
     assemblyName: Unity.InputSystem
     namespaceName: 
@@ -1687,6 +1773,12 @@ ScriptsOnlyBuild:
     assemblyName: SimpleInput.Runtime
     namespaceName: SimpleInputNamespace
     className: KeyInputSwipeGesture
+  - hash:
+      serializedVersion: 2
+      Hash: 91959f9d8d2718a2f022a34de4b2b8b0
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TruckRent
   - hash:
       serializedVersion: 2
       Hash: e1d899167d57278839d15e34b2b8c0a0
@@ -2115,7 +2207,7 @@ ScriptsOnlyBuild:
     className: GoogleAndroidProviderSettings
   - hash:
       serializedVersion: 2
-      Hash: 4897623dfe77991ace141b5bc89dce7b
+      Hash: 39e64f16101d8c0584c9e0b5d04b1671
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: coalList
@@ -2643,7 +2735,7 @@ ScriptsOnlyBuild:
     className: UnityOnInputFieldEndEditMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 282d5fa28171cb94af8d5a7a1504967b
+      Hash: 74bcfcd63c26e5dcf1365e2a26fbdf8e
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: truckData
@@ -2725,13 +2817,8 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: UI.Dialogs
     className: uDialog
-  - hash:
-      serializedVersion: 2
-      Hash: 8eac252700d2c6ee1bc7328064d80ffa
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: disclaimer
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/Software/bfs test.apk
+  playerPath: D:/Game assets/Bricks factory simulator for play store/Bricks factory
+    simulator.aab

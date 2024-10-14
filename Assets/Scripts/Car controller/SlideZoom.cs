@@ -15,6 +15,7 @@ public class SlideZoom : MonoBehaviour
 
     void Start()
     {
+        slidingPanel = GameObject.Find("Canvas car").gameObject.transform.Find("Panel").GetComponent<RectTransform>();
         if (carCamera == null)
         {
             carCamera = Camera.main;

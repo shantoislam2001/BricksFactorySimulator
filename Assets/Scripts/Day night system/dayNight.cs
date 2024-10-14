@@ -14,6 +14,7 @@ public class dayNight : MonoBehaviour
     void Start()
     {
         sunInitialIntensity = sun.intensity;
+        timeOfDay = 8;
     }
 
     void Update()

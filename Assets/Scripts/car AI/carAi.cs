@@ -5,7 +5,7 @@ public class CarAI : MonoBehaviour
     [System.Serializable]
     public class Waypoint
     {
-        public Transform waypointTransform;
+        public Vector3 waypointPosition; // Use Vector3 instead of Transform
         public float speedLimit = 150f;
         public bool applyBrakes = false;
         public float brakeTorque = 300f;
@@ -57,7 +57,7 @@ public class CarAI : MonoBehaviour
 
         UpdateWheelPoses();
 
-        float distanceToWaypoint = Vector3.Distance(transform.position, activeWaypoints[currentWaypointIndex].waypointTransform.position);
+        float distanceToWaypoint = Vector3.Distance(transform.position, activeWaypoints[currentWaypointIndex].waypointPosition);
 
         if (distanceToWaypoint < waypointRadius)
         {
@@ -116,7 +116,7 @@ public class CarAI : MonoBehaviour
 
     void ApplySteering()
     {
-        Vector3 relativeVector = transform.InverseTransformPoint(activeWaypoints[currentWaypointIndex].waypointTransform.position);
+        Vector3 relativeVector = transform.InverseTransformPoint(activeWaypoints[currentWaypointIndex].waypointPosition);
         float newSteer = (relativeVector.x / relativeVector.magnitude) * maxSteerAngle;
 
         frontLeftWheel.steerAngle = newSteer;
@@ -194,7 +194,7 @@ public class CarAI : MonoBehaviour
 
     bool IsWaypointBehind()
     {
-        Vector3 relativeVector = transform.InverseTransformPoint(activeWaypoints[currentWaypointIndex].waypointTransform.position);
+        Vector3 relativeVector = transform.InverseTransformPoint(activeWaypoints[currentWaypointIndex].waypointPosition);
         return relativeVector.z < 0;
     }
 
@@ -249,7 +249,7 @@ public class CarAI : MonoBehaviour
                 if (i < activeWaypoints.Length - 1)
                 {
                     Gizmos.color = Color.red;
-                    Gizmos.DrawLine(activeWaypoints[i].waypointTransform.position, activeWaypoints[i + 1].waypointTransform.position);
+                    Gizmos.DrawLine(activeWaypoints[i].waypointPosition, activeWaypoints[i + 1].waypointPosition);
                 }
             }
         }

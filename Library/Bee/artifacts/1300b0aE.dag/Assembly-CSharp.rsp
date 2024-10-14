@@ -447,6 +447,7 @@
 "Assets/Scripts/AI character controller/aiController.cs"
 "Assets/Scripts/Animation/Tutorial character/TutorialAC.cs"
 "Assets/Scripts/car AI/carAi.cs"
+"Assets/Scripts/car AI/TestAi.cs"
 "Assets/Scripts/Car controller/CarController.cs"
 "Assets/Scripts/Car controller/engineSound.cs"
 "Assets/Scripts/Car controller/SlideZoom.cs"
