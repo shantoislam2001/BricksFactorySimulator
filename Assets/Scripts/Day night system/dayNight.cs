@@ -10,11 +10,12 @@ public class dayNight : MonoBehaviour
     public float dayDuration = 24f * 60f; // Duration of one day in real time (24 minutes = 1440 seconds)
 
     private float sunInitialIntensity;
+    [SerializeField] public Text displayDate;
 
     void Start()
     {
         sunInitialIntensity = sun.intensity;
-        timeOfDay = 8;
+        timeOfDay = 11;
     }
 
     void Update()
@@ -22,6 +23,7 @@ public class dayNight : MonoBehaviour
         UpdateTime();
         UpdateSunPosition();
         UpdateTimeDisplay();
+        dateSystem(timeOfDay);
     }
 
     void UpdateTime()
@@ -39,6 +41,39 @@ public class dayNight : MonoBehaviour
 
         // Adjust the sun's intensity for day and night
         sun.intensity = Mathf.Clamp(sunInitialIntensity * Mathf.Sin((timeOfDay / 24f) * Mathf.PI), 0f, sunInitialIntensity);
+    }
+    public int dayCount = 1;
+ 
+    void dateSystem(float hour)
+    {
+        int date = 02;
+        int month = 02;
+        int year = 2025;
+
+        if (hour == 0 && dayCount == 1)
+        {
+            date++;
+            dayCount++;
+            if(date == 31)
+            {
+                month++;
+                date = 1;
+
+                if(month == 13)
+                {
+                    year++;
+                    month = 1;
+                }
+            }
+            displayDate.text = date + "/" + month + "/" + year;
+            Invoke("resatdayCount", 120f);
+        }
+ 
+    }
+
+    void resatdayCount()
+    {
+        dayCount = 1;
     }
 
     void UpdateTimeDisplay()

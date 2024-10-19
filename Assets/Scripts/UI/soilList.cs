@@ -55,6 +55,15 @@ public class SoilList : MonoBehaviour
 
     void OnItemClick(int index, string truck)
     {
+        if(truck.Contains("Rent") && Payments.pendingRentDay > 2)
+        {
+            listPanel.SetActive(false);
+            canvasList.SetActive(false);
+            warning("Please pay truck rent bill");
+            return;
+        }
+
+
         if (currency.money >= 175)
         {
             GameObject cTruck = GameObject.Find(truck);
@@ -97,7 +106,7 @@ public class SoilList : MonoBehaviour
         }
         else
         {
-            warning();
+            warning("Not enough money");
         }
     }
 
@@ -153,11 +162,11 @@ public class SoilList : MonoBehaviour
         truckTimers.Remove(cTruck);  // Remove the truck's timer as it's done
     }
 
-    public void warning()
+    public void warning(string s)
     {
         uDialog.NewDialog()
         .SetTitleText("Warning")
-        .SetContentText("Not enough money")
+        .SetContentText(s)
         .SetIcon(eIconType.Warning)
         .AddButton("Close", (dialog) => dialog.Close());
     }

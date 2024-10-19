@@ -54,9 +54,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 9
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -89,7 +89,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -626,19 +626,15 @@ MonoBehaviour:
         speedLimit: 30
         applyBrakes: 0
         brakeTorque: 0
-      - waypointPosition: {x: 553, y: 0.1000001, z: 575}
+      - waypointPosition: {x: 542, y: 0.1000001, z: 570}
         speedLimit: 15
         applyBrakes: 0
         brakeTorque: 0
-      - waypointPosition: {x: 612, y: 0.1000001, z: 579}
+      - waypointPosition: {x: 545, y: 0.1000001, z: 554}
         speedLimit: 10
         applyBrakes: 0
         brakeTorque: 0
-      - waypointPosition: {x: 622.8, y: 0.1000001, z: 616}
-        speedLimit: 10
-        applyBrakes: 0
-        brakeTorque: 0
-      - waypointPosition: {x: 622, y: 0.1000001, z: 630}
+      - waypointPosition: {x: 546, y: 0.1000001, z: 547}
         speedLimit: 0
         applyBrakes: 1
         brakeTorque: 1000

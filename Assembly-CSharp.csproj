@@ -89,6 +89,7 @@
     <Compile Include="Assets\UI\uDialog\uDialog_Utilities.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\Scripts\UI\test.cs" />
+    <Compile Include="Assets\Scripts\Banking\BankUI.cs" />
     <Compile Include="Assets\Scripts\Tutorial script\TutorialAT5.cs" />
     <Compile Include="Assets\Scripts\sound\voice.cs" />
     <Compile Include="Assets\UI\uDialog\uDialog_NotificationPanel.cs" />
@@ -119,13 +120,13 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Downloaded assets\Forst\CTI Runtime Components\CTI Runtime Components BIRP\Scripts\CTI_Utils.cs" />
-    <Compile Include="Assets\note.cs" />
     <Compile Include="Assets\UI\uDialog\uDialog_ColorScheme.cs" />
     <Compile Include="Assets\Scripts\UI\soilList.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\Truck\antiRollBer.cs" />
     <Compile Include="Assets\Scripts\Truck buy and rent\TruckBuy.cs" />
+    <Compile Include="Assets\learning.cs" />
     <Compile Include="Assets\Scripts\car AI\TestAi.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Scripts\UI\currency.cs" />
@@ -152,6 +153,7 @@
     <Compile Include="Assets\Scripts\Truck\transport.cs" />
     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\SpawnInArea.cs" />
     <Compile Include="Assets\ClassicSRIA\Scripts\Examples\Common\DemoUI.cs" />
+    <Compile Include="Assets\Scripts\Banking\Bank.cs" />
     <Compile Include="Assets\Scripts\Truck\parkingAt.cs" />
     <Compile Include="Assets\Scripts\Tutorial script\disclaimer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
@@ -186,6 +188,7 @@
     <Compile Include="Assets\Scripts\UI\coalList.cs" />
     <Compile Include="Assets\Scripts\Truck buy and rent\TruckRent.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\Scripts\Bill payments\Payments.cs" />
     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\TreeExplosion.cs" />
     <Compile Include="Assets\ClassicSRIA\Scripts\Examples\VerticalClassicListViewExample.cs" />
     <Compile Include="Assets\Scripts\Tutorial script\Tutorial.cs" />

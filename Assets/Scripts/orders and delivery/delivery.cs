@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using TMPro;
+using UI.Dialogs;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,6 +18,9 @@ public class Delivery : MonoBehaviour
     [SerializeField] public GameObject UiddFirstClass;
     [SerializeField] public GameObject UiddThreeHole;
     [SerializeField] public GameObject UiddTenHole;
+    [SerializeField] public GameObject canvasOffice;
+    [SerializeField] public GameObject orderPanel;
+    [SerializeField] public GameObject panel;
     public Queue<GameObject> tq = new Queue<GameObject>();
 
     public int ddFirstClassValue;
@@ -125,6 +129,7 @@ public class Delivery : MonoBehaviour
 
     public void Send()
     {
+        
         if (UiddFirstClass.activeSelf)
         {
             if(dd1.value == 1)
@@ -135,7 +140,10 @@ public class Delivery : MonoBehaviour
                     sendTruck(transport.firstClass1k.Dequeue());
                 } else
                 {
-                    
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
             else if (dd1.value == 2)
@@ -147,7 +155,10 @@ public class Delivery : MonoBehaviour
                 }
                 else
                 {
-
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
             else  if (dd1.value == 3)
@@ -159,7 +170,10 @@ public class Delivery : MonoBehaviour
                 }
                 else
                 {
-
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
             else if (dd1.value == 4)
@@ -171,7 +185,10 @@ public class Delivery : MonoBehaviour
                 }
                 else
                 {
-
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
             else if (dd1.value == 5)
@@ -183,7 +200,10 @@ public class Delivery : MonoBehaviour
                 }
                 else
                 {
-
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
             else if (dd1.value == 6)
@@ -195,7 +215,10 @@ public class Delivery : MonoBehaviour
                 }
                 else
                 {
-
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
         }
@@ -210,7 +233,10 @@ public class Delivery : MonoBehaviour
                 }
                 else
                 {
-
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
             else if (dd2.value == 2)
@@ -222,7 +248,10 @@ public class Delivery : MonoBehaviour
                 }
                 else
                 {
-
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
             else if (dd2.value == 3)
@@ -234,7 +263,10 @@ public class Delivery : MonoBehaviour
                 }
                 else
                 {
-
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
             else if (dd2.value == 4)
@@ -246,7 +278,10 @@ public class Delivery : MonoBehaviour
                 }
                 else
                 {
-
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
             else if (dd2.value == 5)
@@ -258,7 +293,10 @@ public class Delivery : MonoBehaviour
                 }
                 else
                 {
-
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
             else if (dd2.value == 6)
@@ -270,7 +308,10 @@ public class Delivery : MonoBehaviour
                 }
                 else
                 {
-
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
         }
@@ -285,7 +326,10 @@ public class Delivery : MonoBehaviour
                 }
                 else
                 {
-
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
             else if (dd3.value == 2)
@@ -297,7 +341,10 @@ public class Delivery : MonoBehaviour
                 }
                 else
                 {
-
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
             else if (dd3.value == 3)
@@ -309,7 +356,10 @@ public class Delivery : MonoBehaviour
                 }
                 else
                 {
-
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
             else if (dd3.value == 4)
@@ -321,7 +371,10 @@ public class Delivery : MonoBehaviour
                 }
                 else
                 {
-
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
             else if (dd3.value == 5)
@@ -333,7 +386,10 @@ public class Delivery : MonoBehaviour
                 }
                 else
                 {
-
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
             else if (dd3.value == 6)
@@ -345,7 +401,10 @@ public class Delivery : MonoBehaviour
                 }
                 else
                 {
-
+                    panel.SetActive(false);
+                    orderPanel.SetActive(false);
+                    canvasOffice.SetActive(false);
+                    warning();
                 }
             }
         }
@@ -353,7 +412,14 @@ public class Delivery : MonoBehaviour
 
     public void sendTruck(string ct)
     {
-        
+        if(ct.Contains("Rent") && Payments.pendingRentDay > 2)
+        {
+            panel.SetActive(false);
+            orderPanel.SetActive(false);
+            canvasOffice.SetActive(false);
+            warning2();
+            return;
+        }
         updateText();
         cTruck = GameObject.Find(ct);
         tq.Enqueue(cTruck);
@@ -442,7 +508,23 @@ public class Delivery : MonoBehaviour
         }
     }
 
+    public void warning()
+    {
+        uDialog.NewDialog()
+        .SetTitleText("Warning")
+        .SetContentText("Not enough bricks")
+        .SetIcon(eIconType.Warning)
+        .AddButton("Close", (dialog) => dialog.Close());
+    }
 
+    public void warning2()
+    {
+        uDialog.NewDialog()
+        .SetTitleText("Warning")
+        .SetContentText("Please pay truck rent bill")
+        .SetIcon(eIconType.Warning)
+        .AddButton("Close", (dialog) => dialog.Close());
+    }
 
     void Update()
     {

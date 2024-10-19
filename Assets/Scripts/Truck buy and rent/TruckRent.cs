@@ -27,6 +27,10 @@ public class TruckRent : MonoBehaviour
     public int rentStatusTruck = 0;
     public int rentStatusVan = 0;
 
+    public static int dtRentCost = 0;
+    public static int truckRentCost = 0;
+    public static int vanRentCost = 0;
+
     public int r = 0;
     Vector3 Position = new Vector3(2, 1, 0);
 
@@ -54,7 +58,7 @@ public class TruckRent : MonoBehaviour
 
        .AddButton("Confirm", () => {
            string n = "Rent " + r++;
-
+           dtRentCost += 90;
            GameObject ob = Instantiate(drumpTruckPrefab, Position, Quaternion.identity);
            ob.name = n;
            parking.park(ob.name);
@@ -101,7 +105,7 @@ public class TruckRent : MonoBehaviour
 
    .AddButton("Confirm", () => {
        string n = "Rent " + r++;
-
+       truckRentCost += 220;
        GameObject ob = Instantiate(truckPrefab, Position, Quaternion.identity);
        ob.name = n;
        parking.park(ob.name);
@@ -146,7 +150,7 @@ public class TruckRent : MonoBehaviour
 
    .AddButton("Confirm", () => {
        string n = "Rent " + r++;
-
+       vanRentCost += 350;
        GameObject ob = Instantiate(vanPrefab, Position, Quaternion.identity);
        ob.name = n;
        parking.park(ob.name);
@@ -178,57 +182,85 @@ public class TruckRent : MonoBehaviour
 
     public void returnDt()
     {
-        if (rentStatusDt > 0)
+        if (Payments.pendingRentDay < 1)
         {
-            string n = drumpTruck.Dequeue();
-            transport.trucks.Remove(n);
-            transport.drumpTruck.Remove(n);
-            Destroy(GameObject.Find(n));
-            rentStatusDt--;
-            dtRentStatus.text = "Rented : " + rentStatusDt;
+            if (rentStatusDt > 0)
+            {
+                dtRentCost -= 90;
+                string n = drumpTruck.Dequeue();
+                transport.trucks.Remove(n);
+                transport.drumpTruck.Remove(n);
+                Destroy(GameObject.Find(n));
+                rentStatusDt--;
+                dtRentStatus.text = "Rented : " + rentStatusDt;
+            }
+            else
+            {
+                rentPanel.SetActive(false);
+                canvasOffice.SetActive(false);
+                warning("You have no rented truck");
+            }
         } else
         {
             rentPanel.SetActive(false);
             canvasOffice.SetActive(false);
-            warning("You have no rented truck");
+            warning("Please pay truck rent bill");
         }
     }
 
     public void returnTruck()
     {
-        if (rentStatusTruck > 0)
+        if (Payments.pendingRentDay < 1)
         {
-            string n = truck.Dequeue();
-            transport.trucks.Remove(n);
-            
-            Destroy(GameObject.Find(n));
-            rentStatusTruck--;
-            truckRentStatus.text = "Rented : " + rentStatusTruck;
-        }
-        else
+            if (rentStatusTruck > 0)
+            {
+                truckRentCost -= 220;
+                string n = truck.Dequeue();
+                transport.trucks.Remove(n);
+
+                Destroy(GameObject.Find(n));
+                rentStatusTruck--;
+                truckRentStatus.text = "Rented : " + rentStatusTruck;
+            }
+            else
+            {
+                rentPanel.SetActive(false);
+                canvasOffice.SetActive(false);
+                warning("You have no rented truck");
+            }
+        } else
         {
             rentPanel.SetActive(false);
             canvasOffice.SetActive(false);
-            warning("You have no rented truck");
+            warning("Please pay truck rent bill");
         }
     }
 
     public void returnVan()
     {
-        if (rentStatusVan > 0)
+        if (Payments.pendingRentDay < 1)
         {
-            string n = van.Dequeue();
-            transport.trucks.Remove(n);
-           
-            Destroy(GameObject.Find(n));
-            rentStatusVan--;
-            vanRentStatus.text = "Rented : " + rentStatusVan;
-        }
-        else
+            if (rentStatusVan > 0)
+            {
+                vanRentCost -= 350;
+                string n = van.Dequeue();
+                transport.trucks.Remove(n);
+
+                Destroy(GameObject.Find(n));
+                rentStatusVan--;
+                vanRentStatus.text = "Rented : " + rentStatusVan;
+            }
+            else
+            {
+                rentPanel.SetActive(false);
+                canvasOffice.SetActive(false);
+                warning("You have no rented truck");
+            }
+        } else
         {
             rentPanel.SetActive(false);
             canvasOffice.SetActive(false);
-            warning("You have no rented truck");
+            warning("Please pay truck rent bill");
         }
     }
 

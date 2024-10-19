@@ -21,6 +21,7 @@ public class uiManager : MonoBehaviour
     [SerializeField] public GameObject truckBuyPanel;
     [SerializeField] public GameObject truckRentPanel;
     [SerializeField] public GameObject payments;
+    [SerializeField] public GameObject bankPanel;
 
 
 
@@ -202,6 +203,12 @@ public class uiManager : MonoBehaviour
     {
         payments.SetActive(false);
         canvasList.SetActive(false);
+    }
+
+    public void openBank()
+    {
+        canvasOffice.SetActive(true);
+        bankPanel.SetActive(true);
     }
 
 
