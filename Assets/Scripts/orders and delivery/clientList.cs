@@ -241,6 +241,7 @@ public class clientList : MonoBehaviour
     {
         cClient.SetActive(false);
         transport.client.Enqueue(cClient.name);
+        transport.activeOrders.Remove(cClient.name);
         panel.SetActive(false);
         order.activeOrder--;
     }
@@ -265,6 +266,8 @@ public class clientList : MonoBehaviour
         cClient.SetActive(false);
         panel.SetActive(false);
         order.activeOrder--;
+        transport.client.Enqueue(cClient.name);
+        transport.activeOrders.Remove(cClient.name);
     }
 
     private string FormatCurrency(float value)

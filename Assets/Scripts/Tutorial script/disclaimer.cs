@@ -4,6 +4,7 @@ public class disclaimer : MonoBehaviour
 {
     [SerializeField] public GameObject playerCanvas;
     [SerializeField] public GameObject dsclaimerCanvas;
+    
     [SerializeField] public AudioSource voice;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,6 +20,7 @@ public class disclaimer : MonoBehaviour
     {
         playerCanvas.SetActive(true);
         dsclaimerCanvas.SetActive(false);
+        voice.Stop();
     }
 
     // Update is called once per frame

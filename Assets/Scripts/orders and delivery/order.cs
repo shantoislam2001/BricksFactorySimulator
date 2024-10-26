@@ -22,8 +22,9 @@ public class order : MonoBehaviour
         int maxO = maxOrder(levelSystem.level);
         if (maxO >= activeOrder)
         {
+            string currentClient = transport.client.Dequeue();
             newOrder.Play();    
-            GameObject client = list.transform.Find(transport.client.Dequeue()).gameObject;
+            GameObject client = list.transform.Find(currentClient).gameObject;
             clientData cd = client.GetComponent<clientData>();
             activeOrder++;
             client.SetActive(true);
@@ -36,7 +37,7 @@ public class order : MonoBehaviour
             cd.pandingPayment = (int)cd.totalAmount;
             timer = new Timer(180f, timeUp);
             TimerManager.AddTimer(timer);
-
+            transport.activeOrders.Add(currentClient);
         } else
         {
             timer = new Timer(180f, timeUp);

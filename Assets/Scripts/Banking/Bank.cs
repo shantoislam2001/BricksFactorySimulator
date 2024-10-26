@@ -18,9 +18,9 @@ public class Bank : MonoBehaviour
     [SerializeField] public TextMeshProUGUI installmentText;
     [SerializeField] public GameObject payIteam;
     [SerializeField] public Text payIteamText;
+    [SerializeField] public GameObject payWarning;
 
-
-    public int balance = 0;
+    public static int balance = 0;
     public int withdrawBalance = 0;
     public static int weeklyProfit = 0;
     public int depositInputValue = 0;
@@ -29,7 +29,7 @@ public class Bank : MonoBehaviour
     public int loanInput = 0;
     public int installment = 0;
     public static int installmentPendingDay = 0;
-    public int pendingInstallment = 0;
+    public static int pendingInstallment = 0;
     public static int day = 0;
 
 
@@ -164,7 +164,7 @@ public class Bank : MonoBehaviour
 
             if(installmentPendingDay > 3)
             {
-
+                payWarning.SetActive(true);
             }
             
         }   
@@ -179,7 +179,9 @@ public class Bank : MonoBehaviour
             pendingInstallment = 0;
             payIteam.SetActive(false);
             installmentPendingDay = 0;
-        }else
+            payWarning.SetActive(false);
+        }
+        else
         {
             warning("Not enough money");
         }

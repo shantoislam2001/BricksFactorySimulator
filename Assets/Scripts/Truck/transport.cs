@@ -29,7 +29,7 @@ public class transport : MonoBehaviour
     public static Queue<string> tenHole6k = new Queue<string>();
 
     public static Queue<string> client = new Queue<string>(new[] {"P1", "P2", "P3", "P4", "P5", "P6", "P7"});
-
+    public static List<string> activeOrders = new List<string>();
 
 
 

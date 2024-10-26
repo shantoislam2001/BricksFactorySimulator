@@ -1,6 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp:
+    - AntiRollBar
+    - CarAI
+    - CarController
+    - CarEngineSound
+    - SlideZoom
+    - TriggerCar
     - UI.Dialogs.uDialog
     - UI.Dialogs.uDialog_Button
     - UI.Dialogs.uDialog_Config
@@ -9,22 +15,25 @@ ScriptsOnlyBuild:
     - UI.Dialogs.uDialog_ScreenOverlay
     - UI.Dialogs.uDialog_TaskBar
     - UI.Dialogs.uDialog_TaskBar_Task
-    Assembly-CSharp-Editor.dll:
-    - ReadmeEditor
+    - truckData
     Assembly-CSharp.dll:
     - AntiRollBar
     - AreaTrigger
+    - Bank
+    - BankUI
     - CarAI
     - CarController
     - CarEngineSound
+    - DeleteFile
     - Delivery
     - FPSController
     - FixedJoystick
     - MultiPanelAnimationScript
+    - Payments
     - ProgressBar
     - ProgressBarCircle
     - Readme
-    - SaveGameManager
+    - SaveGame
     - SlideAxisController
     - SlideZoom
     - SoilList
@@ -84,6 +93,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshPro
     Unity.TextMeshPro.dll:
     - TMPro.TMP_Dropdown
     - TMPro.TMP_FontAsset
@@ -230,6 +240,9 @@ ScriptsOnlyBuild:
     fullTypeName: TriggerControl
     methodName: EnterCar
   - assembly: Assembly-CSharp
+    fullTypeName: Bank
+    methodName: add
+  - assembly: Assembly-CSharp
     fullTypeName: loadAT
     methodName: DropdownVan
   - assembly: Assembly-CSharp
@@ -247,6 +260,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: closeOffice
+  - assembly: Assembly-CSharp
+    fullTypeName: Payments
+    methodName: payRentTruckBill
   - assembly: Assembly-CSharp
     fullTypeName: clientList
     methodName: p4
@@ -317,6 +333,9 @@ ScriptsOnlyBuild:
     fullTypeName: TruckBuy
     methodName: setNameByRandom
   - assembly: Assembly-CSharp
+    fullTypeName: SaveGame
+    methodName: saveGame
+  - assembly: Assembly-CSharp
     fullTypeName: TruckRent
     methodName: rentDt
   - assembly: Assembly-CSharp
@@ -329,11 +348,20 @@ ScriptsOnlyBuild:
     fullTypeName: uiManager
     methodName: openTruckBuy
   - assembly: Assembly-CSharp
+    fullTypeName: Bank
+    methodName: loan
+  - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: closeCoalList
   - assembly: Assembly-CSharp
+    fullTypeName: Bank
+    methodName: withdraw
+  - assembly: Assembly-CSharp
     fullTypeName: clientList
     methodName: p1
+  - assembly: Assembly-CSharp
+    fullTypeName: BankUI
+    methodName: withdraw
   - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: closeVan
@@ -347,8 +375,14 @@ ScriptsOnlyBuild:
     fullTypeName: uiManager
     methodName: closeMenu
   - assembly: Assembly-CSharp
+    fullTypeName: BankUI
+    methodName: close
+  - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: closeDt
+  - assembly: Assembly-CSharp
+    fullTypeName: Bank
+    methodName: closeLoan
   - assembly: Assembly-CSharp
     fullTypeName: uiManager
     methodName: closeSettings
@@ -365,6 +399,12 @@ ScriptsOnlyBuild:
     fullTypeName: uiManager
     methodName: openOrderList
   - assembly: Assembly-CSharp
+    fullTypeName: BankUI
+    methodName: loan
+  - assembly: Assembly-CSharp
+    fullTypeName: Bank
+    methodName: refreshWithdraw
+  - assembly: Assembly-CSharp
     fullTypeName: TruckRent
     methodName: returnTruck
   - assembly: Assembly-CSharp
@@ -374,14 +414,11 @@ ScriptsOnlyBuild:
     fullTypeName: MultiPanelAnimationScript
     methodName: FadeOut
   - assembly: Assembly-CSharp
+    fullTypeName: uiManager
+    methodName: openBank
+  - assembly: Assembly-CSharp
     fullTypeName: clientList
     methodName: p5
-  - assembly: Assembly-CSharp
-    fullTypeName: uiManager
-    methodName: openStore
-  - assembly: Assembly-CSharp
-    fullTypeName: MultiPanelAnimationScript
-    methodName: FadeIn
   - assembly: Assembly-CSharp
     fullTypeName: TruckBuy
     methodName: BuyDrumpTruck
@@ -425,11 +462,20 @@ ScriptsOnlyBuild:
     fullTypeName: TruckRent
     methodName: rentTruck
   - assembly: Assembly-CSharp
+    fullTypeName: uiManager
+    methodName: openStore
+  - assembly: Assembly-CSharp
+    fullTypeName: MultiPanelAnimationScript
+    methodName: FadeIn
+  - assembly: Assembly-CSharp
     fullTypeName: clientList
     methodName: p7
   - assembly: Assembly-CSharp
     fullTypeName: TruckRent
     methodName: rentVan
+  - assembly: Assembly-CSharp
+    fullTypeName: Bank
+    methodName: payInstallment
   - assembly: Assembly-CSharp
     fullTypeName: clientList
     methodName: Cencel
@@ -439,6 +485,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: MultiPanelAnimationScript
     methodName: FadeIn
+  - assembly: Assembly-CSharp
+    fullTypeName: BankUI
+    methodName: deposit
   - assembly: Assembly-CSharp
     fullTypeName: loadAT
     methodName: loadVan
@@ -493,171 +542,179 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 25972}
+      Script: {instanceID: 25984}
     - Class: 114
-      Script: {instanceID: 26022}
+      Script: {instanceID: 26034}
     - Class: 114
-      Script: {instanceID: 26148}
+      Script: {instanceID: 26160}
     - Class: 114
-      Script: {instanceID: 26188}
+      Script: {instanceID: 26200}
     - Class: 114
-      Script: {instanceID: 26242}
+      Script: {instanceID: 26254}
     - Class: 114
-      Script: {instanceID: 26300}
+      Script: {instanceID: 26312}
     - Class: 114
-      Script: {instanceID: 26454}
+      Script: {instanceID: 26466}
     - Class: 114
-      Script: {instanceID: 26522}
+      Script: {instanceID: 26534}
     - Class: 114
-      Script: {instanceID: 26742}
+      Script: {instanceID: 26754}
     - Class: 114
-      Script: {instanceID: 26822}
+      Script: {instanceID: 26834}
     - Class: 114
-      Script: {instanceID: 26892}
+      Script: {instanceID: 26904}
     - Class: 114
-      Script: {instanceID: 26928}
+      Script: {instanceID: 26940}
     - Class: 114
-      Script: {instanceID: 27106}
+      Script: {instanceID: 27118}
     - Class: 114
-      Script: {instanceID: 27128}
+      Script: {instanceID: 27140}
     - Class: 114
-      Script: {instanceID: 27234}
+      Script: {instanceID: 27246}
     - Class: 114
-      Script: {instanceID: 27292}
+      Script: {instanceID: 27304}
     - Class: 114
-      Script: {instanceID: 27604}
+      Script: {instanceID: 27616}
     - Class: 114
-      Script: {instanceID: 27694}
+      Script: {instanceID: 27706}
     - Class: 114
-      Script: {instanceID: 27780}
+      Script: {instanceID: 27792}
     - Class: 114
-      Script: {instanceID: 27876}
+      Script: {instanceID: 27888}
     - Class: 114
-      Script: {instanceID: 28024}
+      Script: {instanceID: 28036}
     - Class: 114
-      Script: {instanceID: 28152}
+      Script: {instanceID: 28164}
     - Class: 114
-      Script: {instanceID: 28216}
+      Script: {instanceID: 28190}
     - Class: 114
-      Script: {instanceID: 28300}
+      Script: {instanceID: 28230}
     - Class: 114
-      Script: {instanceID: 28346}
+      Script: {instanceID: 28314}
     - Class: 114
-      Script: {instanceID: 28432}
+      Script: {instanceID: 28360}
     - Class: 114
-      Script: {instanceID: 28438}
+      Script: {instanceID: 28446}
     - Class: 114
-      Script: {instanceID: 28732}
+      Script: {instanceID: 28452}
     - Class: 114
-      Script: {instanceID: 28960}
+      Script: {instanceID: 28746}
     - Class: 114
-      Script: {instanceID: 29094}
+      Script: {instanceID: 28974}
     - Class: 114
-      Script: {instanceID: 29130}
+      Script: {instanceID: 29108}
     - Class: 114
-      Script: {instanceID: 29260}
+      Script: {instanceID: 29144}
     - Class: 114
-      Script: {instanceID: 29448}
+      Script: {instanceID: 29274}
     - Class: 114
-      Script: {instanceID: 29514}
+      Script: {instanceID: 29464}
     - Class: 114
-      Script: {instanceID: 29728}
+      Script: {instanceID: 29530}
     - Class: 114
-      Script: {instanceID: 29824}
+      Script: {instanceID: 29744}
     - Class: 114
-      Script: {instanceID: 30010}
+      Script: {instanceID: 29840}
     - Class: 114
-      Script: {instanceID: 30022}
+      Script: {instanceID: 30026}
     - Class: 114
-      Script: {instanceID: 30052}
+      Script: {instanceID: 30038}
     - Class: 114
-      Script: {instanceID: 30176}
+      Script: {instanceID: 30068}
     - Class: 114
-      Script: {instanceID: 30266}
+      Script: {instanceID: 30180}
     - Class: 114
-      Script: {instanceID: 30354}
+      Script: {instanceID: 30194}
     - Class: 114
-      Script: {instanceID: 30582}
+      Script: {instanceID: 30284}
     - Class: 114
-      Script: {instanceID: 30654}
+      Script: {instanceID: 30372}
     - Class: 114
-      Script: {instanceID: 30656}
+      Script: {instanceID: 30600}
     - Class: 114
-      Script: {instanceID: 30686}
+      Script: {instanceID: 30672}
     - Class: 114
-      Script: {instanceID: 30772}
+      Script: {instanceID: 30674}
     - Class: 114
-      Script: {instanceID: 30780}
+      Script: {instanceID: 30704}
     - Class: 114
-      Script: {instanceID: 30850}
+      Script: {instanceID: 30790}
     - Class: 114
-      Script: {instanceID: 30874}
+      Script: {instanceID: 30798}
     - Class: 114
-      Script: {instanceID: 31090}
+      Script: {instanceID: 30868}
     - Class: 114
-      Script: {instanceID: 31236}
+      Script: {instanceID: 30892}
     - Class: 114
-      Script: {instanceID: 31254}
+      Script: {instanceID: 31108}
     - Class: 114
-      Script: {instanceID: 31398}
+      Script: {instanceID: 31256}
     - Class: 114
-      Script: {instanceID: 31424}
+      Script: {instanceID: 31274}
     - Class: 114
-      Script: {instanceID: 31526}
+      Script: {instanceID: 31418}
     - Class: 114
-      Script: {instanceID: 31532}
+      Script: {instanceID: 31444}
     - Class: 114
-      Script: {instanceID: 31562}
+      Script: {instanceID: 31546}
     - Class: 114
-      Script: {instanceID: 31676}
+      Script: {instanceID: 31552}
     - Class: 114
-      Script: {instanceID: 31792}
+      Script: {instanceID: 31582}
     - Class: 114
-      Script: {instanceID: 31972}
+      Script: {instanceID: 31696}
     - Class: 114
-      Script: {instanceID: 31986}
+      Script: {instanceID: 31812}
     - Class: 114
-      Script: {instanceID: 32172}
+      Script: {instanceID: 31992}
     - Class: 114
-      Script: {instanceID: 32224}
+      Script: {instanceID: 32006}
     - Class: 114
-      Script: {instanceID: 32348}
+      Script: {instanceID: 32192}
     - Class: 114
-      Script: {instanceID: 32358}
+      Script: {instanceID: 32244}
     - Class: 114
-      Script: {instanceID: 32406}
+      Script: {instanceID: 32258}
     - Class: 114
-      Script: {instanceID: 32422}
+      Script: {instanceID: 32370}
     - Class: 114
-      Script: {instanceID: 32596}
+      Script: {instanceID: 32380}
     - Class: 114
-      Script: {instanceID: 32638}
+      Script: {instanceID: 32428}
     - Class: 114
-      Script: {instanceID: 32712}
+      Script: {instanceID: 32444}
     - Class: 114
-      Script: {instanceID: 32798}
+      Script: {instanceID: 32618}
     - Class: 114
-      Script: {instanceID: 33024}
+      Script: {instanceID: 32662}
     - Class: 114
-      Script: {instanceID: 33032}
+      Script: {instanceID: 32736}
     - Class: 114
-      Script: {instanceID: 33070}
+      Script: {instanceID: 32822}
     - Class: 114
-      Script: {instanceID: 33118}
+      Script: {instanceID: 33048}
     - Class: 114
-      Script: {instanceID: 33266}
+      Script: {instanceID: 33056}
     - Class: 114
-      Script: {instanceID: 33364}
+      Script: {instanceID: 33094}
     - Class: 114
-      Script: {instanceID: 33670}
+      Script: {instanceID: 33142}
     - Class: 114
-      Script: {instanceID: 33754}
+      Script: {instanceID: 33290}
     - Class: 114
-      Script: {instanceID: 33920}
+      Script: {instanceID: 33376}
     - Class: 114
-      Script: {instanceID: 33986}
+      Script: {instanceID: 33390}
     - Class: 114
-      Script: {instanceID: 42512}
+      Script: {instanceID: 33696}
+    - Class: 114
+      Script: {instanceID: 33780}
+    - Class: 114
+      Script: {instanceID: 33944}
+    - Class: 114
+      Script: {instanceID: 34010}
+    - Class: 114
+      Script: {instanceID: 42852}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -713,7 +770,7 @@ ScriptsOnlyBuild:
     className: order
   - hash:
       serializedVersion: 2
-      Hash: 7e0d045966fad49339090a3d1dc256e5
+      Hash: 0343ea3fd00cb5959efdc49dfdd5587a
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: SlideAxisController
@@ -1289,6 +1346,12 @@ ScriptsOnlyBuild:
     className: DepthOfField
   - hash:
       serializedVersion: 2
+      Hash: ef4cb43b4a673b6d5f1da8f26c3a58d7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DeleteFile
+  - hash:
+      serializedVersion: 2
       Hash: 82b8ed9c0730698166dcf222fb952f91
     assemblyName: SimpleInput.Runtime
     namespaceName: 
@@ -1313,7 +1376,7 @@ ScriptsOnlyBuild:
     className: MouseButtonInputKeyboard
   - hash:
       serializedVersion: 2
-      Hash: de4b501df0155c46d4a8f312d3262e31
+      Hash: 8b358da313204b9f4b243d31b50c0ce2
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: uiManager
@@ -1325,10 +1388,10 @@ ScriptsOnlyBuild:
     className: TMP_PhoneNumberValidator
   - hash:
       serializedVersion: 2
-      Hash: 4212b2de5d28ceb2a968be8926dc44df
+      Hash: de2940907630ad9ae3955e24ecbcc833
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: SaveGameManager
+    className: SaveGame
   - hash:
       serializedVersion: 2
       Hash: ff76cf6cf52b4db7b95af6ffadca9288
@@ -1817,7 +1880,13 @@ ScriptsOnlyBuild:
     className: PanelEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 120149baded9d7a4d86c810f328f2e94
+      Hash: 1d452a0e6bc2105d7d4edc4698be1a41
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Bank
+  - hash:
+      serializedVersion: 2
+      Hash: 3597caf5025314a224af4247a536ccf3
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Delivery
@@ -2111,6 +2180,12 @@ ScriptsOnlyBuild:
     className: AxisInputMoveGesture
   - hash:
       serializedVersion: 2
+      Hash: b561aea08bcbcd0f26d162ae93a0a962
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CarAITest
+  - hash:
+      serializedVersion: 2
       Hash: bc75926bfd3609757f7bf33ff766f026
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.EnhancedTouch
@@ -2393,6 +2468,12 @@ ScriptsOnlyBuild:
     className: uDialog_Config
   - hash:
       serializedVersion: 2
+      Hash: 2f7cb21abf2a50069e1bd531562999c4
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Payments
+  - hash:
+      serializedVersion: 2
       Hash: 3b569c21d29984e54db19f4903235d1d
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -2411,7 +2492,7 @@ ScriptsOnlyBuild:
     className: VertexColorCycler
   - hash:
       serializedVersion: 2
-      Hash: 23548c8530c25f99856bc1222ad84a88
+      Hash: 254153992c5b7d41c95bc9539d90f719
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CarAI
@@ -2507,6 +2588,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 4747425addf1947b4147d7febf914a20
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: learning
+  - hash:
+      serializedVersion: 2
       Hash: 810e3c228b295cc60c4de2cdd94b18cb
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -2537,7 +2624,7 @@ ScriptsOnlyBuild:
     className: AdaptivePerformanceGeneralSettings
   - hash:
       serializedVersion: 2
-      Hash: cc079085204cbd57fbcf2f5f2106739d
+      Hash: 52e1b64b1783342d5e7ee27ead6f5d9c
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: dayNight
@@ -2661,6 +2748,12 @@ ScriptsOnlyBuild:
     assemblyName: SimpleInput.Runtime
     namespaceName: SimpleInputNamespace
     className: KeyInputKeyboard
+  - hash:
+      serializedVersion: 2
+      Hash: d1beeb75be6fa207e64177cd80d0a1b8
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BankUI
   - hash:
       serializedVersion: 2
       Hash: 13f262cc0741566a7ab72682984bc3e1
@@ -2789,12 +2882,6 @@ ScriptsOnlyBuild:
     className: InputActionEditorWindow
   - hash:
       serializedVersion: 2
-      Hash: 37ba0c88f5dc84c8bc2970e344342f71
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: note
-  - hash:
-      serializedVersion: 2
       Hash: ee8cd2be783205a7c712839d5deb3b3c
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -2820,5 +2907,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/Game assets/Bricks factory simulator for play store/Bricks factory
-    simulator.aab
+  playerPath: D:/Game assets/Bricks factory simulator for play store/bfs close test.aab

@@ -33,6 +33,7 @@ public class TruckRent : MonoBehaviour
 
     public int r = 0;
     Vector3 Position = new Vector3(2, 1, 0);
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -62,8 +63,8 @@ public class TruckRent : MonoBehaviour
            GameObject ob = Instantiate(drumpTruckPrefab, Position, Quaternion.identity);
            ob.name = n;
            parking.park(ob.name);
-          
-               drumpTruck.Enqueue(ob.name);
+           
+           drumpTruck.Enqueue(ob.name);
                transport.trucks.Add(ob.name);
                transport.drumpTruck.Add(ob.name);
                rentStatusDt++;
