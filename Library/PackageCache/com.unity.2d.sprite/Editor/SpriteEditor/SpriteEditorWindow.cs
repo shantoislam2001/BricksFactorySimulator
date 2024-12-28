@@ -252,6 +252,7 @@ namespace UnityEditor.U2D.Sprites
             public static readonly GUIContent yesLabel = EditorGUIUtility.TrTextContent("Yes");
             public static readonly GUIContent noLabel = EditorGUIUtility.TrTextContent("No");
             public static readonly string styleSheetPath = "Packages/com.unity.2d.sprite/Editor/UI/SpriteEditor/SpriteEditor.uss";
+            public static readonly string toolBarStyleSheetPath = "Packages/com.unity.2d.sprite/Editor/UI/SpriteEditor/SpriteEditorToolbar.uss";
         }
 
         class CurrentResetContext
@@ -647,7 +648,8 @@ namespace UnityEditor.U2D.Sprites
                 m_MainViewElement.Add(m_ModuleViewElement);
                 var root = rootVisualElement;
                 root.styleSheetList.Add(styleSheet);
-                root.Add(m_ToolbarContainer);
+                m_ToolbarContainer.styleSheets.Add(AssetDatabase.LoadAssetAtPath<StyleSheet>(SpriteEditorWindowStyles.toolBarStyleSheetPath));
+                baseRootVisualElement.Insert(0, m_ToolbarContainer);
                 root.Add(m_MainViewElement);
 
                 TryGetOverlay("Overlays/OverlayMenu", out Overlay overlay);

@@ -99,15 +99,6 @@
     min-width:0;
 }
 
-/* Toolbar */
-#spriteEditorWindowToolbarContainer{
-    width: 100%;
-    flex-direction: row;
-    height: 21px;
-    border-bottom-width: 1px;
-    border-bottom-color: var(--unity-colors-toolbar-border);
-}
-
 /* Sprite Editor Window Module Drop Down*/
 #spriteEditorWindowModuleDropDown{
     flex: 0 0 auto;

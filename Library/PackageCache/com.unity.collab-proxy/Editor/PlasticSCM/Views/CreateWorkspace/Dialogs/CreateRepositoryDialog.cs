@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
-
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
 using Codice.Client.Common;
+using Codice.Client.Common.Threading;
+using Codice.CM.Common;
 using PlasticGui;
 using PlasticGui.WorkspaceWindow.Home.Repositories;
 using PlasticGui.WebApi;
@@ -22,7 +24,7 @@ namespace Unity.PlasticSCM.Editor.Views.CreateWorkspace.Dialogs
             get
             {
                 var baseRect = base.DefaultRect;
-                return new Rect(baseRect.x, baseRect.y, 600, 275);
+                return new Rect(baseRect.x, baseRect.y, 600, 310);
             }
         }
 
@@ -53,14 +55,11 @@ namespace Unity.PlasticSCM.Editor.Views.CreateWorkspace.Dialogs
 
         protected override void OnModalGUI()
         {
-            Title(PlasticLocalization.GetString(
-                PlasticLocalization.Name.NewRepositoryTitle));
+            Title(PlasticLocalization.Name.NewRepositoryTitle.GetString());
 
-            Paragraph(PlasticLocalization.GetString(
-                PlasticLocalization.Name.NewRepositoryExplanation));
+            Paragraph(PlasticLocalization.Name.NewRepositoryExplanation.GetString());
 
-            Paragraph(PlasticLocalization.GetString(
-                PlasticLocalization.Name.CreateRepositoryDialogDetailedExplanation));
+            Paragraph(PlasticLocalization.Name.CreateRepositoryDialogDetailedExplanation.GetString());
 
             if (Event.current.type == EventType.Layout)
             {
@@ -71,10 +70,9 @@ namespace Unity.PlasticSCM.Editor.Views.CreateWorkspace.Dialogs
 
             DoEntriesArea();
 
-            GUILayout.Space(10);
+            DrawProgressForDialogs.For(mProgressControls.ProgressData);
 
-            DrawProgressForDialogs.For(
-                mProgressControls.ProgressData);
+            GUILayout.FlexibleSpace();
 
             DoButtonsArea();
 
@@ -83,20 +81,22 @@ namespace Unity.PlasticSCM.Editor.Views.CreateWorkspace.Dialogs
 
         protected override string GetTitle()
         {
-            return PlasticLocalization.GetString(
-                PlasticLocalization.Name.NewRepositoryTitle);
+            return PlasticLocalization.Name.NewRepositoryTitle.GetString();
         }
 
-        void KnownServersListOperations.IKnownServersList.FillValues(List<string> values)
+        void KnownServersListOperations.IKnownServersList.FillValues(List<string> knownServers)
         {
-            mKnownServers = values;
+            mKnownServers = knownServers.Select(ResolveServer.ToDisplayString).ToList();
+            mKnownServers.Sort();
+
+            OnServerSelected(mSelectedServer);
         }
 
         void DoEntriesArea()
         {
-            mName = TextEntry(
-                PlasticLocalization.GetString(PlasticLocalization.Name.RepositoryNameShortLabel),
-                mName,
+            mRepositoryName = TextEntry(
+                PlasticLocalization.Name.RepositoryNameShortLabel.GetString(),
+                mRepositoryName,
                 REPONAME_CONTROL_NAME,
                 ENTRY_WIDTH,
                 ENTRY_X);
@@ -108,22 +108,152 @@ namespace Unity.PlasticSCM.Editor.Views.CreateWorkspace.Dialogs
             }
 
             GUILayout.Space(5);
-
-            mServer = ComboBox(
-                PlasticLocalization.GetString(PlasticLocalization.Name.RepositoryExplorerServerLabel),
-                mServer,
-                DROPDOWN_CONTROL_NAME,
+            
+            mSelectedServer = ComboBox(
+                PlasticLocalization.Name.RepositoryServerOrOrganizationLabel.GetString(),
+                mSelectedServer,
                 mKnownServers,
-                new GenericMenu.MenuFunction2(SelectServer),
+                OnServerSelected,
                 ENTRY_WIDTH,
                 ENTRY_X);
+
+            if (OrganizationsInformation.IsUnityOrganization(mSelectedServer))
+            {
+                GUILayout.Space(5);
+
+                DoOrganizationProjectsDropdown();
+                DoCreateOrganizationProjectLink();
+            }
         }
 
-        void SelectServer(object userData)
+        void DoOrganizationProjectsDropdown()
         {
-            mServer = userData.ToString();
+            if (mSelectedProject == null)
+            {
+                GUI.enabled = false;
+            }
+
+            ComboBox(
+                PlasticLocalization.Name.OrganizationProjectLabel.GetString(),
+                mSelectedProject,
+                mCurrentServerProjects,
+                OnProjectSelected,
+                ENTRY_WIDTH,
+                ENTRY_X);
+
+            GUI.enabled = true;
+        }
+
+        void DoCreateOrganizationProjectLink()
+        {
+            GUILayout.BeginHorizontal();
+
+            GUILayout.FlexibleSpace();
+
+            if (GUILayout.Button(
+                    PlasticLocalization.Name.CreateOrganizationProjectLabel.GetString(),
+                    UnityStyles.LinkLabel,
+                    GUILayout.Height(20)))
+            {
+                // TODO refactor this code once the new changes in the OrganizationInfo are available
+                string serverName = ResolveServer.FromUserInput(mSelectedServer, CmConnection.Get().UnityOrgResolver);
+                string organizationName = ServerOrganizationParser.GetOrganizationFromServer(serverName);
+
+                Application.OpenURL(UnityUrl.UnityDashboard.UnityOrganizations.GetProjectsUrl(organizationName));
+            }
+
+            GUILayout.EndHorizontal();
+        }
+
+        void OnServerSelected(object server)
+        {
+            ((IProgressControls) mProgressControls).HideProgress();
+            mProgressControls.ProgressData.StatusMessage = string.Empty;
+            mProgressControls.ProgressData.StatusType = MessageType.None;
+
+            mIsLoadingProjects = false;
+
+            if (server == null || string.IsNullOrEmpty(server.ToString()))
+            {
+                mSelectedServer = null;
+                mSelectedProject = null;
+
+                return;
+            }
+
+            mSelectedServer = server.ToString();
+
+            // We need to ensure it is a known server because the dropdown is editable
+            if (OrganizationsInformation.IsUnityOrganization(mSelectedServer) && mKnownServers.Contains(mSelectedServer))
+            {
+                LoadServerProjects(mSelectedServer);
+            }
+            else
+            {
+                mSelectedProject = null;
+            }
 
             Repaint();
+        }
+
+        void OnFocus()
+        {
+            OnServerSelected(mSelectedServer);
+        }
+
+        void OnProjectSelected(object project)
+        {
+            mSelectedProject = project.ToString();
+
+            Repaint();
+        }
+
+        void LoadServerProjects(string server)
+        {
+            mIsLoadingProjects = true;
+
+            ((IProgressControls) mProgressControls).ShowProgress(
+                PlasticLocalization.Name.RetrievingServerProjects.GetString());
+
+            List<string> serverProjects = null;
+
+            IThreadWaiter waiter = ThreadWaiter.GetWaiter();
+            waiter.Execute(
+                /*threadOperationDelegate*/ delegate
+                {
+                    string serverName = ResolveServer.FromUserInput(server, CmConnection.Get().UnityOrgResolver);
+
+                    serverProjects = OrganizationsInformation.GetOrganizationProjects(serverName);
+                },
+                /*afterOperationDelegate*/ delegate
+                {
+                    mIsLoadingProjects = false;
+
+                    if (waiter.Exception != null)
+                    {
+                        ((IProgressControls) mProgressControls).ShowError(
+                        PlasticLocalization.Name.ErrorRetrievingServerProjects.GetString());
+                    }
+
+                    mCurrentServerProjects = serverProjects;
+
+                    if (mCurrentServerProjects == null || mCurrentServerProjects.Count == 0)
+                    {
+                        mSelectedProject = null;
+
+                        ((IProgressControls) mProgressControls).ShowError(
+                            PlasticLocalization.Name.NoServerProjectsFound.GetString());
+                    }
+                    else
+                    {
+                        if (string.IsNullOrEmpty(mSelectedProject) || !mCurrentServerProjects.Contains(mSelectedProject))
+                        {
+                            mSelectedProject = mCurrentServerProjects.First();
+                        }
+
+                        ((IProgressControls) mProgressControls).HideProgress();
+                    }
+                });
         }
 
         void DoButtonsArea()
@@ -131,6 +261,11 @@ namespace Unity.PlasticSCM.Editor.Views.CreateWorkspace.Dialogs
             using (new EditorGUILayout.HorizontalScope())
             {
                 GUILayout.FlexibleSpace();
+
+                if (mIsLoadingProjects)
+                {
+                    GUI.enabled = false;
+                }
 
                 if (Application.platform == RuntimePlatform.WindowsEditor)
                 {
@@ -146,8 +281,7 @@ namespace Unity.PlasticSCM.Editor.Views.CreateWorkspace.Dialogs
 
         void DoOkButton()
         {
-            if (!AcceptButton(PlasticLocalization.GetString(
-                    PlasticLocalization.Name.OkButton)))
+            if (!AcceptButton(PlasticLocalization.Name.OkButton.GetString()))
                 return;
 
             OkButtonWithValidationAction();
@@ -155,8 +289,7 @@ namespace Unity.PlasticSCM.Editor.Views.CreateWorkspace.Dialogs
 
         void DoCancelButton()
         {
-            if (!NormalButton(PlasticLocalization.GetString(
-                    PlasticLocalization.Name.CancelButton)))
+            if (!NormalButton(PlasticLocalization.Name.CancelButton.GetString()))
                 return;
 
             CancelButtonAction();
@@ -172,7 +305,13 @@ namespace Unity.PlasticSCM.Editor.Views.CreateWorkspace.Dialogs
 
         RepositoryCreationData BuildCreationData()
         {
-            return new RepositoryCreationData(mName, mServer);
+            string repositoryName = mSelectedProject != null
+                ? string.Format("{0}/{1}", mSelectedProject, mRepositoryName)
+                : mRepositoryName;
+
+            return new RepositoryCreationData(
+                repositoryName,
+                ResolveServer.FromUserInput(mSelectedServer, CmConnection.Get().UnityOrgResolver));
         }
 
         static CreateRepositoryDialog Create(
@@ -192,8 +331,19 @@ namespace Unity.PlasticSCM.Editor.Views.CreateWorkspace.Dialogs
 
         void BuildComponents(string proposedRepositoryName, string proposedServer)
         {
-            mName = proposedRepositoryName;
-            mServer = proposedServer;
+            mSelectedServer = ResolveServer.ToDisplayString(proposedServer);
+            mSelectedProject = null;
+
+            mRepositoryName = proposedRepositoryName;
+            if (OrganizationsInformation.IsUnityOrganization(proposedServer))
+            {
+                string[] repositoryNameParts = proposedRepositoryName.Split('/');
+
+                if (repositoryNameParts.Length > 1)
+                {
+                    mRepositoryName = repositoryNameParts[repositoryNameParts.Length - 1].Trim();
+                }
+            }
 
             KnownServersListOperations.GetCombinedServers(
                 true,
@@ -216,9 +366,14 @@ namespace Unity.PlasticSCM.Editor.Views.CreateWorkspace.Dialogs
         IPlasticWebRestApi mPlasticWebRestApi;
         bool mFocusIsAreadySet;
 
-        string mName;
-        string mServer;
+        string mRepositoryName;
+        string mSelectedServer;
+        string mSelectedProject;
+        bool mIsLoadingProjects;
+
         List<string> mKnownServers = new List<string>();
+        List<string> mCurrentServerProjects = new List<string>();
+
         ProgressControlsForDialogs.Data mProgressData = new ProgressControlsForDialogs.Data();
 
         ProgressControlsForDialogs mProgressControls;
@@ -226,6 +381,5 @@ namespace Unity.PlasticSCM.Editor.Views.CreateWorkspace.Dialogs
         const float ENTRY_WIDTH = 400;
         const float ENTRY_X = 175f;
         const string REPONAME_CONTROL_NAME = "CreateRepositoryDialog.RepositoryName";
-        const string DROPDOWN_CONTROL_NAME = "CreateRepositoryDialog.ServerDropdown";
     }
 }

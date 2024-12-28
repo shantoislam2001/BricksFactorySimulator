@@ -67,6 +67,13 @@
         "DisplayIdEnabled": false,
         "DisplayId": ""
     },
+    "m_ScreenCaptureSettings": {
+        "Mode": 0,
+        "m_LastSaveLocation": [
+            "D:\\Unity projects\\BricksFactorySimulator",
+            "D:\\Unity projects\\BricksFactorySimulator"
+        ]
+    },
     "m_InputSettings": {
         "ShiftModifier": false,
         "SendText": "",

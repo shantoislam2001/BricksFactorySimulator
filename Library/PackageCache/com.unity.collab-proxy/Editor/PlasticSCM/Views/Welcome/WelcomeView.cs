@@ -1,17 +1,15 @@
-﻿using UnityEditor;
-using UnityEngine;
-
+﻿using Codice.Client.BaseCommands;
 using Codice.Client.Common;
 using PlasticGui;
 using PlasticGui.WebApi;
 using Unity.PlasticSCM.Editor.AssetUtils;
-using Unity.PlasticSCM.Editor.UI;
-using Unity.PlasticSCM.Editor.Views.CreateWorkspace;
-using Unity.PlasticSCM.Editor.UI.Progress;
 using Unity.PlasticSCM.Editor.Configuration.CloudEdition.Welcome;
-using Codice.Client.BaseCommands;
 using Unity.PlasticSCM.Editor.Configuration.TeamEdition;
-using Codice.CM.Common;
+using Unity.PlasticSCM.Editor.UI;
+using Unity.PlasticSCM.Editor.UI.Progress;
+using Unity.PlasticSCM.Editor.Views.CreateWorkspace;
+using UnityEditor;
+using UnityEngine;
 
 namespace Unity.PlasticSCM.Editor.Views.Welcome
 {
@@ -30,10 +28,7 @@ namespace Unity.PlasticSCM.Editor.Views.Welcome
             mPlasticWebRestApi = plasticWebRestApi;
             mCmConnection = cmConnection;
 
-            mGuiMessage = new UnityPlasticGuiMessage();
             mConfigureProgress = new ProgressControlsForViews();
-
-            mInstallerFile = GetInstallerTmpFileName.ForPlatform();
             autoLoginState = AutoLogin.State.Off;
         }
 
@@ -53,10 +48,7 @@ namespace Unity.PlasticSCM.Editor.Views.Welcome
 
             DoContentViewArea(
                 clientNeedsConfiguration,
-                mIsCreateWorkspaceButtonClicked,
-                mInstallerFile,
-                mGuiMessage,
-                mConfigureProgress);
+                mIsCreateWorkspaceButtonClicked);
 
             GUILayout.EndHorizontal();
         }
@@ -72,10 +64,7 @@ namespace Unity.PlasticSCM.Editor.Views.Welcome
 
         void DoContentViewArea(
             bool clientNeedsConfiguration,
-            bool isCreateWorkspaceButtonClicked,
-            string installerFile,
-            GuiMessage.IGuiMessage guiMessage,
-            ProgressControlsForViews configureProgress)
+            bool isCreateWorkspaceButtonClicked)
         {
             GUILayout.BeginVertical();
 
@@ -86,8 +75,6 @@ namespace Unity.PlasticSCM.Editor.Views.Welcome
             else
                 DoSetupViewArea(
                     clientNeedsConfiguration,
-                    mInstallerFile,
-                    mGuiMessage,
                     mConfigureProgress);
 
             GUILayout.EndVertical();
@@ -95,8 +82,6 @@ namespace Unity.PlasticSCM.Editor.Views.Welcome
 
         void DoSetupViewArea(
             bool clientNeedsConfiguration,
-            string installerFile,
-            GuiMessage.IGuiMessage guiMessage,
             ProgressControlsForViews configureProgress)
         {
             DoTitleLabel();
@@ -113,8 +98,6 @@ namespace Unity.PlasticSCM.Editor.Views.Welcome
 
             DoActionButtonsArea(
                 isStep1Completed,
-                installerFile,
-                guiMessage,
                 configureProgress);
 
             DoNotificationArea(configureProgress.ProgressData);
@@ -122,21 +105,15 @@ namespace Unity.PlasticSCM.Editor.Views.Welcome
 
         void DoActionButtonsArea(
             bool isStep1Completed,
-            string installerFile,
-            GuiMessage.IGuiMessage guiMessage,
             ProgressControlsForViews configureProgress)
         {
             DoActionButton(
                 isStep1Completed,
-                installerFile,
-                guiMessage,
                 configureProgress);
         }
 
         void DoActionButton(
             bool isStep1Completed,
-            string installerFile,
-            GuiMessage.IGuiMessage guiMessage,
             ProgressControlsForViews configureProgress)
         {
             if (!isStep1Completed)
@@ -187,18 +164,14 @@ namespace Unity.PlasticSCM.Editor.Views.Welcome
             // sign in window, but show Enterprise option as well
             GUILayout.FlexibleSpace();
 
-            var anchorStyle = new GUIStyle(GUI.skin.label);
-            anchorStyle.normal.textColor = new Color(0.129f, 0.588f, 0.953f);
-            anchorStyle.hover.textColor = new Color(0.239f, 0.627f, 0.949f);
-            anchorStyle.active.textColor = new Color(0.239f, 0.627f, 0.949f);
-
             if (GUILayout.Button(
-                PlasticLocalization.GetString(
-                    PlasticLocalization.Name.NeedEnterprise),
-                    anchorStyle,
+                    PlasticLocalization.Name.NeedEnterprise.GetString(),
+                    UnityStyles.LinkLabel,
                     GUILayout.Width(BUTTON_WIDTH),
                     GUILayout.Height(20)))
+            {
                 TeamEditionConfigurationWindow.ShowWindow(mPlasticWebRestApi, this);
+            }
 
             GUILayout.Space(BUTTON_MARGIN);
 
@@ -312,12 +285,10 @@ namespace Unity.PlasticSCM.Editor.Views.Welcome
 
         internal AutoLogin.State autoLoginState = AutoLogin.State.Off;
 
-        string mInstallerFile;
         bool mIsCreateWorkspaceButtonClicked = false;
 
         CreateWorkspaceView mCreateWorkspaceView;
         readonly ProgressControlsForViews mConfigureProgress;
-        readonly GuiMessage.IGuiMessage mGuiMessage;
         readonly CmConnection mCmConnection;
         readonly IPlasticAPI mPlasticApi;
         readonly IPlasticWebRestApi mPlasticWebRestApi;
@@ -331,7 +302,5 @@ namespace Unity.PlasticSCM.Editor.Views.Welcome
         const int BUTTON_MARGIN = 10;
         const int STEP_LABEL_HEIGHT = 20;
         const int BUTTON_WIDTH = 170;
-
-        const string DOWNLOAD_URL = @"https://www.plasticscm.com/download";
     }
 }

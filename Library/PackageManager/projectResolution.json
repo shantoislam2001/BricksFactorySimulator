@@ -1,7 +1,7 @@
 {
   "context": {
     "projectPath": "D:/Unity projects/BricksFactorySimulator/Packages",
-    "unityVersion": "6000.0.18f1"
+    "unityVersion": "6000.0.24f1"
   },
   "inputs": [
     "D:\\Unity projects\\BricksFactorySimulator\\Packages\\manifest.json",
@@ -11,7 +11,7 @@
     "com.unity.2d.sprite@1.0.0": {
       "name": "com.unity.2d.sprite",
       "resolvedPath": "D:\\Unity projects\\BricksFactorySimulator\\Library\\PackageCache\\com.unity.2d.sprite",
-      "fingerprint": "b0dd32b64256b7cc7ae5c0e91e62d40c380b6581",
+      "fingerprint": "0e70656ef5df5c7161c8cfc6f24ab0dde0dc637e",
       "editorCompatibility": "2019.2.0a1",
       "version": "1.0.0",
       "source": "builtin"
@@ -24,12 +24,12 @@
       "version": "1.3.1",
       "source": "registry"
     },
-    "com.unity.collab-proxy@2.4.4": {
+    "com.unity.collab-proxy@2.5.2": {
       "name": "com.unity.collab-proxy",
       "resolvedPath": "D:\\Unity projects\\BricksFactorySimulator\\Library\\PackageCache\\com.unity.collab-proxy",
-      "fingerprint": "f073ab5b7d4916dd0953caa6b29a435a4e9a3df8",
+      "fingerprint": "da7e55b87e08569f31766e7cabc37bc033c9c7f9",
       "editorCompatibility": "2020.3.48f1",
-      "version": "2.4.4",
+      "version": "2.5.2",
       "source": "registry"
     },
     "com.unity.device-simulator.devices@1.0.0": {
@@ -63,12 +63,12 @@
       "version": "2.0.22",
       "source": "registry"
     },
-    "com.unity.inputsystem@1.9.0": {
+    "com.unity.inputsystem@1.11.1": {
       "name": "com.unity.inputsystem",
       "resolvedPath": "D:\\Unity projects\\BricksFactorySimulator\\Library\\PackageCache\\com.unity.inputsystem",
-      "fingerprint": "4c821b62f24c1485f7476242f03772aaa7a79f1d",
+      "fingerprint": "f32e50d372b38a6a40f5382ad8ab0d11ac27b67d",
       "editorCompatibility": "2019.4.0a1",
-      "version": "1.9.0",
+      "version": "1.11.1",
       "source": "registry"
     },
     "com.unity.postprocessing@3.4.0": {
@@ -98,7 +98,7 @@
     "com.unity.ugui@2.0.0": {
       "name": "com.unity.ugui",
       "resolvedPath": "D:\\Unity projects\\BricksFactorySimulator\\Library\\PackageCache\\com.unity.ugui",
-      "fingerprint": "b0e0b1c828561e8a0d130fa0e71078e9684ef47f",
+      "fingerprint": "0187e0e77e6c4674362938fa5a77e1c92574f3dd",
       "editorCompatibility": "2019.2.0a1",
       "version": "2.0.0",
       "source": "builtin"
@@ -323,12 +323,12 @@
       "version": "2.0.5",
       "source": "registry"
     },
-    "com.unity.mobile.android-logcat@1.4.2": {
+    "com.unity.mobile.android-logcat@1.4.3": {
       "name": "com.unity.mobile.android-logcat",
       "resolvedPath": "D:\\Unity projects\\BricksFactorySimulator\\Library\\PackageCache\\com.unity.mobile.android-logcat",
-      "fingerprint": "672c98980a158c65cca25f644cd456c5df19511e",
+      "fingerprint": "86a975bfc16f701425c247ca7041193fade12afd",
       "editorCompatibility": "2021.3.0a1",
-      "version": "1.4.2",
+      "version": "1.4.3",
       "source": "registry"
     },
     "com.unity.adaptiveperformance@5.1.0": {

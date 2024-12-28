@@ -5,22 +5,22 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638633052693749540
-    m_Hash: 2081886826
+      ticks: 638678642439203490
+    m_Hash: 4185571793
   m_LockFileStatus:
     m_FilePath: D:/Unity projects/BricksFactorySimulator/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638633052693794645
-    m_Hash: 1771794368
+      ticks: 638678642493380575
+    m_Hash: 93904992
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: D:/Unity projects/BricksFactorySimulator/Packages
-m_EditorVersion: 6000.0.18f1 (3699cf869f9b)
+m_EditorVersion: 6000.0.24f1 (11fa355cd605)
 m_ResolvedPackages:
 - packageId: com.unity.2d.sprite@1.0.0
   testable: 0
@@ -87,7 +87,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: b0dd32b64256b7cc7ae5c0e91e62d40c380b6581
+  fingerprint: 0e70656ef5df5c7161c8cfc6f24ab0dde0dc637e
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
@@ -195,10 +195,10 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.3.1
     minimumUnityVersion: 2021.2.0a18
-- packageId: com.unity.collab-proxy@2.4.4
+- packageId: com.unity.collab-proxy@2.5.2
   testable: 0
   isDirectDependency: 1
-  version: 2.4.4
+  version: 2.5.2
   source: 1
   resolvedPath: D:\Unity projects\BricksFactorySimulator\Library\PackageCache\com.unity.collab-proxy
   assetPath: Packages/com.unity.collab-proxy
@@ -209,7 +209,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Editor
-  type: assets
+  type: 
   description: The package gives you the ability to use Unity Version Control in
     the Unity editor. To use Unity Version Control, a subscription is required. Learn
     more about how you can get started for free by visiting https://unity.com/solutions/version-control
@@ -292,10 +292,8 @@ m_ResolvedPackages:
     - 2.5.1
     - 2.5.2
     compatible:
-    - 2.4.4
-    - 2.5.1
     - 2.5.2
-    recommended: 2.4.4
+    recommended: 2.5.2
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -326,16 +324,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638573492230000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.4/manual/index.html
+  datePublishedTicks: 638630364536670000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.5/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-    revision: 03b1de8d838eb1e427cb1b1d8bf9157f33377542
+    revision: c402e6396d3ea20ecb2d59eac908e7e0a30cd7e6
     path: 
   unityLifecycle:
-    version: 2.4.4
+    version: 2.5.2
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -345,14 +343,14 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fixed the Unity Editor stuck on \"Creating
-    workspace\" when \"Use Unity Version Control\" was selected from the Hub"}'
+  upmReserved: '{"changelog":"### Fixed\n\n- Fix token renewal issue: Can''t obtain
+    a new token (Message: Invalid Refresh Token., Code: 132.104)"}'
   assetStore:
     productId: 
-  fingerprint: f073ab5b7d4916dd0953caa6b29a435a4e9a3df8
+  fingerprint: da7e55b87e08569f31766e7cabc37bc033c9c7f9
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 2.4.4
+    minimumPackageVersion: 2.5.2
     minimumUnityVersion: 2020.3.48f1
 - packageId: com.unity.device-simulator.devices@1.0.0
   testable: 0
@@ -460,7 +458,7 @@ m_ResolvedPackages:
     version: default
   resolvedDependencies:
   - name: com.unity.mobile.android-logcat
-    version: 1.4.2
+    version: 1.4.3
   - name: com.unity.adaptiveperformance
     version: 5.1.0
   - name: com.unity.profiling.core
@@ -573,9 +571,11 @@ m_ResolvedPackages:
     - 3.0.27
     - 3.0.28
     - 3.0.31
+    - 3.0.34
     compatible:
     - 3.0.31
-    recommended: 3.0.31
+    - 3.0.34
+    recommended: 3.0.34
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -732,10 +732,10 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.22
     minimumUnityVersion: 2019.4.25f1
-- packageId: com.unity.inputsystem@1.9.0
+- packageId: com.unity.inputsystem@1.11.1
   testable: 0
   isDirectDependency: 1
-  version: 1.9.0
+  version: 1.11.1
   source: 1
   resolvedPath: D:\Unity projects\BricksFactorySimulator\Library\PackageCache\com.unity.inputsystem
   assetPath: Packages/com.unity.inputsystem
@@ -746,7 +746,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: assets
+  type: 
   description: A new input system which can be used as a more extensible and customizable
     alternative to Unity's classic input system in UnityEngine.Input.
   errors: []
@@ -802,12 +802,11 @@ m_ResolvedPackages:
     - 1.10.0
     - 1.11.0
     - 1.11.1
+    - 1.11.2
     compatible:
-    - 1.9.0
-    - 1.10.0
-    - 1.11.0
     - 1.11.1
-    recommended: 1.9.0
+    - 1.11.2
+    recommended: 1.11.2
     deprecated: []
   dependencies:
   - name: com.unity.modules.uielements
@@ -844,16 +843,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638567251840000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.9/manual/index.html
+  datePublishedTicks: 638632824854080000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.11/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/InputSystem.git
-    revision: 73feff4267461a868fdfc3fa43f112de1f5312c1
+    revision: 684a2848f24f4d45ffdf14900025ae9bb98c7dd8
     path: 
   unityLifecycle:
-    version: 1.9.0
+    version: 1.11.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -863,68 +862,30 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Changed\n- Added warning messages to both `OnScreenStick`
-    and `OnScreenButton` Inspector editors that would display a warning message in
-    case on-screen control components are added to a `GameObject` not part of a valid
-    UI hierarchy.\n- Changed behavior for internal feature flag relating to Windows
-    Gaming Input to be ignored on non-supported platforms.\n- Changed `DualSenseHIDInputReport`
-    from internal to public visibility\n\n### Fixed\n- Avoid potential crashes from
-    `NullReferenceException` in `FireStateChangeNotifications`.\n- Fixed cases where
-    `wasPressedThisFrame` would not return true if a press and release happened within
-    the same frame before being queried (and vice versa for `wasReleasedThisFrame`).\n-
-    Fixed an issue where a composite binding would not be consecutively triggered
-    after ResetDevice() has been called from the associated action handler [ISXB-746](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-746).\n-
-    Fixed resource designation for \"d_InputControl\" icon to address CI failure.\n-
-    Fixed an issue where a composite binding would not be consecutively triggered
-    after disabling actions while there are action modifiers in progress [ISXB-505](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-505).\n-
-    Fixed prefabs and missing default control scheme used by PlayerInput component
-    are now correctly shown in the inspector [ISXB-818](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-818).\n-
-    Fixed error thrown when Cancelling Control Scheme creation in Input Actions Editor.\n-
-    Fixed Scheme Name in Control Scheme editor menu that gets reset when editing
-    devices [ISXB-763](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-763).\n-
-    Fixed an issue where `InputActionAsset.FindAction(string, bool)` would throw
-    `System.NullReferenceException` instead of returning `null` if searching for
-    a non-existent action with an explicit action path and using `throwIfNotFound:
-    false`, e.g. searching for \"Map/Action\" when `InputActionMap` \"Map\" exists
-    but no `InputAction` named \"Action\" exists within that map [ISXB-895](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-895).\n-
-    Fixed scroll speed being slower when using InputSystemUIInputModule instead of
-    StandaloneInputModule. (https://jira.unity3d.com/browse/ISXB-771)\n- Fixed an
-    issue where adding a `OnScreenButton` or `OnScreenStick` to a regular GameObject
-    would lead to exception in editor.\n- Fixed an issue where adding a `OnScreenStick`
-    to a regular GameObject and entering play-mode would lead to exceptions being
-    generated.\n- Fixed InputActionReference issues when domain reloads are disabled
-    [ISXB-601](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-601),
-    [ISXB-718](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-718),
-    [ISXB-900](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-900)\n-
-    Fixed a performance issue with many objects using multiple action maps [ISXB-573](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-573).\n-
-    Fixed an variable scope shadowing issue causing compilation to fail on Unity
-    2019 LTS.\n- Fixed an issue where changing `InputSettings` instance would not
-    affect associated feature flags.\n- Submit and Cancel UI actions will now respect
-    configured interactions. [ISXB-841](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-841).\n-
-    Fixed the UI generation of enum fields when editing interactions of action properties.
-    The new selected value was lost when saving.\n- Fixed the UI generation of custom
-    interactions of action properties when it rely on OnGUI callback. [ISXB-886](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-886).\n-
-    Fixed deletion of last composite part raising an exception. [ISXB-804](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-804)\n-
-    Fixed an issue related to Visualizers sample where exceptions would be thrown
-    by InputActionVisualizer and InputControlVisualizer when entering play-mode if
-    added as components to a new `GameObject`.\n- Fixed an issue with InputAction
-    Asset editor where invalid ControlScheme names with only spaces could be entered.
-    [ISXB-547](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-547).\n\n###
-    Added\n- Added additional device information when logging the error due to exceeding
-    the maximum number of events processed\n  set by `InputSystem.settings.maxEventsBytesPerUpdate`.
-    This additional information is available in development builds\n  only.\n- Fixed
-    deletion of last composite part raising an exception. [ISXB-804](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-804)\n-
-    Expanded editor and build insight analytics to cover ``.inputactions` asset editor
-    usage, `InputSettings` and common component configurations.\n\n### Changed\n-
-    Changed `DualSenseHIDInputReport` from internal to public visibility\n- Added
-    Input Setting option allowing to keep platform-specific scroll wheel input values
-    instead of automatically converting them to a normalized range."}'
+  upmReserved: '{"changelog":"### Fixed\n- Fixed Multiple interactions could breaks
+    on Composite Binding. [ISXB-619](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-619)\n-
+    Fixed memory leak when the OnScreenStick component was destroyed [ISXB-1070](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1070).
+    Contribution by [LukeUnityDev](https://github.com/LukeUnityDev).\n- Fixed Action
+    Maps contextual menu in Action Editor UI that occasionally displays unrelated
+    items.\n- Fixed \"MissingReferenceException\" errors when closing an in-game
+    dropdown field [ISXB-1081](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1081).\n-
+    Fixed potential crash on Mac when using stale references to deleted InputDevice
+    objects [ISXB-606](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-606).\n-
+    Fixed conditional compilation for non-editor analytics on platforms not enabling
+    analytics.\n\n### Changed\n- Renamed editor Resources directories to PackageResources
+    to fix package validation warnings.\n- Changed representation of GamepadButton
+    enum values in Inspector to display aliased enum values as a single item to avoid
+    confusion around selection and aliased value display when multiple enum items
+    map to the same numerical value. [ISXB-543](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-543)\n-
+    PlayerInput component now warns if the system cannot find matching control scheme,
+    which can occur if all control schemes already paired (e.g. to other game objects
+    with PlayerInput components) [ISXB-1020](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1020)"}'
   assetStore:
     productId: 
-  fingerprint: 4c821b62f24c1485f7476242f03772aaa7a79f1d
+  fingerprint: f32e50d372b38a6a40f5382ad8ab0d11ac27b67d
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.9.0
+    minimumPackageVersion: 1.11.1
     minimumUnityVersion: 2019.4.0a1
 - packageId: com.unity.postprocessing@3.4.0
   testable: 0
@@ -1473,7 +1434,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: b0e0b1c828561e8a0d130fa0e71078e9684ef47f
+  fingerprint: 0187e0e77e6c4674362938fa5a77e1c92574f3dd
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.0
@@ -1529,9 +1490,11 @@ m_ResolvedPackages:
     - 1.9.1
     - 1.9.2
     - 1.9.4
+    - 1.9.5
     compatible:
     - 1.9.4
-    recommended: 1.9.4
+    - 1.9.5
+    recommended: 1.9.5
     deprecated:
     - 1.8.0-pre.1
   dependencies:
@@ -3053,8 +3016,7 @@ m_ResolvedPackages:
     url: 
   category: 
   type: module
-  description: 'The UnityAnalytics module implements APIs required to use Unity Analytics.
-    Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityAnalyticsModule.html'
+  description: 
   errors: []
   versions:
     all:
@@ -4090,10 +4052,10 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.5
     minimumUnityVersion: 2019.4.0a1
-- packageId: com.unity.mobile.android-logcat@1.4.2
+- packageId: com.unity.mobile.android-logcat@1.4.3
   testable: 0
   isDirectDependency: 0
-  version: 1.4.2
+  version: 1.4.3
   source: 1
   resolvedPath: D:\Unity projects\BricksFactorySimulator\Library\PackageCache\com.unity.mobile.android-logcat
   assetPath: Packages/com.unity.mobile.android-logcat
@@ -4104,7 +4066,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: assets
+  type: 
   description: "Android Logcat package provides support for:\n - Android log messages\n
     - Android application memory statistics\n - Input injection\n - Android Screen
     Capture\n - Android Screen Recorder\n - Stacktrace Utility\n\nClick the 'View
@@ -4134,7 +4096,6 @@ m_ResolvedPackages:
     - 1.4.2
     - 1.4.3
     compatible:
-    - 1.4.2
     - 1.4.3
     recommended: 1.4.3
     deprecated: []
@@ -4156,16 +4117,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638515173020000000
+  datePublishedTicks: 638616524392130000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.mobile.android-logcat@1.4/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/com.unity.mobile.logcat.git
-    revision: 98e03c396b230c19f4b96a0e9b43fe805f03e784
+    revision: dbddf951bd5d17fbd9405673bb238aec8cba201e
     path: 
   unityLifecycle:
-    version: 1.4.2
+    version: 1.4.3
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -4175,14 +4136,16 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixes & Improvements\n - Fix issue, where logcat
-    package would throw an error if there are multiple devices connected."}'
+  upmReserved: '{"changelog":"### Fixes & Improvements\n - Fix Screen Capture window
+    not saving last image/video save location correctly between Unity domain reloads
+    or launches, previously it would always reset to Unity project directory.\n -
+    Fix compatability issues with future Unity versions."}'
   assetStore:
     productId: 
-  fingerprint: 672c98980a158c65cca25f644cd456c5df19511e
+  fingerprint: 86a975bfc16f701425c247ca7041193fade12afd
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.4.2
+    minimumPackageVersion: 1.4.3
     minimumUnityVersion: 2021.3.0a1
 - packageId: com.unity.adaptiveperformance@5.1.0
   testable: 0
@@ -4396,8 +4359,10 @@ m_ResolvedPackages:
     - 2.3.0
     - 2.3.1
     - 2.3.2
+    - 2.4.0
     compatible:
     - 2.3.2
+    - 2.4.0
     recommended: 2.3.2
     deprecated: []
   dependencies:
@@ -4529,4 +4494,4 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.2
     minimumUnityVersion: 2020.1.0a1
-m_BuiltInPackagesHash: c9fb3817a895082dd98fc4bf7f43f4d92307ba89
+m_BuiltInPackagesHash: 58144a8dde1d83f3c4a710a626e57c6ff83a4009
